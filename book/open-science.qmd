@@ -47,7 +47,7 @@ Before depositing any data publicly, ensure all personal and sensitive informati
 
 Reproducibility means your results can be re-created exactly from your raw data and code. Good practices:
 
-- Keep a **clean, annotated syntax file** (R or SPSS) from the start (see chapter "[R for Data Analysis](r-for-data-analysis.qmd)")
+- Keep a **clean, annotated syntax file** (R or SPSS) from the start (see chapter "[R for Data Analysis](r-resources.qmd)")
 - Use **relative file paths** so your code works on other machines
 - Document every data transformation and exclusion decision
 - Consider using **R Markdown** or **Quarto** to combine analysis and write-up

@@ -44,6 +44,21 @@ Once you find a central paper:
 - Prefer **recent** literature (typically last 10–15 years, unless citing foundational work)
 - Be selective — your Theory chapter should discuss only what directly contributes to your argument
 
+Relevant Journals in our field are for example (check out this [Communication Science Journal Tracker](https://masurp.github.io/ICA-Journal-Tracker/)): 
+
+- Journal of Communication
+- Journal of Computer-Mediated Communication
+- Political Communication
+- Science Communication
+- New Media & Society
+- Communication Monographs
+- Social Media + Society
+- Information Communication & Society
+- Media Psychology
+- Journal of Media Psychology
+- Mobile Media & Communication
+- and many more
+
 ::: {.callout-warning}
 ## Quality over quantity
 The vast majority of your references should be peer-reviewed academic journal articles. Avoid blogs, Wikipedia, previous BA/MA theses, and PhD dissertations unless unavoidable.
