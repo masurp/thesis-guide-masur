@@ -1,6 +1,8 @@
 # R for Data Analysis
 
+::: {.content-visible when-format="html"}
 ![](https://thestatsninja.com/wp-content/uploads/2018/11/p-value-statistics-meme.jpg){fig-align="center" width="30%"}
+:::
 
 R is the primary statistical computing environment used in Communication Science research at VU Amsterdam. This chapter points you to resources for learning R, running common analyses, and reporting results in APA format. It also covers how AI tools can help you write and debug R code.
 

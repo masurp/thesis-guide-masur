@@ -1,6 +1,8 @@
 # Welcome {.unnumbered}
 
+::: {.content-visible when-format="html"}
 ![](https://corrinemalcolm.com/wp-content/uploads/2017/04/phd050115s.gif){fig-align="center"}
+:::
 
 Welcome to Philipp's **MA Thesis Guide for Communication Science** at Vrije Universiteit Amsterdam. This website is designed to support you throughout your master's thesis project — from choosing a topic to submitting your final version.
 
