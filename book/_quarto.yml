@@ -92,8 +92,5 @@ format:
       \definecolor{vuBlue}{HTML}{00A6D6}
       \definecolor{vuDarkBlue}{HTML}{003D6B}
 
-  epub:
-    cover-image: img/cover.png
-
 bibliography: references.bib
 csl: ../theme/apa.csl
