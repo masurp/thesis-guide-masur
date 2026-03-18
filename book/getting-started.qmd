@@ -1,0 +1,64 @@
+# Getting Started
+
+## Course information
+
+The MA Thesis in Communication Science is a substantial independent research project that represents the culmination of your master's degree. Here are the key course facts:
+
+| | |
+|---|---|
+| **Course code** | S_MTcw |
+| **Credits** | 18 EC (≈ 504 hours) |
+| **Course level** | 600 |
+| **Periods** | 4–6 (February track) or 1–2 (September track) |
+| **Language** | Dutch or English |
+| **Faculty** | Faculty of Social Sciences |
+| **Teaching format** | Individual and small-group meetings with me, plus centralized support and student peer review |
+| **Assessment** | Evaluated by me (first reviewer) and a second reviewer using the assessment form (see Canvas) |
+
+## Entry requirements
+
+Before you can continue with the full MA thesis trajectory, you must meet two requirements:
+
+1. A minimum of **12 EC** in total from preceding MA courses, including successful completion of **Research Methods for Communication Science**
+2. An **approved Research Proposal** after the first phase (see [The Thesis Trajectory](trajectory.qmd))
+
+## Start dates: February or September track
+
+The thesis course formally starts in **early February** (Period 4). However, it is also possible to start after the summer, in **early September** (Period 1).
+
+**Why choose the September track?**
+
+- You are doing an internship or other study activity that does not fit alongside the thesis
+- You did not pass all courses from Period 1 or 2
+
+If you want to start in September, discuss this with potential supervisors during the thesis market in January. Note that only a few supervisors offer supervision in the September track. You must still participate in the January supervisor assignment procedure.
+
+## Registration
+
+Preparation begins in **December** with an information lecture about procedures, deadlines, and available supervisor topics. **Register for the course before December** to receive information via Canvas.
+
+::: {.callout-important}
+## Don't miss the information lecture
+The information lecture (usually early December) is where you receive the full list of supervisor topics and procedural information. Missing it can mean missing important deadlines.
+:::
+
+## Choosing a topic
+
+In **January**, a **thesis market** is organized where you can walk around and talk informally with different supervisors about their research themes.
+
+After the market, you submit an **online questionnaire** with your topic preferences (ranked 1–8). If you would like to work with me, you need to put my topics high in your ranks and at best also indicate in the comment section that you would like to work with me.
+
+Supervisor assignments are generally finalized by the **end of January**.
+
+### Can I propose my own topic?
+
+In general, I would like you to work on the topics that I proposed during the information lecture and the MA thesis market. Yet, I am open to good research ideas. A good own proposal should contain at minimum:
+
+- A research question
+- A brief theoretical foundation
+- The intended type of research (survey, experiment, content analysis, etc.)
+- Indicate why you belief it fits within my research interests
+
+### Can I write my thesis in English?
+
+Yes. In fact, I prefer if you would write your thesis in English, but also allow for Dutch. 

@@ -1,0 +1,100 @@
+# Using AI Tools
+
+![](https://prod.superblogcdn.com/site_cuid_cl2eaqvk0362651klr22srwymp/images/funny-chatgpt-memes-10-1751563378679-compressed.png){fig-align="center" width="30%"}
+
+
+(Generative) AI tools are increasingly part of the academic workflow. The Department of Communication Science at VU Amsterdam permits the use of these tools — provided you use them **responsibly and transparently**. And don't be fooled, these tools may output text that sounds coherent or logical while being based on dubious sources. 
+
+::: {.callout-important}
+## The core principle: Human in the Lead
+You are always the one who decides on the content. You are responsible for the quality and originality of your work. Generative AI cannot do the thinking for you — and it should not!
+:::
+
+## What is responsible use?
+
+Responsible use means:
+
+- **You decide on the content** at all times
+- **You are critical of AI output** — AI is not a source of truth; it can produce inaccurate, incomplete, or superficial suggestions
+- **You understand what you are doing** — use AI tools only when you understand the topic well enough to evaluate, improve, or reject what the tool suggests
+- **You take full responsibility** for the final submitted version
+
+Generative AI can be a useful sparring partner for brainstorming, gaining an overview, structuring your work, or improving text you have already written. It cannot replace the reading, thinking, and writing that constitute your learning process.
+
+## Academic misconduct and fraud
+
+- **Never copy-paste AI-generated text** into your thesis without attribution — this is plagiarism
+- Using AI without transparency is **academic fraud**
+- If I doubt whether you have used AI responsibly, I will discuss this with you; persistent doubts go to the Examination Board
+
+More information: [vu.nl/en/student/examinations/academic-integrity](https://vu.nl/en/student/examinations/academic-integrity)
+
+VU rules on generative AI: [vu.nl/en/student/examinations/generative-ai-your-use-our-expectations](https://vu.nl/en/student/examinations/generative-ai-your-use-our-expectations)
+
+## VU-licensed vs. non-licensed tools
+
+### VU-licensed tools (recommended)
+
+Log in with your **VU email account** — your data will not be used to train the model:
+
+| Tool | Access |
+|------|--------|
+| **Microsoft Copilot** | [copilot.microsoft.com](https://copilot.microsoft.com) — log in with VU credentials |
+| **Google Gemini** | [gemini.google.com](https://gemini.google.com) — log in with VU email |
+| **NotebookLM** | [notebooklm.google.com](https://notebooklm.google.com) — log in with VU email |
+
+### Non-licensed tools (use at your own risk)
+
+Tools like **[ChatGPT](https://chatgpt.com)**, **[Elicit](https://elicit.com)**, **[QuillBot](https://quillbot.com)**, and others fall **outside VU's license**. When using these:
+- Your data may be used for model training
+- You are personally responsible for privacy and data protection
+- **Never upload personal research data** (names, email addresses, interview transcripts, survey data)
+- **Never upload paywalled articles** — this violates copyright
+
+::: {.callout-warning}
+## GDPR and data protection
+Never upload sensitive or personal data to any AI tool — not even VU-licensed ones. This includes: names, email addresses, research data, financial records, or company details from internships or partnerships.
+:::
+
+## Responsible AI use by thesis phase
+
+| Thesis Phase | Responsible Use | Useful Tools |
+|---|---|---|
+| **Topic selection** | Brainstorming ideas, identifying research gaps, but always verify by cross-checking with relevant literature | [Gemini](https://gemini.google.com), [Elicit](https://elicit.com), [Perplexity](https://www.perplexity.ai) |
+| **Literature review** | Finding keywords/synonyms, searching articles, generating summaries (always verify originals) | [Elicit](https://elicit.com), [Scite](https://scite.ai), [Research Rabbit](https://www.researchrabbit.ai), [NotebookLM](https://notebooklm.google.com), [Undermind](https://www.undermind.ai), [Perplexity](https://www.perplexity.ai) |
+| **Research design** | Generating ideas, creating experimental stimuli (justify all choices yourself), cross-validate | [Gemini](https://gemini.google.com), [Qualtrics AI](https://www.qualtrics.com) |
+| **Proposal writing** | Feedback on text you wrote; rephrasing, shortening, grammar | [Gemini](https://gemini.google.com), [Grammarly](https://www.grammarly.com), [Wordtune](https://www.wordtune.com) |
+| **Data collection** | In some cases, automating data collection (verify quality yourself, implemented validation procedures if possible) | [Gemini](https://gemini.google.com), [Google Forms](https://forms.google.com) |
+| **Data analysis** | Generating/debugging R code, creating visualizations (verify all output) | [Gemini](https://gemini.google.com), [NVivo](https://lumivero.com/products/nvivo/), [Orange3](https://orangedatamining.com) |
+| **Writing the thesis** | Improving clarity and structure of your own text | [Gemini](https://gemini.google.com), [Grammarly](https://www.grammarly.com), [QuillBot](https://quillbot.com), [Wordtune](https://www.wordtune.com) |
+| **Revision & feedback** | Improving academic style, tone, consistency | [Gemini](https://gemini.google.com), [Grammarly](https://www.grammarly.com), [Hemingway Editor](https://hemingwayapp.com), [Trinka AI](https://www.trinka.ai) |
+
+::: {.callout-tip}
+## Sustainability
+Every query to a generative AI system requires significant computing energy and thus has a large environmental impact. Use these tools mindfully and purposefully.
+:::
+
+## The AI statement (required)
+
+All theses must include a **Statement about Generative AI and AI-Assisted Technology usage** at the end of the thesis, after the reference list. This statement is **not counted in the word count**.
+
+Your statement must answer:
+
+1. **Did you use generative AI?** (yes/no — if no, the statement ends here)
+2. **Which tools did you use, and how?** — for each tool, specify the purpose (e.g., *"I used Google Gemini to receive feedback on paragraph structure in the introduction and theory sections"*)
+3. **How did you handle the AI-generated content?** — end with a statement taking responsibility for the final work
+
+### Example AI statements
+
+> *"During the process of writing this thesis, I used Perplexity to explore the scientific literature. I always verified the information received via AI searches by reading the original sources. I also used Google Gemini to receive feedback on my own writing regarding paragraph structure and academic phrasing. The final formulations were written and checked by myself. I take full responsibility for the final submitted version."*
+
+> *"When writing the theory sections, I used Grammarly to improve readability and language. I also used Copilot to debug errors in my R code during analyses. When using these tools, I carefully reviewed and edited the generated content. I take full responsibility for the content of this thesis."*
+
+### In-chapter disclosure
+
+If you used AI for specific chapter-level tasks, also note this within the relevant chapter. For example:
+- *Theory section*: used AI to generate an initial reading list on a topic
+- *Method section*: used AI to generate experimental stimuli
+- *Results section*: used AI to generate or refine analysis code
+
+Keep a record of your AI prompts and outputs — you may be asked to show these.

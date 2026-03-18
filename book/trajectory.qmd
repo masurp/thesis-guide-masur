@@ -1,0 +1,99 @@
+# The Thesis Trajectory
+
+The MA thesis project unfolds in three main phases: **preparation (P4)**, **research and writing (P5)**, and **finalizing and submission (P6)**. This chapter explains what is expected at each stage.
+
+## Phase 1 (P4): Preparation
+
+Period 4 runs from **February to late March**. During this period, the thesis course runs in parallel with your two elective courses. You should plan to spend approximately **4 hours per week** on your thesis in this phase. It is crucial to develop first ideas and narrow down your focus. 
+
+Your main tasks in P4:
+
+- Read relevant literature in your chosen area
+- Delineate your individual research focus
+- Develop a draft research question
+- Meet with me (and your thesis group) to get feedback on your ideas
+
+::: {.callout-tip}
+## Start writing immediately
+As soon as you start reading, do it systematically: collect articles, write down your ideas and summaries. Keep an overview of all sources (e.g., using citation managers such as Zotero) and note the relevant aspects of each paper. This prevents you from getting lost in the literature and speeds up writing later. A good overview of the literature is key to not only an interesting and focused research question, but also for writing a large part of your thesis later on. 
+:::
+
+### The MA Thesis Plan (end of P4)
+
+By the **end of Period 4** (see [Timeline & Deadlines](timeline.qmd)), you submit a so-called **Thesis Plan** (sometimes also called **Exposé**) to me via email. This is a **minimum two-page document** that outlines your proposed project. The further you have developed it, the better. It should include at minimum:
+
+1. A first description of the relevant literature and core theory, and a research "gap" that justifies your focus (theoretical and societal relevance)
+2. Your over-arching research question, i.e., what you would like to answer with your study
+3. Related hypotheses (if the study is confirmatory) or sub-questions (if it is exploratory)
+4. A description of your intended research design (e.g., *"a survey exploring the relationship between X and Y"*, or *"a 2×2 between-subjects experiment with X as IV and Y as DV"*)
+
+Think of the Thesis Plan as a blueprint for the next step, your Research Proposal: (1) and (2) become your Introduction, (3) goes into the Theory section, and (4) goes into the Method section.
+
+## Phase 2 (P5): Research and Writing
+
+Period 5 begins in April. From now on, you should work **full time** on your thesis.
+
+### The Research Proposal (early P5)
+
+In the **first two weeks of P5**, you should intensively develop your **Research Proposal**, building on the Thesis Plan and incorporating my feedback. The Research Proposal must contain:
+
+1. **Introduction** — including a clearly formulated over-arching Research Question
+2. **Theory** — theoretical grounds and argumentation for the relationships or effects you expect
+3. **Final hypotheses** (or sub-questions for exploratory or qualitative research)
+4. A **conceptual model** (for quantitative research)
+5. **Method** — research design, (in)dependent and control variables, ideas on procedure and operationalization (a first draft of the questionnaire, codebook, etc. can go in the appendix)
+6. **Analysis plan** — for each hypothesis/RQ, specify exactly which statistical test on which variables you will use
+
+::: {.callout-important}
+## The Research Proposal is a go/no-go moment in your thesis trajectory
+I evaluate the proposal as *sufficient* or *insufficient*. An **approved** Research Proposal is required to continue the thesis trajectory. If it is rejected, you have up to two resits (within 10 working days each). Failing both resits means you must stop and restart in the following academic year.
+:::
+
+Upload your Research Proposal on Canvas and email it to me before the deadline. Give peer feedback to fellow students first, and process their feedback before submitting.
+
+### Complete Methodology
+
+As soon as possible after the Research Proposal is approved, submit your **complete methodology**. This is the final, detailed operationalization of your method — the exact content of your questionnaire, experimental materials, codebook, Qualtrics setup, etc. A lof this information usually will be included in appendix in your final thesis.
+
+### Ethical Review
+
+Before you start collecting data, you must complete the **ethical self-check** via the Research Ethics Review Committee (RERC). See [Ethics & Data Management](ethics.qmd) for details. You will go through this with me together.
+
+### Data Collection and Analysis
+
+Once your Research Proposal and Complete Methodology are approved and the ethical self-check is done:
+
+- You will start **data collection** (often in consultation with me, depending on your project)
+- Write the **Method chapter** (in past tense)
+- Conduct analyses and write the **Results chapter**
+
+::: {.callout-tip}
+## Prepare analyses before data comes in
+You can write your analysis syntax (R or SPSS) and structure your results section before the final data is collected. This saves a lot of time.
+:::
+
+## Phase 3 (P6): Finalizing and Submission
+
+Period 6 is the final stretch. After receiving feedback on your Method and Results chapters, you:
+
+- Write the **Conclusion and Discussion** chapter
+- Polish Introduction, Theory, Method, and Results
+- Process all remaining feedback
+- Submit the **complete concept version** to me for final feedback (see deadlines)
+  - This round focuses on: (1) overall coherence, (2) the discussion/conclusion section, and (3) any specific questions you have
+- After processing all feedback, submit the **final version**
+
+::: {.callout-note}
+## Quality matters — for you and for me
+Submit only high-quality draft versions, meaning: versions you have already peer-reviewed with fellow students and improved. Feedback can only be useful and focused if the text is already in good shape.
+:::
+
+## Peer feedback
+
+Throughout the trajectory, you are expected to give and receive **peer feedback** with fellow students in your thesis group. Peer feedback is required before submitting the following to me:
+
+- The Research Proposal
+- The Method and Results chapters
+- The complete concept version
+
+Use the official **Guideline Masterthesis Communication Science** (Canvas) as your peer feedback checklist.

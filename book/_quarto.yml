@@ -1,0 +1,99 @@
+project:
+  type: book
+  output-dir: ../_book
+
+book:
+  title: "MA Thesis Guide"
+  subtitle: ""
+  author: "Philipp Masur"
+  date: today
+  date-format: "MMMM D, YYYY"
+  language: en
+  repo-url: https://github.com/masurp/thesis-guide-masur
+  repo-actions: [issue]
+  search: true
+  downloads: [pdf, epub]
+
+  navbar:
+    logo: img/logo.png
+    logo-alt: "VU Amsterdam"
+    title: false
+    right:
+      - text: "🇳🇱 Nederlands"
+        href: ../nl/index.html
+
+  sidebar:
+    style: docked
+    search: true
+
+  chapters:
+    - index.qmd
+    - part: "Getting Started"
+      chapters:
+        - getting-started.qmd
+        - trajectory.qmd
+        - timeline.qmd
+        - supervision.qmd
+    - part: "The Research Process"
+      chapters:
+        - research-question.qmd
+        - research-design.qmd
+        - ethics.qmd
+        - thesis-plan.qmd
+        - research-proposal.qmd
+    - part: "Writing Your Thesis"
+      chapters:
+        - thesis-structure.qmd
+        - writing-intro-theory.qmd
+        - writing-method.qmd
+        - writing-results.qmd
+        - writing-discussion.qmd
+    - part: "Academic Practices"
+      chapters:
+        - ai-tools.qmd
+        - literature.qmd
+        - citation.qmd
+        - open-science.qmd
+        - r-resources.qmd
+    - part: "Submission & Graduation"
+      chapters:
+        - assessment.qmd
+        - graduation.qmd
+
+  page-footer:
+    left: "© Philipp Masur · [Vrije Universiteit Amsterdam](https://vu.nl) · Department of Communication Science"
+    right:
+      - icon: github
+        href: https://github.com/masurp/thesis-guide-masur
+
+format:
+  html:
+    theme: [cosmo, ../theme/theme.scss]
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    link-external-icon: true
+    link-external-newwindow: true
+    number-sections: true
+    number-depth: 3
+    code-copy: true
+  pdf:
+    documentclass: scrbook
+    papersize: a4
+    fontsize: 11pt
+    geometry: margin=2.5cm
+    toc: true
+    number-sections: true
+    colorlinks: true
+    linkcolor: vuDarkBlue
+    urlcolor: vuBlue
+    header-includes: |
+      \usepackage{xcolor}
+      \definecolor{vuBlue}{HTML}{00A6D6}
+      \definecolor{vuDarkBlue}{HTML}{003D6B}
+
+  epub:
+    cover-image: img/cover.png
+
+bibliography: references.bib
+csl: ../theme/apa.csl

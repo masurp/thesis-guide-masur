@@ -1,0 +1,66 @@
+# Open Science
+
+![](https://www.curatore.es/uc3m2OpenScience/wp-content/uploads/2024/06/open-data-meme.jpg){fig-align="center" width="50%"}
+
+Open science refers to a set of practices that make scientific research more transparent, reproducible, and accessible. Adopting open science practices in your thesis not only strengthens the quality of your work, but also aligns it with the standards increasingly expected in Communication Science. I, myself, strongly advocate for the implementation of open science practices (see [this](https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqz052/5803422#200712879) or [this](https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqz052/5803422#200712879) paper) and thus expect you to engage with these practices as well. 
+
+## Preregistration
+
+**Preregistration** means publicly documenting your research design, hypotheses, and analysis plan *before* you collect data. It:
+
+- Prevents *p*-hacking and HARKing (Hypothesizing After Results are Known)
+- Increases credibility of your confirmatory findings
+- Distinguishes what you planned from exploratory analyses you add later
+
+### Where to preregister
+
+The standard platform is the **Open Science Framework (OSF)**: [osf.io](https://osf.io)
+
+To pre-register:
+1. Create a free OSF account (log in with your institutional email)
+2. Create a new project for your thesis
+3. Under *Registrations*, choose a registration template (e.g., AsPredicted or OSF Prereg)
+4. Complete your hypotheses, design, and analysis plan
+5. Submit — you receive a time-stamped, publicly accessible registration
+
+::: {.callout-tip}
+## Discuss preregistration with me
+I strongly encourage to oreregister your MA thesis. I can help you how to do it. If you registered, include the OSF link in your method section.
+:::
+
+## Open data
+
+Sharing your data and analysis code allows others to verify, reuse, and build on your work.
+
+In your VU thesis, you share data with me via a secure surfdrive folder (see [Ethics & Data Management](ethics.qmd)). After your thesis is graded, you may optionally deposit anonymized data in a public repository such as:
+
+- **OSF** ([osf.io](https://osf.io)) — general purpose, mostly likely the best choice for your thesis
+- **DANS / Data Archiving and Networked Services** ([dans.knaw.nl](https://dans.knaw.nl)) — Dutch research data archive
+- **Zenodo** ([zenodo.org](https://zenodo.org)) — CERN-hosted, general purpose
+
+::: {.callout-warning}
+## Never share personal data publicly
+Before depositing any data publicly, ensure all personal and sensitive information has been removed. When in doubt, consult me and the RERC guidelines.
+:::
+
+## Reproducible analysis
+
+Reproducibility means your results can be re-created exactly from your raw data and code. Good practices:
+
+- Keep a **clean, annotated syntax file** (R or SPSS) from the start (see chapter "[R for Data Analysis](r-for-data-analysis.qmd)")
+- Use **relative file paths** so your code works on other machines
+- Document every data transformation and exclusion decision
+- Consider using **R Markdown** or **Quarto** to combine analysis and write-up
+
+For R users: resources are available on the Canvas page *R for Social Scientists*.
+
+## Transparency in reporting
+
+- Report **all tested hypotheses**, including non-significant findings
+- Clearly distinguish **confirmatory** (pre-registered) from **exploratory** analyses
+- If you deviated from your pre-registered plan, explain why
+- Report exact *p* values and effect sizes (not just *p* < .05)
+
+## Open access
+
+After passing your thesis, you are required to upload your thesis to the **UBVU thesis database** with public access rights (see [Assessment & Graduation](assessment.qmd)). This makes your work openly available for future researchers and students.

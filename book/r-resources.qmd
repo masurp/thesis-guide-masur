@@ -1,0 +1,285 @@
+# R for Data Analysis
+
+![](https://thestatsninja.com/wp-content/uploads/2018/11/p-value-statistics-meme.jpg){fig-align="center" width="30%"}
+
+R is the primary statistical computing environment used in Communication Science research at VU Amsterdam. This chapter points you to resources for learning R, running common analyses, and reporting results in APA format. It also covers how AI tools can help you write and debug R code.
+
+## Getting started with R
+
+If you are new to R or need a refresher, start here:
+
+| Resource | What it covers |
+|----------|---------------|
+| **R for Social Scientists** (Canvas) | The departmental resource — covers common analyses relevant to Communication Science; start here |
+| [CCS Amsterdam R Course Material](https://github.com/ccs-amsterdam/r-course-material) | Modular R tutorials developed at VU Amsterdam for Communication Science students — covers R fundamentals, tidyverse, ggplot2, regression, multilevel models, factor analysis, text analysis, topic modeling, and more |
+| [R for Data Science](https://r4ds.hadley.nz) (Wickham et al.) | Free online book; covers data import, transformation, visualization with the tidyverse |
+| [Learning Statistics with R](https://learningstatisticswithr.com) (Navarro) | Free textbook; covers statistics concepts alongside R implementation |
+| [swirl](https://swirlstats.com) | Interactive R tutorials you run inside R itself |
+| [Posit Cheatsheets](https://posit.co/resources/cheatsheets/) | One-page visual references for ggplot2, dplyr, tidyr, etc. |
+
+::: {.callout-tip}
+## Statistics helpdesk
+VU Amsterdam runs a **statistics helpdesk** for students. Check Canvas for the current schedule and how to book an appointment. This is the right place for questions about which test to use and how to run it — not me.
+:::
+
+## Essential packages
+
+Install these packages to cover most analyses you'll need:
+
+```r
+install.packages(c(
+  "tidyverse",   # data manipulation and visualization (dplyr, ggplot2, tidyr, ...)
+  "haven",       # import SPSS (.sav) and Stata files
+  "psych",       # reliability (alpha), descriptive stats, factor analysis
+  "car",         # ANOVA, Levene's test, recoding
+  "lme4",        # multilevel / mixed models
+  "lavaan",      # SEM and mediation/moderation (alternative to PROCESS)
+  "mediation",   # causal mediation analysis
+  "effectsize",  # Cohen's d, eta-squared, omega-squared
+  "apaTables",   # export APA-formatted tables to Word
+  "papaja",      # APA-style reporting in R Markdown / Quarto
+  "report"       # automatic plain-language results reporting
+))
+```
+
+## Common analyses
+
+### Descriptive statistics and correlations
+
+```r
+library(tidyverse)
+library(psych)
+
+# Descriptive statistics
+describe(data[, c("var1", "var2", "var3")])
+
+# Correlation matrix (APA-ready)
+library(apaTables)
+apa.cor.table(data[, c("var1", "var2", "var3")],
+              filename = "Table1_correlations.doc")
+```
+
+
+### Reliability (Cronbach's α)
+
+```r
+library(psych)
+
+# Select items belonging to one scale
+alpha(data[, c("item1", "item2", "item3", "item4")])
+# Look at: raw_alpha (Cronbach's α)
+```
+
+### Independent samples *t*-test
+
+```r
+# Test whether group means differ
+t.test(outcome ~ group, data = data, var.equal = TRUE)
+
+# Effect size
+library(effectsize)
+cohens_d(outcome ~ group, data = data)
+```
+
+Report as: *t*(df) = X.XX, *p* = .XXX, *d* = X.XX
+
+### One-way and factorial ANOVA
+
+```r
+library(car)
+
+# Factorial ANOVA (e.g., 2x2 between-subjects experiment)
+model <- lm(outcome ~ factor_a * factor_b, data = data)
+Anova(model, type = "III")   # Type III sums of squares
+
+# Effect size
+library(effectsize)
+eta_squared(model, partial = TRUE)
+```
+
+Report as: *F*(df1, df2) = X.XX, *p* = .XXX, η²_p = .XX
+
+### Linear regression
+
+```r
+# Simple regression
+model1 <- lm(outcome ~ predictor, data = data)
+summary(model1)
+
+# Multiple regression
+model2 <- lm(outcome ~ predictor1 + predictor2 + covariate, data = data)
+summary(model2)
+
+# Standardized coefficients
+library(effectsize)
+standardize_parameters(model2)
+```
+
+Report as: *b* = X.XX, *SE* = X.XX, 95% CI [XX, XX], *β* = X.XX, *p* = .XXX
+
+For more comprehensive tutorials, see [here](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/simple_modeling.md). 
+
+### Moderation (interaction effects)
+
+```r
+# Center continuous predictors before creating interaction term
+data$pred_c     <- scale(data$predictor, center = TRUE, scale = FALSE)
+data$moderator_c <- scale(data$moderator, center = TRUE, scale = FALSE)
+
+model_mod <- lm(outcome ~ pred_c * moderator_c, data = data)
+summary(model_mod)
+
+# Visualize interaction with ggplot2 or the 'interactions' package
+library(interactions)
+interact_plot(model_mod, pred = pred_c, modx = moderator_c)
+```
+
+### Mediation analysis
+
+```r
+# Using the 'mediation' package (bootstrapped indirect effects)
+library(mediation)
+
+# Step 1: model for mediator
+m_model <- lm(mediator ~ predictor, data = data)
+
+# Step 2: model for outcome
+y_model <- lm(outcome ~ predictor + mediator, data = data)
+
+# Bootstrap mediation
+med_out <- mediate(m_model, y_model,
+                   treat = "predictor", mediator = "mediator",
+                   boot = TRUE, sims = 5000)
+summary(med_out)
+```
+
+Alternatively, you can also use **lavaan** for structural equation modeling in R to run similar analyses (see [this tutorial](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/mediation_analysis.md))
+
+### Manipuation check (experiment)
+
+```r
+# Did participants in different conditions perceive the manipulation differently?
+t.test(manipulation_check ~ condition, data = data)
+
+# For 2x2 design
+aov_result <- aov(manipulation_check ~ factor_a * factor_b, data = data)
+summary(aov_result)
+```
+
+## APA-formatted reporting in R
+
+### The `report` package
+
+```r
+library(report)
+
+model <- lm(outcome ~ predictor, data = data)
+report(model)
+# Returns a plain-language sentence you can adapt for your results section
+```
+
+### The `apaTables` package
+
+```r
+library(apaTables)
+
+# APA regression table exported to Word
+apa.reg.table(model1, model2,
+              filename = "Table2_regression.doc")
+```
+
+### papaja (APA manuscripts in Quarto/R Markdown)
+
+If you are writing your thesis in R Markdown or Quarto, the [papaja](https://frederikaust.com/papaja_man/) package provides APA-formatted output. Use `apa_print()` to inline statistics:
+
+```r
+library(papaja)
+result <- t.test(outcome ~ group, data = data)
+apa_print(result)$statistic   # → "t(48) = 2.34, p = .023"
+```
+
+### Visualizations with ggplot2
+
+`ggplot2` (part of the tidyverse) is the standard tool for creating publication-quality figures in R. It builds plots in layers using a consistent grammar: data → aesthetics → geometric objects.
+
+```r
+library(ggplot2)
+
+# Scatter plot with a regression line
+ggplot(data, aes(x = predictor, y = outcome)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(title = "Effect of X on Y",
+       x = "Predictor", y = "Outcome") +
+  theme_minimal()
+
+# Bar chart of group means with error bars
+data |>
+  group_by(condition) |>
+  summarise(mean = mean(outcome), se = sd(outcome) / sqrt(n())) |>
+  ggplot(aes(x = condition, y = mean, fill = condition)) +
+  geom_col(width = 0.5) +
+  geom_errorbar(aes(ymin = mean - se, ymax = mean + se), width = 0.2) +
+  labs(x = "Condition", y = "Mean outcome") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+For a comprehensive step-by-step tutorial on data visualization with ggplot2, see the [CCS Amsterdam visualization tutorial](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/r-tidy-3_7-visualization.md).
+
+## Keeping your syntax clean
+
+Good syntax habits matter — I need to be able to reproduce your analyses from your raw data. You can use both a standard R file (.r) or an RMarkdown file (.rmd).
+
+```r
+# ============================================================
+# MA Thesis Analysis — [Your Name] — [Date]
+# ============================================================
+
+# 0. Load packages ----
+library(tidyverse)
+library(psych)
+library(effectsize)
+
+# 1. Import data ----
+data_raw <- haven::read_sav("data/raw_data.sav")
+
+# 2. Data cleaning ----
+# Remove incomplete responses (n = 9)
+data_clean <- data_raw |>
+  filter(progress == 100)
+
+# 3. Compute scale scores ----
+# Scale: Vaccine Hesitancy (α = .82 in original; check below)
+data_clean <- data_clean |>
+  mutate(vacc_hes = rowMeans(across(c(vh1, vh2, vh3, vh4, vh5)),
+                              na.rm = TRUE))
+
+# 4. Descriptive statistics ----
+describe(data_clean[, c("vacc_hes", "soc_media_exp", "age")])
+
+# 5. H1: Regression of social media exposure on vaccine hesitancy ----
+h1_model <- lm(vacc_hes ~ soc_media_exp, data = data_clean)
+summary(h1_model)
+```
+
+::: {.callout-tip}
+## Use section headers in your script
+The `# Section ----` pattern (four dashes) creates collapsible sections in RStudio's code outline. This keeps your syntax file navigable when it grows long.
+:::
+
+## Getting help with R code
+
+Beyond the statistics helpdesk and Canvas resources, AI tools can be genuinely useful for R:
+
+| Task | Useful approach |
+|------|----------------|
+| Debugging an error message | Paste the error + relevant code into Gemini or Copilot and ask what is wrong |
+| Finding the right function | Describe what you want to do in plain English |
+| Writing boilerplate (e.g., a for-loop) | Ask AI to generate it, then check you understand it |
+| Interpreting output | Ask AI to explain what a specific output means |
+
+::: {.callout-warning}
+## Verify AI-generated R code
+AI tools can produce plausible-looking but incorrect R code. Always run it, check the output makes sense, and make sure you understand what every line does before including results in your thesis. See [Using AI Tools](ai-tools.qmd) for the full policy.
+:::

@@ -1,0 +1,85 @@
+# Literature Search
+
+A thorough and systematic literature review is foundational to your thesis. This chapter offers guidance on how to find, organize, and manage the literature for your research.
+
+## Where to search
+
+VU Amsterdam provides access to major academic databases. Log in with your VU credentials at [ub.vu.nl](https://ub.vu.nl).
+
+| Database | Best for |
+|----------|----------|
+| **[Scopus](https://www.scopus.com)** | Broad coverage of social sciences, easy citation tracking |
+| **[Web of Science](https://www.webofscience.com)** | High-quality journals, citation analysis |
+| **[PsycINFO](https://www.apa.org/pubs/databases/psycinfo)** | Psychology and communication research |
+| **[Communication Abstracts](https://www.ebsco.com/products/research-databases/communication-abstracts)** | Communication-specific literature |
+| **[Google Scholar](https://scholar.google.com)** | Quick searches, finding grey literature |
+| **[JSTOR](https://www.jstor.org)** | Archive of humanities and social science journals |
+
+For **qualitative or content analysis** work, additional platforms like **LexisNexis** (news content) or **Coosto/ANP** (social media) may be relevant.
+
+## Search strategies
+
+### Keywords and Boolean operators
+
+Construct your search systematically:
+
+- Use **AND** to narrow results (e.g., `social media AND misinformation AND health`)
+- Use **OR** to broaden results for synonyms (e.g., `vaccine hesitancy OR vaccine refusal`)
+- Use **NOT** to exclude irrelevant terms
+- Use **quotation marks** for exact phrases: `"filter bubble"`
+- Use **truncation** with `*` for word variations: `persuad*` finds persuade, persuasion, persuaded
+
+Keep a record of your search terms, databases used, and results counts — you may need to report this in your method section.
+
+### Snowballing
+
+Once you find a central paper:
+ 
+- **Forward snowballing**: who has cited this paper? (use Google Scholar or Scopus)
+- **Backward snowballing**: what does this paper cite?
+
+### Scoping and narrowing
+
+- Prioritize **peer-reviewed journal articles** from reputable journals
+- Prefer **recent** literature (typically last 10–15 years, unless citing foundational work)
+- Be selective — your Theory chapter should discuss only what directly contributes to your argument
+
+::: {.callout-warning}
+## Quality over quantity
+The vast majority of your references should be peer-reviewed academic journal articles. Avoid blogs, Wikipedia, previous BA/MA theses, and PhD dissertations unless unavoidable.
+:::
+
+## Reference management: Zotero
+
+I strongly recommend using **[Zotero](https://www.zotero.org)** (free) to manage your references:
+
+- Install the browser extension to save references directly from databases
+- Organize references into collections by topic
+- Add notes to each reference summarizing relevant content
+- Generate in-text citations and reference lists in APA format
+- Export `.bib` files for Quarto, LaTeX, or Word integration
+
+::: {.callout-tip}
+## Write as you read
+When reading a paper, immediately write down the relevant arguments, findings, and how they connect to your own study. Do not rely on being able to recall this later. This also prevents you from losing track of sources.
+:::
+
+## AI tools for literature search
+
+AI tools can support (but not replace) your literature search:
+
+| Tool | Use |
+|------|-----|
+| **[Elicit](https://elicit.com)** | AI-powered literature search and summarization |
+| **[Perplexity](https://www.perplexity.ai)** | AI search engine with cited sources; good for quick overviews |
+| **[Research Rabbit](https://www.researchrabbit.ai)** | Discover related papers via citation networks |
+| **[Undermind](https://www.undermind.ai)** | AI-assisted deep literature search |
+| **[NotebookLM](https://notebooklm.google.com)** (VU-licensed) | Summarize and explore uploaded documents |
+| **[Scite](https://scite.ai)** | Find papers that support or contradict a claim |
+
+::: {.callout-important}
+## Always verify AI-generated literature
+AI tools can hallucinate references that do not exist or misattribute findings. **Always read the original sources yourself** and verify that citations are real and accurately represented before including them in your thesis.
+:::
+
+See [Using AI Tools](ai-tools.qmd) for the full departmental AI policy.

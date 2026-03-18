@@ -1,0 +1,42 @@
+# Welcome {.unnumbered}
+
+![](https://corrinemalcolm.com/wp-content/uploads/2017/04/phd050115s.gif){fig-align="center"}
+
+Welcome to Philipp's **MA Thesis Guide for Communication Science** at Vrije Universiteit Amsterdam. This website is designed to support you throughout your master's thesis project — from choosing a topic to submitting your final version.
+
+The guide brings together information from several official documents (e.g., the thesis manual, writing guidelines, and departmental AI policy) and resources (e.g., github repos) in hopefully one accessible, more searchable and digestible format. 
+Use it alongside my feedback during supervision sessions and the general resources on Canvas (in case of doubt, check those!)
+
+## How to use this guide {.unnumbered}
+
+This guide is organized into five parts:
+
+1. **Getting Started** — Here you can find course details, the thesis trajectory, key deadlines, how supervision works and how to write the thesis plan and research proposal (first deliverables!)
+2. **The Research Process** — How to move from research question to design, while taking ethics and data management into account
+3. **Writing Your Thesis** — Section-by-section writing requirements and tips
+4. **Academic Practices** — Information about literature search, APA citation, open science, AI tools, and using R for statistical analysis
+5. **Submission & Graduation** — Information about submitting, grading, resits, and graduation
+
+Use the sidebar to navigate, the search bar to find specific topics, or download the full guide as a PDF or EPUB using the buttons on the above-right.
+
+::: {.callout-tip}
+## New to the thesis process?
+Start with [Getting Started](getting-started.qmd) for an overview of the course, then work through [The Thesis Trajectory](trajectory.qmd) to understand what is expected at each stage.
+:::
+
+::: {.callout-note}
+## Official documents
+Please note that this guide synthesizes and elaborates on the following official departmental documents (which you can find on Canvas):
+
+- *Manual for the MA thesis Communication Science 2025–26*
+- *Guideline Masterthesis Communication Science*
+- *Use of Generative AI Tools in Your Ba/Ma Thesis 2025–26*
+
+In case of any discrepancy, the official documents on Canvas take precedence.
+:::
+
+## About this guide {.unnumbered}
+
+This guide was created by [**Philipp Masur**](https://philippmasur.de) (Department of Communication Science, VU Amsterdam). It is updated frequently to reflect current departmental policy and best practices.
+
+If you notice an error or want to suggest an improvement, "Report an issue" links in the right margin of any page.

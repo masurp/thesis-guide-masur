@@ -1,0 +1,85 @@
+# Research Design
+
+Choosing the right research design is one of the most important decisions you make in your thesis. Your design must fit your research question. This chapter outlines the main options available to you.
+
+## Quantitative vs. qualitative research
+
+| | Quantitative | Qualitative |
+|---|---|---|
+| **Goal** | Test hypotheses about relationships between variables | Explore meanings, experiences, patterns |
+| **Data** | Numerical (survey responses, coded content) | Text, images, audio (interviews, documents) |
+| **Analysis** | Statistical tests (regression, ANOVA, etc.) | Thematic analysis, grounded theory, discourse analysis |
+| **Output** | Generalizable findings across populations | Rich, contextualized insights |
+| **Thesis structure** | Hypotheses + conceptual model | Sub-questions |
+
+Both approaches are valid in Communication Science. The choice depends on your research question and the state of knowledge in your area.
+
+## Survey research
+
+A survey measures variables via a questionnaire administered to a sample of participants. It is the most common design in Communication Science master's theses.
+
+**When to use it:** When you want to assess the prevalence of variables and/or examine associations and relationships between them in a larger sample.
+
+**Key considerations:**
+- Sample size and recruitment (specify power analysis rationale)
+- Validated scales vs. self-constructed items
+- Platform (Qualtrics is the standard at VU)
+- Online convenience sampling vs. probability sampling
+
+## Experimental research
+
+An experiment manipulates one or more independent variables and measures effects on dependent variables, with random assignment of participants to conditions.
+
+**When to use it:** When you want to establish causal effects.
+
+**Design notation:** Describe your design clearly, e.g.:
+
+> *"A 2 (color of logo: red vs. blue) × 2 (medium: TV vs. newspaper) between-subjects experiment with purchase intention as the dependent variable."*
+
+Always specify:
+- Whether it is between-subjects, within-subjects, or mixed
+- Whether randomization was used (it should be)
+- Whether you conducted a **manipulation check**
+
+## Content analysis
+
+Content analysis systematically codes and analyzes a corpus of media content (text, images, video, social media posts).
+
+**Types:**
+- **Manual content analysis**: human coders apply a codebook; requires intercoder reliability testing
+- **Automated content analysis**: computational methods (e.g., dictionary-based, supervised machine learning, LLMs) via R, AmCat, or Coosto
+
+**Key considerations:**
+- How was the corpus assembled? (sampling strategy)
+- What is the unit of analysis?
+- How were variables operationalized and coded?
+- What are the reliability and validity of your coding?
+
+## Qualitative research
+
+Qualitative designs explore social phenomena in depth without the goal of statistical generalization.
+
+**Common approaches in Communication Science:**
+- **Interviews** (semi-structured, in-depth)
+- **Focus groups**
+- **Ethnographic observation**
+
+**Analysis frameworks:**
+- **Thematic analysis** — identifying recurring patterns across data
+- **Grounded theory** — building theory inductively from the data
+- **Discourse analysis** — analyzing how language constructs meaning
+
+In qualitative theses, the method chapter describes the methodology (e.g., grounded theory), data collection (who, how many, how recruited), and data analysis procedures.
+
+## The analysis plan
+
+Your **Research Proposal must include an analysis plan** that specifies — for each hypothesis or sub-question — exactly which statistical test on which variables will be used to answer it. For example:
+
+> *"H1 will be tested with a simple linear regression with social media exposure as the predictor and vaccine hesitancy as the outcome variable."*
+
+This plan prevents ad-hoc analysis decisions later. In the final thesis, the analysis plan is not a separate chapter — it is integrated into the Results section.
+
+::: {.callout-tip}
+## Pre-registration
+Consider pre-registering your analysis plan on the Open Science Framework (OSF) before data collection. See [Open Science](open-science.qmd) for details.
+:::

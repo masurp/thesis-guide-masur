@@ -1,0 +1,6 @@
+# Afstuderen
+
+::: {.callout-note}
+## Nederlandse versie in ontwikkeling
+Dit hoofdstuk wordt momenteel vertaald. Raadpleeg in de tussentijd de [Engelstalige versie](../../index.html).
+:::

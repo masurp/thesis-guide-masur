@@ -1,0 +1,81 @@
+# Citing & Referencing 
+
+Your thesis must follow **APA 7th edition** throughout — for in-text citations, the reference list, tables, figures, and statistical reporting. The authoritative source is [apastyle.apa.org](https://apastyle.apa.org/).
+
+## In-text citations
+
+### Basic format
+
+| Situation | Format | Example |
+|-----------|--------|---------|
+| One author | (Author, Year) | (Masur, 2023) |
+| Two authors | (Author & Author, Year) | (Masur & Teutsch, 2023) |
+| Three or more authors | (First author et al., Year) | (Masur et al., 2023) |
+| Narrative citation | Author (Year) found that… | Masur (2023) found that… |
+| Multiple citations | Alphabetical order, separated by ; | (Jones, 2021; Masur, 2023) |
+
+### Direct quotations
+
+If you quote directly, you must include a **page number**:
+
+> (Masur, 2023, p. 45)
+
+::: {.callout-note}
+## Minimize direct quotations
+In scientific writing, you should paraphrase and synthesize — direct quotations are the exception, not the rule. Only quote when the exact wording is essential.
+:::
+
+### Paraphrasing
+
+When you restate an idea in your own words, you still need a citation. Every factual claim, theoretical argument, or empirical finding that is not your own must be cited.
+
+## Reference list
+
+The reference list appears at the end of the thesis, after the Conclusion and before the AI statement. Entries are in **alphabetical order by first author's last name** and use a **hanging indent**.
+
+### Common reference types
+
+**Journal article:**
+
+> Masur, P. K., DiFranzo, D. J., & Bazarova, N. N. (2021). Behavioral Contagion on Social Media: Effects of Social Norms, Design Interventions, and Critical Media Literacy on Self-Disclosure. PLOS One, 16(7). e0254670. https://doi.org/10.1371/journal.pone.0254670
+
+**Journal article with DOI:**
+Include the DOI as a live hyperlink. Always include DOI when available.
+
+**Book:**
+
+> Masur, P. K. (2018). *Situational privacy and self-disclosure: Communication processes in online environments.* Cham, Switzerland: Springer
+
+**Book chapter:**
+
+> Masur, P.K., Hagendorff, T., & Trepte, S. (2023). Challenges in Studying Social Media Privacy Literacy. In S. Trepte & P. K. Masur (Eds.). The Routledge Handbook of Privacy and Social Media (pp. 110-123). New York: Routledge.
+
+::: {.callout-warning}
+## Reference managers often produce incomplete book chapter references
+Always verify book chapter references manually — check that editor names, book title, page numbers, and publisher are all included.
+:::
+
+## Quality of references
+
+- The **large majority** of your references should be peer-reviewed journal articles
+- Prefer articles from journals with a strong reputation in social sciences
+- Avoid citing: Wikipedia, blogs, news articles, BA/MA theses, or PhD dissertations as primary sources for theoretical claims
+- When in doubt about a source's quality, discuss it with me
+- Aim to include diverse sources (not just from WEIRD countries or all-male). You can check the diversity of your sources with the "[Diversity-X](https://diversity-x.de/)" tool.
+
+## Using Zotero
+
+[Zotero](https://www.zotero.org) generates APA 7th references automatically. However, always **check the output** — automatic generation sometimes produces errors or incomplete entries, especially for:
+- Book chapters (often missing editors, page numbers, or publisher)
+- Conference papers
+- Preprints
+
+## Checklist: Reference list
+
+- [ ] Every in-text citation has a corresponding entry in the reference list, and vice versa
+- [ ] All entries follow APA 7th format
+- [ ] Journal article titles are in sentence case (capitalize only first word, proper nouns, and first word after a colon)
+- [ ] Journal names are in title case and italicized
+- [ ] DOIs are included where available
+- [ ] Book chapter references are complete (editors, page numbers, publisher)
+- [ ] References are in alphabetical order by first author's last name

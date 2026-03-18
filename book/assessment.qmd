@@ -1,0 +1,47 @@
+# Submission & Assessment
+
+## Submitting your final thesis
+
+Submit your final thesis **no later than the first-opportunity deadline** (see [Timeline & Deadlines](timeline.qmd)):
+
+1. **Upload on Canvas** (required — the thesis is checked for plagiarism here)
+2. **Email to me and the second reviewer**
+3. **Ensure I have access** to your final data file and syntax via the shared surfdrive folder
+
+## How your thesis is assessed
+
+Your thesis is evaluated by **two reviewers**: me (first reviewer) and a second reviewer. Both use the official **assessment form** (available on Canvas).
+
+| | Details |
+|---|---|
+| **Time to grade** | Two weeks (10 working days) after submission deadline |
+| **Final grade** | Average of first and second reviewer |
+| **Disagreement** | If assessors differ by more than 2 points, or one fails and the other passes → third assessor assigned by the Examination Board (binding) |
+| **Passing grade** | ≥ 5.5 |
+
+## Resits and late submission
+
+Failing to submit at the first deadline is treated the same as missing an exam — you have used one exam opportunity.
+
+| Situation | What happens |
+|---|---|
+| **Not submitted at first deadline** | First exam opportunity used; one resit available |
+| **Submitted but grade < 5.5** | One resit available |
+| **Resit submitted but grade < 5.5** | Failed the course; may be eligible for a second resit in the next academic year (see below) |
+| **Not submitted at first deadline AND resit** | Failed the course; may be eligible for a second resit in the next academic year |
+
+### Second resit (next academic year)
+
+In limited circumstances, you may be eligible for a second resit in the following academic year (deadline: end of November). This requires re-enrollment and tuition fee payment. Eligibility is assessed by me and the thesis coordinator. Contact your study advisor.
+
+## Where to find formal regulations
+
+The formal *Regulation Ma thesis* governs all MA theses at the Faculty of Social Sciences. It is available on VUnet. For the vast majority of students, these regulations remain in the background — we find a good working relationship without needing to consult them. They become relevant if serious disagreements arise.
+
+## Getting help
+
+| Need | Contact |
+|------|---------|
+| Academic/personal difficulties | Study advisor: [vu.nl/en/student/contact-student-guidance-and-support/academic-advisors-fss](https://vu.nl/en/student/contact-student-guidance-and-support/academic-advisors-fss) |
+| Financial support for delays | Profileringsfonds: [vu.nl/en/student/finances/profile-fund](https://vu.nl/en/student/finances/profile-fund) |
+| Ethics self-check questions | rerc.ssc@vu.nl |

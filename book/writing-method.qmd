@@ -1,0 +1,85 @@
+# Method Chapter
+
+The method chapter is written in **past tense** and must be detailed enough that another researcher could fully **replicate your study**. It is highly standardized in structure.
+
+## Overall checklist
+
+- [ ] Is the method section written in past tense?
+- [ ] Is the level of detail sufficient for replication?
+- [ ] Is there a clear fit between the method and the hypotheses/sub-questions?
+
+## Quantitative research (survey and experiment)
+
+### Participants
+
+Report:
+- Method of **recruitment**
+- **Demographics**: frequency and percentage for gender, age, education, etc.
+- **Sample size**, including justification (power analysis)
+- **Exclusions**: exactly how many participants were excluded and for what reason(s)
+- The **final *N*** (must match the *N* reported in the results section)
+
+### Design
+
+- State the **type of design** clearly: survey, experiment, between-subjects, within-subjects, mixed
+- Briefly describe the **task** (e.g., *"Participants were exposed to a news article and then completed a questionnaire"*)
+- Name the **independent and dependent variables**
+- For experiments: describe factors and conditions clearly using design notation (e.g., *"a 2 [logo color: red, blue] × 2 [medium: TV, newspaper] between-subjects design"*), and confirm randomization
+
+### Procedure
+
+Describe in **chronological order**:
+
+- What participants were exposed to (especially condition differences in experiments)
+- What tasks and measurements were completed
+- Key instructions given (purpose of study, debriefing)
+
+### Materials
+
+- Describe **experimental stimuli** or materials, including exact differences between conditions
+- All materials must be provided in the appendix
+
+### Measures
+
+For each variable, report:
+
+- Variable name (in **bold** or *italics*)
+- What it measures
+- Source reference (original scale)
+- Number of items
+- Example item(s) — or all items if few; refer to appendix for longer scales
+- Response format (e.g., *"5-point Likert scale from 1 = strongly disagree to 5 = strongly agree"*)
+- *M* and *SD* in your sample, along with minimum and maximum values
+- Reliability (Cronbach's α)
+- How the final score was computed (e.g., average of items; recoded items)
+- Direction (e.g., *"Higher scores indicate greater vaccine hesitancy"*)
+- For experiments: a **manipulation check**
+
+Organize measures under subheadings: Independent variables, Dependent variables, Control variables.
+
+::: {.callout-warning}
+## Consistency is critical
+The variable names in your method section must be **identical** to those used in your hypotheses, conceptual model, and results section. This is one of the most common sources of errors in MA theses.
+:::
+
+## Content analysis
+
+The method chapter for a content analysis includes:
+
+- A short description of the **research design**
+- **Data collection**: how the corpus was assembled (sampling strategy, date range, sources)
+- **Content analysis method**: manual (intercoder reliability) or automated (tool used, e.g., R, AmCat, Coosto)
+- **Operationalization**: search terms or codebook
+- **Reliability**: intercoder agreement or precision/recall of search terms
+
+## Qualitative research
+
+The method chapter for qualitative research describes:
+
+- **Methodology**: the chosen framework (e.g., grounded theory) and its rationale
+- **Case study** (if applicable): why this case is appropriate for the research question
+- **Participants/key informants**: recruitment method, demographics, sample size, inclusion/exclusion criteria
+- **Data collection**: method (interviews, observation, etc.), materials used (topic guide, prompts), where conducted
+- **Data analysis**: analytical approach (thematic analysis, grounded theory coding, discourse analysis), analytical materials
+
+All choices should be supported by methodological literature with proper APA citations.

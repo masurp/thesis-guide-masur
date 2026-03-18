@@ -1,0 +1,56 @@
+# Timeline & Key Deadlines
+
+## Monthly overview
+
+The table below shows the typical tasks and tips for each month in the **February track** (P4–P6). The same structure applies to the September track, shifted by approximately seven months.
+
+| Month | Tasks | Tips |
+|-------|-------|------|
+| **December** | Thesis information lecture | Think about what you want to study. A preliminary list of supervisor topics is published before Christmas. |
+| **January** | Thesis market — meet supervisors, discuss topics, submit preferences questionnaire | Come prepared and with an open mind. Talk to a range of supervisors to find the right fit. |
+| **February (P4 starts)** | Read relevant literature; delineate your individual focus; develop a draft research question | Start writing down your ideas immediately. Use Zotero to keep track of sources. |
+| **March** | Determine your research gap; formulate your research question; think about your method. Submit **MA Thesis Plan** (2-pager) to me by end of P4. | Everything you do in P4 is preparation for a flying start in P5. |
+| **April (P5 starts)** | First two weeks: intensively develop your **Research Proposal** (intro, theory, method, analysis plan). Process peer feedback before submitting. | Use the knowledge clips and support resources on Canvas for writing and hypothesis formulation. |
+| **April** | Work out your **Complete Methodology**. Once Research Proposal + analysis plan + methodology are approved: do the ethical self-check, and optionally submit a pre-registration. Then start data collection. | |
+| **Late April** | Start data collection. Write method chapter; conduct and report analyses in results chapter. | Keep a clean SPSS/R syntax from the start. You can prepare your analysis syntax before data is in. |
+| **Early May** | Process peer feedback on method and results chapters before submitting to me. | Relate results to hypotheses and theory; seek additional literature if needed. |
+| **May** | Write and polish theory, method, results; write discussion and conclusion. Process peer feedback on complete concept version before submitting. | Writing a good thesis always requires many revisions. |
+| **Early June** | Submit complete concept version to me. Process feedback and refine. | Agree with me in advance when to submit — this is a busy time for everyone. |
+| **End of June** | Submit **final version** | See deadline table below. |
+
+## Deadline tables (2025–26)
+
+### February track
+
+| Event | Date |
+|-------|------|
+| Information lecture | Tuesday, 2 December 2025 |
+| Thesis market | Tuesday, 13 January 2026 |
+| MA Thesis Plan deadline | Tuesday, 31 March 2026 |
+| Research Proposal deadline | Tuesday, 14 April 2026 |
+| **1st submission deadline** | **Friday, 26 June 2026, 16:00** |
+| Resit deadline | Friday, 24 July 2026, 17:00 |
+| 2nd resit (if allowed) | Friday, 20 November 2026 |
+
+### September track
+
+| Event | Date |
+|-------|------|
+| Supervisor assignment | January 2026 |
+| Start of trajectory | Beginning of September 2026 |
+| MA Thesis Plan deadline | Monday, 19 October 2026 |
+| Research Proposal deadline | Monday, 2 November 2026 |
+| **1st submission deadline** | **Friday, 15 January 2027, 17:00** |
+| Resit deadline | Friday, 19 February 2027, 17:00 |
+| 2nd resit (if allowed) | Friday, 18 June 2027 |
+
+::: {.callout-important}
+## Missing the first deadline = missing an exam opportunity
+Not submitting at the first opportunity is treated the same as not showing up for an exam. You are then entitled to one resit. If you fail the resit as well, you have exhausted your attempts for the current academic year.
+:::
+
+## My availability
+
+I am available for guidance during the regular thesis period, **up to and including the first submission deadline**. During July and August**: Here I am generally not available for feedback
+
+Plan accordingly — do not rely on my feedback during the summer months.

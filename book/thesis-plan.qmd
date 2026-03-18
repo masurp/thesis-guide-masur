@@ -1,0 +1,97 @@
+# Writing the Thesis Plan
+
+The **MA Thesis Plan** (sometimes called the Exposé) is the first formal deliverable of your thesis project. It is due at the end of Period 4 and should be a minimum of two pages. Think of it as a working blueprint: it does not need to be polished or complete, but it should show that you have done serious preparatory thinking.
+
+## What the Thesis Plan needs to contain
+
+### 1. Literature overview and research gap
+
+Begin by summarizing the state of knowledge in your topic area. You do not need an exhaustive review — focus on the core literature directly relevant to your research focus. Then clearly articulate the **research gap**: what is not yet known, understudied, inconsistent, or unresolved?
+
+A good research gap statement follows this pattern:
+
+> *"While prior research has shown that X, relatively little attention has been paid to Y. In particular, it remains unclear whether/how/to what extent [gap]. This matters because [theoretical/societal reason]."*
+
+**Typical length in the plan:** 1–2 paragraphs.
+
+### 2. Research question
+
+State your central research question explicitly. At this stage it may still be somewhat provisional — you can refine it in the Research Proposal. A good research question is:
+
+- Specific about the constructs involved
+- Empirically answerable
+- Clearly connected to the gap you identified
+
+**Example:**
+
+> *"To what extent does the framing of climate change news as a political versus scientific issue affect readers' policy support, and does this effect depend on prior environmental attitudes?"*
+
+### 3. Hypotheses or sub-questions
+
+List your expected hypotheses (quantitative research) or sub-questions (qualitative research). At this stage, these can be tentative. You should be able to provide at least a brief theoretical rationale for each.
+
+For quantitative research, a hypothesis predicts a specific directional or non-directional relationship:
+
+> *"H1: Exposure to politically framed climate news will be associated with lower policy support than scientifically framed news."*
+>
+> *"H2: This effect will be moderated by prior environmental attitudes, such that the framing effect is stronger among politically non-engaged readers."*
+
+### 4. Research design
+
+Describe how you plan to answer your research question. Be concrete — specify the type of research and the key elements. For example:
+
+> *"I plan to conduct a 2 (news framing: political vs. scientific) × 2 (headline valence: positive vs. negative) between-subjects online experiment. Participants will be recruited via Prolific. The main dependent variable is policy support, measured with an established 5-item scale."*
+
+or
+
+> *"I will use semi-structured interviews with 15–20 journalists at Dutch national news outlets to explore how they perceive and enact editorial independence norms in the context of audience metrics."*
+
+## What makes a strong Thesis Plan?
+
+| Strong | Weak |
+|--------|------|
+| Research gap is clearly derived from the literature | Gap is vague or asserted without evidence |
+| RQ is specific and names constructs | RQ is too broad or not researchable |
+| Hypotheses follow logically from the theoretical argument | Hypotheses are not justified |
+| Design is clearly matched to the RQ | Design is described only in general terms |
+| Writing is clear and coherent | Writing is unfocused, ideas are scattered |
+
+## Common mistakes
+
+- **Describing an area of interest rather than a gap.** "Social media and mental health is an important topic" is not a gap. What specifically is unknown?
+- **Overly broad RQs.** If your RQ could be a book, it's too broad. Narrow down to one specific relationship or phenomenon.
+- **Missing the connection between design and RQ.** Your design must be capable of answering your RQ. If your RQ asks about causal effects, a cross-sectional survey alone is insufficient.
+- **Writing the plan after the fact.** The plan is meant to guide your proposal, not just describe what you decided already. Use it to think through whether your project is feasible.
+
+## Practical tips
+
+::: {.callout-tip}
+## Start earlier than you think
+The Thesis Plan is due at the end of P4, but the earlier you start reading and writing, the better your plan will be — and the easier your Research Proposal will become.
+:::
+
+- **Use Zotero from the start**: track every paper you read with a brief note on its relevance to your project
+- **Write in parallel with reading**: don't wait until you've read everything to start writing
+- **Discuss your gap with me early**: I can quickly tell you if your gap has already been addressed in literature you haven't found yet
+- **Keep it focused**: two pages forces you to be precise — that's the point
+
+## Template structure
+
+A two-page Thesis Plan might be organized as follows:
+
+```
+Title (working title of the thesis)
+Name | Student number | Supervisor | Date
+
+1. Introduction and research gap (approx. ½ page)
+   Brief overview of the topic; what is known; what is the gap
+
+2. Research question (1–2 sentences)
+
+3. Hypotheses / sub-questions (bulleted list with brief rationale)
+
+4. Proposed research design (approx. ½ page)
+   Type of study; participants/corpus; key variables/concepts; method
+
+[Optional: preliminary reference list]
+```

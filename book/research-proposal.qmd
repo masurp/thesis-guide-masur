@@ -1,0 +1,133 @@
+# Writing the Research Proposal
+
+The **Research Proposal** is the most important early milestone of your thesis. It is due in the first two weeks of Period 5 and is evaluated by me as *sufficient* or *insufficient*. An approved proposal is required to continue — it is the green light to start collecting data.
+
+The proposal is not the final thesis. It is a detailed plan that shows your research design is sound, your theory is well-grounded, and you know exactly what you are going to do and how. I evaluate it primarily on **feasibility** and the **fit between your method, analysis plan, and research question**.
+
+## Required sections
+
+### 1. Introduction
+
+The introduction frames your study and states your research question. It follows the same structure as the introduction in the final thesis (see [Introduction & Theory Chapter](writing-intro-theory.qmd)), but at this stage it may not yet be in final form.
+
+The introduction must contain:
+- A clear **motivation** for the topic (why does this matter?)
+- An identification of the **research gap**
+- A clear, explicitly stated **research question**
+- A brief argument for the **societal and scientific relevance**
+
+**Length:** 1–2 pages.
+
+**Common mistakes:**
+- Stating why the topic is interesting in general, without identifying a specific gap
+- Formulating a research question that is too broad, too vague, or not empirically answerable
+- Relevance that is disconnected from the gap (e.g., claiming societal relevance for a purely theoretical contribution)
+
+### 2. Theory
+
+The theory chapter reviews relevant literature and builds a theoretical argument that culminates in your hypotheses. In the proposal, this chapter should be substantially developed, though it need not be fully polished.
+
+Structure:
+1. Define and explain your central constructs
+2. Review prior empirical work, organized thematically
+3. Build theoretical arguments linking constructs
+4. Formulate hypotheses (or sub-questions)
+5. Present a **conceptual model** (for quantitative research)
+
+**Length:** 4–6 pages in the proposal (6–8 in the final thesis).
+
+**Common mistakes:**
+- Summarizing papers one by one instead of synthesizing them thematically
+- Hypotheses that appear out of nowhere without a theoretical build-up
+- Inconsistent naming of constructs (use the same term throughout)
+- Too many or too few hypotheses — each hypothesis needs a full theoretical argument
+
+::: {.callout-tip}
+## The cone structure
+Each section of your theory chapter should start broad (definitions, background) and narrow toward your specific hypotheses. Think of it as a funnel.
+:::
+
+### 3. Hypotheses (or sub-questions)
+
+State all hypotheses clearly and separately. Each hypothesis:
+- Proposes exactly **one effect** (one direction, one pair of variables)
+- Is numbered (H1, H2, H3 etc.; sub-hypotheses as H1a, H1b)
+- Uses the **same variable names** as your theory, conceptual model, and method
+- Is supported by a clear theoretical argument in the theory chapter
+
+For **moderation**: *"The effect of X on Y will be moderated by Z, such that the effect will be stronger/weaker when Z is high."*
+
+For **mediation**: *"The effect of X on Y will be mediated by M."*
+
+For **qualitative research**: state sub-questions instead. Each sub-question should address one distinct aspect of the main RQ.
+
+### 4. Method
+
+The method section describes how you will answer your research question. At the proposal stage, it should be as detailed as possible, even if some specifics will be refined later.
+
+#### Participants / data source
+- Who are the participants (or what is the corpus)?
+- How will you recruit them (or sample the data)?
+- What is the intended sample size? Include a **power analysis** or justify your *N* (e.g., for experimental research: a medium effect size with 80% power for a between-subjects ANOVA requires ~52 per cell)
+- For qualitative research: how many participants, using what sampling logic?
+
+#### Design
+- State the type of design clearly
+- For experiments: write out the full design notation (e.g., *"a 2 [X: condition A vs. condition B] × 2 [Y: high vs. low] between-subjects experiment"*)
+- Name all independent, dependent, and control variables
+
+#### Procedure
+- Describe the study sequence step by step
+- For experiments: describe exactly what each condition will look like
+
+#### Measures / operationalization
+For each variable:
+- Name the scale or instrument
+- Cite the original source
+- State the number of items and the response format
+- Note reliability from the original source (if available)
+
+A first draft of the **questionnaire, experimental materials, or codebook** can be included as an appendix to the proposal.
+
+### 5. Analysis plan
+
+The analysis plan is one of the most important parts of the proposal and is often where students struggle. For **each hypothesis or sub-question**, specify:
+
+- Which statistical test you will use
+- Which variables are included (exactly as named in the method section)
+- What the criteria are for accepting or rejecting the hypothesis
+
+**Example analysis plan entries:**
+
+> *H1 (main effect of framing on policy support) will be tested with an independent-samples t-test, with news framing condition (political vs. scientific) as the independent variable and policy support (scale average) as the dependent variable. H1 will be supported if the effect is statistically significant (p < .05) and in the hypothesized direction.*
+
+> *H3 (moderation of framing effect by political identity) will be tested with a 2-step hierarchical regression. In Step 1, news framing (dummy-coded) and political identity are entered as predictors of policy support. In Step 2, the interaction term (framing × political identity) is added. H3 will be supported if the interaction term in Step 2 is statistically significant.*
+
+> *H5 (mediation of X on Y via M) will be tested using Hayes' PROCESS macro (Model 4) with 5,000 bootstrap samples. The indirect effect will be considered significant if the 95% bootstrap confidence interval does not include zero.*
+
+**For qualitative research:** describe your analytical approach (e.g., thematic analysis following Braun & Clarke, 2006), how you will code the data, and how you will ensure trustworthiness (e.g., member checking, peer debriefing).
+
+::: {.callout-important}
+## The analysis plan is binding
+I approve your analysis plan. Deviating from it substantially in the final thesis without justification is a problem. If circumstances require a change (e.g., your manipulation fails), discuss this with me immediately.
+:::
+
+## Getting to "sufficient"
+
+I evaluate the proposal primarily on:
+
+| Criterion | What I am looking for |
+|---|---|
+| **Feasibility** | Can you realistically do this study within the timeframe? |
+| **Fit between RQ and design** | Does the design actually answer the research question? |
+| **Theoretical grounding** | Are the hypotheses derived from solid theoretical argumentation? |
+| **Analysis plan clarity** | Do you know exactly which test to run for each hypothesis? |
+| **Consistency** | Are the same variable names used throughout theory, method, and analysis plan? |
+
+## Practical tips
+
+- **Don't wait for the perfect idea.** Submit the best proposal you can. The proposal is a plan, not a guarantee. It can be refined.
+- **Be very specific about your design.** Vague descriptions of "a survey" or "an experiment" are not enough. What exact manipulation? What exact measures?
+- **Name your scales.** "I will measure anxiety" is not sufficient. "I will measure anxiety using the 6-item STAI-6 (Marteau & Bekker, 1992)" is.
+- **Map your analysis plan against your hypotheses one by one.** If you have 5 hypotheses, you need 5 analysis plan entries — no more, no less.
+- **Process peer feedback before submitting.** Fellow students can often spot inconsistencies in variable names or gaps in the theoretical argument that you miss when reading your own work.

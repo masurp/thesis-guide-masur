@@ -1,0 +1,76 @@
+# Supervision & Peer Feedback
+
+## What you can expect from me as your supervisor
+
+I will guide you in:
+
+- Formulating an interesting and well-grounded research question and hypotheses
+- Writing a coherent, well-structured, and theoretically sound thesis
+- Designing a proper methodology and analysis plan
+- Giving focused feedback on each chapter — **once per chapter**
+
+As a rule of thumb, I will provide feedback on:
+
+1. Your **introduction** (as part of the Thesis Plan feedback)
+2. Your **theory chapter and research design** (as part of the Research Proposal feedback)
+3. Your **complete methodology**
+4. Your **method and results chapters**
+5. The **complete concept version** (focus: coherence and discussion/conclusion)
+
+## What I expect from you
+
+A master's thesis student is expected to demonstrate the capacity to **independently** set up, conduct, and report an empirical research project. I am a guide — not a co-author.
+
+This means:
+
+- Show **initiative**: contact me with a clear agenda, not just general questions
+- Submit **high-quality drafts**: only submit versions that you (and your peers) cannot improve further on your own
+- **Do not ask me* about basic matters such as how to conduct a literature search, spell-checking, APA formatting, how to run R/SPSS tests, or things you have already been taught in your coursework
+
+For technical analysis questions (how to run tests in R or SPSS, how to report results), use:
+
+- The statistics helpdesk
+- The *R for Social Scientists* Canvas page
+- The departmental knowledge clips on Canvas
+- The Guideline Masterthesis Communication Science document
+
+::: {.callout-warning}
+## Feedback is only useful if you've done your part
+Feedback is pointless on text you know has flaws. Submit drafts only when you have already done everything you can to improve them — including peer feedback.
+:::
+
+## Thesis groups and peer feedback
+
+At times, I organize supervision in **thesis groups** of 2–4 students working on related topics. If that is the case, you will meet together especially in P4. As projects become more individualized, groups may split into smaller subgroups. Across the full trajectory, expect approximately **6–8 meetings** with me. 
+
+### Peer feedback process
+
+Before submitting any draft to me, you must:
+
+1. Give and receive peer feedback with fellow students
+2. Process the peer feedback and improve your draft
+3. **Then** submit the improved version to me
+
+Peer feedback is required for:
+
+- The **Research Proposal** (including introduction and theory)
+- The **Method and Results chapters**
+- The **complete concept version** of the thesis
+
+Use the **Guideline Masterthesis Communication Science** (Canvas) as your peer feedback checklist. As a peer reviewer, reflect on each section in a few sentences and suggest concrete improvements.
+
+## Formal regulations
+
+The formal regulations for the MA thesis are described in the *Regulation Ma thesis* document, available on VUnet. In practice, we can usually find a good working relationship without needing to consult the formal rules. However, in cases of disagreement, the regulations serve as the official reference point.
+
+## Getting help for personal circumstances
+
+If personal circumstances are affecting your progress:
+
+- Contact the **study advisor** as early as possible: [vu.nl/en/student/contact-student-guidance-and-support/academic-advisors-fss](https://vu.nl/en/student/contact-student-guidance-and-support/academic-advisors-fss)
+- For delays due to illness, psychological issues, or other circumstances, you may be eligible for financial support from the **Profileringsfonds**: [vu.nl/en/student/finances/profile-fund](https://vu.nl/en/student/finances/profile-fund)
+
+::: {.callout-tip}
+## Report delays early
+The sooner you contact your study advisor about a delay, the more options are available to you. Waiting too long limits what support can be offered.
+:::

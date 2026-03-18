@@ -1,0 +1,98 @@
+# Structure & Formalia
+
+Your thesis is an academic piece of work. There are many rules for how academic works should look like. Even though some of these may be arbitrary they actually serve the purpose of making different works comparable. Following these formalia is thus extremely important. 
+
+## Length and formatting
+
+| | Requirement |
+|---|---|
+| **Minimum length** | 8,000 words |
+| **Maximum length** | 9,000 words (10% margin allowed = up to 9,900) |
+| **Word count excludes** | Title page, abstract, references, tables, appendices, and (for qualitative research) citations from data |
+| **Line spacing** | 1.5 |
+| **Font** | 12pt Times New Roman |
+| **Pages (approx.)** | 22–28 |
+| **Word count location** | State on title page |
+
+::: {.callout-note}
+## Length is about quality, not padding
+If your project is genuinely complex and cannot be reported within 9,000 words, discuss this with me. However, being overly long without justification may negatively affect your grade. Less-important material can usually be moved to an appendix.
+:::
+
+## Required structure
+
+Your thesis must follow this structure. The page counts below are guidelines, not strict requirements.
+
+| # | Section | Guideline |
+|---|---------|-----------|
+| 0 | **Title page** | — |
+| 1 | **Table of contents** | — |
+| 2 | **Abstract / Summary** | ~0.5 page |
+| 3 | **Introduction** | 1–2 pages |
+| 4 | **Theory** | 6–8 pages |
+| 5 | **Method** | 2–3 pages |
+| 6 | **Results** | 3–4 pages (qualitative: 6–8 pages) |
+| 7 | **Conclusion and Discussion** | 4–5 pages |
+| 8 | **Reference list** | ≥ 30 references |
+| 9 | **Statement about Generative AI and AI-Assisted Technology usage** | After references; not in word count |
+| 10 | **Appendices** | — |
+
+Depending on your research design, you may deviate from this structure — but always consult me first.
+
+### Title page
+
+The title page should include at minimum:
+
+- Title of your thesis
+- Your name and student number
+- Course name and code (S_MTcw)
+- Supervisor's name
+- Date of submission
+- Word count of the main text
+- VU Amsterdam / Faculty of Social Sciences / Department of Communication Science
+
+### Abstract
+
+The abstract (approximately half a page) is written **last** but appears first. It concisely describes:
+
+- The reason for the study and the research question/hypotheses
+- The method
+- The key results
+- The main conclusion
+
+### Appendices
+
+At minimum, include:
+
+- Your questionnaire and/or stimulus materials
+- Your codebook (for content analysis)
+- The RERC ethical self-check PDF
+
+Variable names in the appendices should match exactly those used in your Method and Results sections.
+
+## Formatting (APA)
+
+All text, tables, figures, the title page, table of contents, abstract, and reference list must follow **APA 7th edition** guidelines. See [Citing & Referencing](citation.qmd) for details and [apastyle.apa.org](https://apastyle.apa.org/) for the full style guide.
+
+Key formatting rules:
+
+- Statistical symbols are italicized: *M*, *SD*, *F*, *t*, *p*, *r*, *N*, *n*
+- All numbers rounded to **two decimal places** (except *p* < .001)
+- No leading zero on *p* values and correlations: write *p* = .03, not *p* = 0.03
+- Report exact *p* values: *p* = .03, except when *p* < .001
+- Spaces after = and < signs
+- Tables and figures must include all necessary information and labels
+
+## AI disclosure statement
+
+All theses must include a **Statement about Generative AI and AI-Assisted Technology usage** after the reference list (not counted in the word count). See [Using AI Tools](ai-tools.qmd) for what this statement must contain.
+
+## Submission
+
+Submit your final thesis:
+
+1. **On Canvas** (where it will be checked for plagiarism)
+2. **By email** to both me and the second reviewer (check with me whether a paper version is also required)
+3. **Ensure I have access** to your final data file and syntax via the shared surfdrive folder
+
+After receiving a passing grade, you must also **upload your thesis to the UBVU thesis database** — this is a prerequisite for receiving your diploma. See [Assessment & Graduation](assessment.qmd) for details.

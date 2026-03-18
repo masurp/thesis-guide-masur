@@ -1,0 +1,8 @@
+# Het schrijven van de scriptieplan (Exposé)
+
+::: {.callout-note}
+## Dit hoofdstuk is in vertaling
+De Nederlandse versie van dit hoofdstuk is nog in ontwikkeling. Raadpleeg voorlopig de Engelstalige versie:
+
+**[Writing the Thesis Plan](../../thesis-plan.html)**
+:::

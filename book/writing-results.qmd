@@ -1,0 +1,78 @@
+# Results Chapter
+
+The results section is a **matter-of-fact description** of your findings. It is written in **past tense** and focuses on answering your research questions and testing your hypotheses. Extensive interpretation belongs in the Discussion — here you report what you found.
+
+That said, good results sections are well-structured and tell a coherent "story" that guides the reader through the analyses step by step.
+
+## Structure for quantitative research
+
+Report sections in this order:
+
+### 1. Descriptive statistics
+
+Report means (*M*), standard deviations (*SD*), and correlations among measured variables. Present these in a table or figure. In the text, describe the main and noteworthy correlations. Note whether control variables correlate with (in)dependent variables — if so, you may want to include them in follow-up analyses.
+
+### 2. Manipulation check (for experiments)
+
+Verify that the experimental manipulation worked as intended. Also check randomization: are demographic variables (gender, age, education) balanced across conditions? Report these checks even if no significant differences were found.
+
+### 3. Hypothesis testing
+
+For each hypothesis:
+1. **Restate** the hypothesis briefly
+2. **Name the test** used and which variables are included (e.g., *"We conducted a linear regression with X as predictor and Y as outcome"*)
+3. **Report results** with all relevant statistics
+4. **State a brief conclusion** (e.g., *"H1 was supported"* or *"H1 was not supported"*)
+
+Follow the same order as in the Theory chapter. Also briefly report non-significant findings — do not omit them.
+
+### 4. Secondary / exploratory analyses (optional)
+
+If you want to explore the data further (e.g., covariate analyses with control variables), include these in a clearly labeled separate section.
+
+## APA statistical reporting
+
+Follow APA 7th edition formatting:
+
+- Statistical symbols are italicized: *M*, *SD*, *N*, *n*, *F*, *t*, *r*, *p*, *b*, *β*, *χ²*
+- Round all numbers to **two decimal places**
+- No leading zero on *p* values and correlations: *p* = .03, *r* = .45 (not 0.03, 0.45)
+- Report **exact *p* values**: *p* = .03 — except use *p* < .001 for very small values
+- Put spaces after = and <
+- Report **effect sizes** (Cohen's *d*, η², *f²*, etc.)
+
+**Examples:**
+
+> The regression analysis revealed a significant positive effect of social media exposure on vaccine hesitancy, *b* = 0.34, *SE* = 0.08, *t*(298) = 4.25, *p* < .001, *β* = .24.
+
+> An independent-samples *t*-test showed no significant difference between conditions, *t*(148) = 1.12, *p* = .264, *d* = 0.18.
+
+> The ANOVA yielded a significant main effect of logo color, *F*(1, 196) = 8.34, *p* = .004, η² = .04.
+
+::: {.callout-important}
+## Report all effects, including non-significant ones
+Non-significant findings are still findings and should also be reported fully!
+:::
+
+## Tables and figures
+
+- Use tables and figures only when they **add information** that cannot be conveyed efficiently in text
+- Format all tables in **APA style** (not copy-pasted from SPSS output)
+- Every table and figure needs:
+  - A title (above for tables, below for figures)
+  - Clear axis labels or column headers
+  - A note if abbreviations are used
+- Variable labels in tables must match those used in the method section
+
+## Results in qualitative research
+
+In qualitative results, the chapter demonstrates your analysis and presents empirical findings. Structure it around your **sub-questions** (usually resulting in three main sections). For each sub-question:
+
+1. Restate the sub-question
+2. Present the analytical findings (from selective coding)
+3. Support findings with representative quotes from the data
+4. Briefly conclude
+
+**Quotes** serve as illustrations — not as substitutes for analysis. Contextualize each quote. Format quotes in italics, indented. Use a respondent ID rather than identifying information.
+
+Avoid discussing theoretical implications extensively in the results section — save that for the Discussion.

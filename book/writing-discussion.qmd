@@ -1,0 +1,90 @@
+# Conclusion & Discussion
+
+The conclusion and discussion chapter is the final major section of your thesis. It is where you step back from the data and reflect on the meaning, implications, and limitations of your findings.
+
+::: {.callout-tip}
+## Language tense
+Descriptions of *your* findings → **past tense** (*"The results showed that…"*)
+Theoretical implications and conclusions → **present tense** (*"This suggests that…"*)
+:::
+
+## Standard structure (use max. 3 subheadings)
+
+### 1. Summary and conclusion
+
+**Opening paragraph:**
+
+- Restate the main focus and purpose of the study
+- Briefly mention the approach (design)
+- Give a clear, concise overall summary of the answer to your research question
+
+**Middle part — detailed summary and discussion of findings:**
+
+For each hypothesis or sub-question:
+
+- Summarize the finding
+- Relate it to the **specific literature** used to motivate the hypothesis
+- Explain whether it is consistent or inconsistent with prior work — and *why*
+- For unexpected findings: introduce possible explanations, potentially drawing on additional literature
+- Offer multiple interpretations where relevant
+- Make cross-connections between findings
+
+Common mistakes to avoid:
+
+- Saying *"This finding is in line with previous research (ref1, ref2)"* — explain *how* and *why*
+- Ignoring non-significant findings — discuss them and consider whether the study was adequately powered
+
+**Middle part — broader implications:**
+
+- **Theoretical implications**: What does your study contribute to theory? Does it extend, refine, or challenge existing frameworks?
+- **Practical implications**: What do your findings mean for practitioners, policymakers, or society?
+- Connect back to the relevance you established in the Introduction
+
+**Closing of the first section:**
+
+- Consider the broader picture — what has your study contributed to the field?
+- Do the findings yield new insights?
+
+### 2. Strengths, limitations, and future research
+
+**Strengths:**
+
+- What methodological or conceptual strengths does your study have? (These give meaning to the limitations — there are always trade-offs)
+
+**Limitations:**
+
+- Be thorough and honest
+- Address methodological limitations (e.g., sampling, measurement, generalizability)
+- For qualitative research: discuss applicability of findings (situations, variations)
+
+**Future research:**
+
+- Suggestions must go beyond just *fixing the limitations*
+- Propose new, theoretically interesting research questions that follow from your conclusions
+- These suggestions should be grounded in your theoretical implications
+
+### 3. Closing paragraph / final conclusion
+
+End with a strong, clear paragraph:
+
+- Concisely restate the goal of the study
+- State a clear and well-founded conclusion
+- Provide a direct answer to the research question and hypotheses
+- End with a strong take-home message
+
+::: {.callout-warning}
+## The discussion is the last thing readers read
+A weak final paragraph is memorable for the wrong reasons. End confidently with a clear statement of what your study has contributed.
+:::
+
+## Full discussion checklist
+
+- [ ] Does the opening clearly restate the research focus and approach?
+- [ ] Does the summary use consistent terminology from the Introduction?
+- [ ] Is each finding linked to the specific literature that motivated it?
+- [ ] Are explanations given for both consistent *and* inconsistent findings?
+- [ ] Are cross-connections made between findings?
+- [ ] Are both theoretical and practical implications discussed?
+- [ ] Is the limitation section thorough (not just a brief list)?
+- [ ] Are future research suggestions theoretically grounded?
+- [ ] Is there a strong closing sentence?

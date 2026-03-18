@@ -1,0 +1,20 @@
+# Welkom {.unnumbered}
+
+Welkom bij de **MA Scriptiegids Communicatiewetenschap** van de Vrije Universiteit Amsterdam. Deze gids ondersteunt je gedurende het gehele scriptietraject — van het kiezen van een onderwerp tot het inleveren van je definitieve versie.
+
+De gids brengt informatie uit verschillende officiële documenten (de scriptiehandleiding, schrijfrichtlijnen en het AI-beleid) samen op één toegankelijke, doorzoekbare plek.
+
+::: {.callout-note}
+## Nederlandse versie in ontwikkeling
+Deze gids wordt momenteel vertaald. Sommige hoofdstukken zijn nog niet beschikbaar in het Nederlands. Raadpleeg voor nu de [Engelstalige versie](../../index.html).
+
+The [English version](../../index.html) is fully available and up-to-date.
+:::
+
+## Structuur van deze gids {.unnumbered}
+
+1. **Aan de slag** — cursusinformatie, het scriptietraject, deadlines en begeleiding
+2. **Het onderzoeksproces** — van onderzoeksvraag tot ethiek en datamanagement
+3. **De scriptie schrijven** — vereisten per sectie en schrijftips
+4. **Academische praktijken** — literatuuronderzoek, APA-citatie, open science en AI-gebruik
+5. **Inleveren & beoordeling** — beoordeling, herkansing en afstuderen

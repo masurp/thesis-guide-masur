@@ -1,0 +1,75 @@
+# Ethics & Data Management
+
+## The ethical self-check
+
+Before you start collecting data, it is **mandatory** to complete the **ethical review self-check** via the Research Ethics Review Committee (RERC) of the Faculty of Social Sciences (FSW).
+
+You can find the self-check and all relevant information here:
+[vu.nl/en/employee/research-support/research-ethics-review-ssc](https://vu.nl/en/employee/research-support/research-ethics-review-ssc)
+
+::: {.callout-important}
+## Always complete the self-check with me
+I hold final responsibility for the accuracy of your answers. **Never complete the self-check without consulting me first.** Inaccurate answers can invalidate the ethical assessment and make your data unusable.
+:::
+
+### How the self-check works
+
+1. Complete the online survey in consultation with me
+2. If your research **meets** the faculty's ethical guidelines → no further review needed. You will receive a PDF confirmation by email.
+3. If your research **does not meet** the guidelines (e.g., no informed consent, stimuli that may distress participants, or vulnerable populations) → further steps are needed
+
+### If your research does not pass the self-check
+
+1. Discuss the issue with me — in many cases, a small design adjustment solves the problem
+2. If the issue cannot be resolved, contact the RERC at rerc.ssc@vu.nl
+3. Note: thesis projects are generally **not eligible** for full RERC review, unless the project is part of a larger, supervised research line that will be published. In that case, I must prepare materials for full review.
+
+### Practical notes
+
+- Save the self-check PDF output and store it in your surfdrive folder and attach it as an appendix to your thesis
+- You can change your answers before the final submission of the form — discuss all answers with me before pressing submit
+- In some cases, I have already applied for ethical review for a research line you are joining. Check with me whether you need to complete the self-check separately.
+
+### Qualtrics: disable personal data collection
+
+By default, Qualtrics stores personal data (IP address and geolocation). If you want to keep responses anonymous:
+
+1. Go to *Survey Options* in Qualtrics
+2. Under *Survey Termination*, enable: **"Anonymize Response — Do NOT record any personal information and remove contact association"**
+
+If you do not do this, you must answer "yes" to the question about collecting personal/sensitive data in the self-check, and you must store the data securely.
+
+## Data management
+
+Careful and secure handling of research data is required throughout your thesis.
+
+### Storing your data (surfdrive)
+
+The accepted secure method for storing and sharing data with me is a **shared SURFdrive folder**, protected by a password. I will create this folder and grant you access.
+
+Workflow:
+
+1. Place the **complete raw data file** in the shared folder with a clear name (e.g., `ALL_RAW_DATA_StudyName_StudentName.sav`)
+2. Make a **duplicate** of the raw file — work only in the copy
+3. **Remove all personal/sensitive data** from the working file (e.g., geolocation, IP addresses, names, email addresses)
+4. Clean the working file and create new variables as needed
+5. Keep your **syntax** (R or SPSS) updated and annotated throughout
+
+### Syntax hygiene
+
+Always work with syntax — never run analyses from menus without recording them (see also the chapter "[R for Data Analysis](r-resources.qmd)"):
+
+- In **SPSS**: click "Paste" for every command run from a menu; add notes with `* comment text`
+- In **R**: annotate your script with `# comment text`
+
+Your syntax should allow anyone (including you, six months from now) to:
+
+- Re-create the final dataset from the raw data
+- Reproduce every reported analysis
+
+At the start of your method section, report all cases removed from the dataset and the reasons (e.g., *"9 cases were excluded because they did not complete the questionnaire"*).
+
+::: {.callout-tip}
+## Syntax is part of your grade
+Reproducible syntax is a sign of scientific rigor. I need access to your data and syntax (via surfdrive) when assessing your thesis.
+:::

@@ -1,0 +1,86 @@
+# Introduction & Theory Chapter
+
+## The Abstract
+
+Although it appears first in your thesis, the abstract is the **last section you write**. It concisely summarizes:
+
+- The reason for the study and the research question or hypotheses
+- The method used
+- The key findings
+- The main conclusion
+
+Keep it to approximately half a page. Focus on the most important points — do not include citations.
+
+## The Introduction
+
+The introduction presents your topic and frames the study. A good introduction is **concise** and focuses on two questions: *"What has been done in this area?"* and *"Why is the current study useful?"*
+
+### Standard structure
+
+1. **Reason** (*aanleiding*) — Why is this topic relevant now? What social or scientific development motivates this study?
+2. **Topic introduction and knowledge gap** — Briefly introduce the topic and name the gap in existing research (keep it short here; details follow in the Theory chapter)
+3. **Problem statement** — Articulate the specific research problem
+4. **Research question** — State the central RQ explicitly and clearly
+5. **Societal and scientific relevance** — Explain why answering this RQ matters
+
+For **qualitative research**, also briefly summarize your methodology (e.g., grounded theory) and methods (e.g., interviews, thematic analysis) at the end of the introduction.
+
+### Checklist for the introduction
+
+- [ ] Is a clear motivation for the research problem provided?
+- [ ] Is the research problem clearly delineated?
+- [ ] Is the research gap clearly identified?
+- [ ] Are central concepts clearly defined and consistently named throughout the thesis?
+- [ ] Is the research question stated explicitly and clearly?
+- [ ] Is the research question researchable?
+- [ ] Is both the **societal** and **scientific** relevance demonstrated?
+
+## The Theory Chapter
+
+The theory chapter reviews the relevant literature and major theories, shows how your research builds on existing work, and leads to your hypotheses (or sub-questions for qualitative research).
+
+### Structure
+
+A theory chapter typically:
+
+1. Defines and explains the central constructs/concepts
+2. Builds a theoretical argument for the relationships between constructs
+3. Discusses relevant prior empirical findings
+4. Culminates in clearly formulated hypotheses (or sub-questions) and a conceptual model
+
+Each sub-section should follow a **cone shape**: start with general definitions and background, then narrow to specific relationships relevant to your hypotheses.
+
+### Content checklist
+
+- [ ] Is the theory relevant to the research question?
+- [ ] Is the literature up-to-date (primarily recent peer-reviewed journal articles)?
+- [ ] Is a critical stance taken (noting relationships, contradictions, gaps)?
+- [ ] Are highly relevant studies discussed in appropriate detail (including their methods and findings)?
+- [ ] Is the labeling of variables/constructs consistent throughout?
+
+### Structure and writing checklist
+
+- [ ] Is there a clear logical thread (*rode lijn*) throughout?
+- [ ] Does each section begin with a topical sentence?
+- [ ] Are sections balanced in length?
+- [ ] Is the conceptual model (for quantitative research) included at the end?
+- [ ] Is every construct in the hypotheses represented in the conceptual model?
+
+### Vocabulary and references
+
+- [ ] Is the vocabulary academic (avoiding contractions and colloquialisms)?
+- [ ] Is every claim supported by a reference?
+- [ ] Are in-text citations in correct APA format?
+- [ ] Are direct quotations justified, and do they include a page number?
+
+### Hypotheses checklist
+
+- [ ] Does each hypothesis propose one effect only (not multiple)?
+- [ ] Are moderation and mediation effects in separate hypotheses?
+- [ ] Are terms used consistently across theory, conceptual model, and method?
+- [ ] Is each hypothesis supported by 3–5 prior studies?
+
+::: {.callout-tip}
+## The golden thread
+Your research question should be visible in every paragraph of your thesis. Whenever you are unsure whether a paragraph belongs, ask yourself: *does this contribute to answering my research question?*
+:::
