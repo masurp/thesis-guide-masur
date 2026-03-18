@@ -29,13 +29,10 @@ jobs:
           install.packages(c("rmarkdown", "knitr"), repos = "https://cloud.r-project.org")
         shell: Rscript {0}
 
-      - name: Render book
-        run: quarto render book/
-
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          path: _book
+          path: book
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
