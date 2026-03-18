@@ -1,0 +1,299 @@
+/*-- scss:defaults --*/
+
+// VU Amsterdam brand colors
+$primary:    #238acc;
+$dark-blue:  #003D6B;
+$accent:     #E85C0D;
+$light-bg:   #f0f7fd;
+
+$link-color: $primary;
+$navbar-bg:  $primary;
+$navbar-fg:  #ffffff;
+
+// Typography
+$font-family-sans-serif: 'Inter', system-ui, -apple-system, sans-serif;
+$font-size-base:         1rem; // 16px
+$line-height-base:       1.6;
+
+/*-- scss:rules --*/
+
+// Google Font import
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+// ── Headings ─────────────────────────────────────────────────────────────────
+
+h1, h1.title {
+  text-align: center;
+  font-weight: 700;
+  color: $dark-blue;
+  margin-top: 3rem !important;
+  margin-bottom: 2.5rem !important;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-weight: 700;
+  color: $dark-blue;
+  border-bottom: 2px solid $primary;
+  padding-bottom: 0.25em;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-weight: 600;
+  font-style: italic;
+  color: $dark-blue;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-weight: 600;
+  color: $accent;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+// ── Body text ─────────────────────────────────────────────────────────────────
+
+p, li {
+  line-height: 1.6;
+}
+
+// ── Links ─────────────────────────────────────────────────────────────────────
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: $dark-blue;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+// Focus ring for accessibility
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid $primary;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+// ── Navbar ────────────────────────────────────────────────────────────────────
+
+.navbar {
+  background-color: $primary !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+// Navbar logo size
+.navbar-logo {
+  width: 120px !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+// ── TOC spacing (right page TOC) ─────────────────────────────────────────────
+
+#TOC li {
+  margin-bottom: 0.15rem;
+}
+
+#TOC .nav-link {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  line-height: 1.4;
+}
+
+// ── Left sidebar spacing ──────────────────────────────────────────────────────
+
+.sidebar-item .sidebar-item-container {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+// ── Sidebar ───────────────────────────────────────────────────────────────────
+
+// Bold part headings in sidebar
+.sidebar-item-text.text-start .menu-text {
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+// Active link: left border highlight
+.sidebar-item.active > .sidebar-item-text a,
+.sidebar-link.active {
+  color: $primary !important;
+  font-weight: 600;
+  background-color: $light-bg !important;
+  border-left: 3px solid $primary;
+  padding-left: 0.5rem;
+  margin-left: -0.5rem;
+}
+
+// ── Callouts ──────────────────────────────────────────────────────────────────
+
+.callout {
+  border-left: 4px solid $primary;
+  background-color: $light-bg;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  margin: 1.5rem 0;
+}
+
+.callout.callout-tip {
+  border-left-color: #1a9e5c;
+  background-color: #f0faf5;
+}
+
+.callout.callout-warning {
+  border-left-color: #d97706;
+  background-color: #fffbeb;
+}
+
+.callout.callout-important {
+  border-left-color: #dc2626;
+  background-color: #fef2f2;
+}
+
+.callout.callout-note {
+  border-left-color: $primary;
+  background-color: $light-bg;
+}
+
+// ── Tables ────────────────────────────────────────────────────────────────────
+
+table {
+  font-size: 0.9em;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+thead {
+  background-color: $dark-blue;
+  color: #ffffff;
+}
+
+thead th {
+  padding: 0.65rem 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f8fb;
+}
+
+tbody tr:hover {
+  background-color: #e8f3fb;
+  transition: background-color 0.15s ease;
+}
+
+tbody td {
+  padding: 0.55rem 0.85rem;
+}
+
+// ── Code blocks ───────────────────────────────────────────────────────────────
+
+pre.sourceCode {
+  border-left: 4px solid $primary;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  padding: 1rem 1.25rem;
+  font-size: 0.875em;
+}
+
+code {
+  font-size: 0.9em;
+  background-color: #f0f4f8;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  color: $dark-blue;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+
+.nav-footer {
+  background-color: $dark-blue;
+  color: #ffffff;
+  font-size: 0.875em;
+  padding: 1rem 0;
+}
+
+.nav-footer a {
+  color: lighten($primary, 20%);
+}
+
+.nav-footer a:hover {
+  color: #ffffff;
+}
+
+// ── Author/date block on index page ──────────────────────────────────────────
+
+.quarto-title-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #555;
+  font-size: 0.95em;
+}
+
+// ── Page centering ────────────────────────────────────────────────────────────
+
+#quarto-content,
+.quarto-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ── Misc ──────────────────────────────────────────────────────────────────────
+
+// Download button label
+.quarto-secondary-nav-title {
+  color: $dark-blue;
+}
+
+// Smooth scroll
+html {
+  scroll-behavior: smooth;
+}
+
+// ── Dark mode ─────────────────────────────────────────────────────────────────
+
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3 { color: $primary; }
+  h2 { border-bottom-color: $primary; }
+  a { color: $primary; }
+  a:hover { color: #ffffff; }
+  pre.sourceCode { background-color: #1e293b; }
+  code { background-color: #1e293b; color: #e2e8f0; }
+  tbody tr:nth-child(even) { background-color: rgba(255,255,255,0.05); }
+  tbody tr:hover { background-color: rgba(255,255,255,0.08); }
+}

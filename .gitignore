@@ -1,0 +1,23 @@
+# Quarto build output
+_book/
+_book-tmp/
+/.quarto/
+book/.quarto/
+book-nl/.quarto/
+
+# Source PDFs (not for public repo)
+docs/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj.user
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor
+.vscode/
+*.swp
