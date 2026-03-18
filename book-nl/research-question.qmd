@@ -1,8 +1,0 @@
-# Van onderwerp naar onderzoeksvraag
-
-::: {.callout-note}
-## Dit hoofdstuk is in vertaling
-De Nederlandse versie van dit hoofdstuk is nog in ontwikkeling. Raadpleeg voorlopig de Engelstalige versie:
-
-**[From Topic to Research Question](../../research-question.html)**
-:::

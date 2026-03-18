@@ -1,8 +1,0 @@
-# Inleiding en theoretisch kader
-
-::: {.callout-note}
-## Dit hoofdstuk is in vertaling
-De Nederlandse versie van dit hoofdstuk is nog in ontwikkeling. Raadpleeg voorlopig de Engelstalige versie:
-
-**[Introduction & Theory Chapter](../../writing-intro-theory.html)**
-:::

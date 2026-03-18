@@ -18,9 +18,6 @@ book:
     logo: img/logo.png
     logo-alt: "VU Amsterdam"
     title: false
-    right:
-      - text: "🇳🇱 Nederlands"
-        href: ../nl/index.html
 
   sidebar:
     style: docked

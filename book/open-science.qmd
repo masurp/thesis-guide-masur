@@ -1,6 +1,8 @@
 # Open Science
 
+::: {.content-visible when-format="html"}
 ![](https://www.curatore.es/uc3m2OpenScience/wp-content/uploads/2024/06/open-data-meme.jpg){fig-align="center" width="50%"}
+:::
 
 Open science refers to a set of practices that make scientific research more transparent, reproducible, and accessible. Adopting open science practices in your thesis not only strengthens the quality of your work, but also aligns it with the standards increasingly expected in Communication Science. I, myself, strongly advocate for the implementation of open science practices (see [this](https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqz052/5803422#200712879) or [this](https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqz052/5803422#200712879) paper) and thus expect you to engage with these practices as well. 
 

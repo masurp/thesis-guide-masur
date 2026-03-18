@@ -29,14 +29,8 @@ jobs:
           install.packages(c("rmarkdown", "knitr"), repos = "https://cloud.r-project.org")
         shell: Rscript {0}
 
-      - name: Render English book
+      - name: Render book
         run: quarto render book/
-
-      - name: Copy Dutch book output into _book/nl/
-        run: |
-          quarto render book-nl/ --output-dir ../_book-tmp
-          mkdir -p _book/nl
-          cp -r _book-tmp/. _book/nl/
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2

@@ -1,8 +1,0 @@
-# AI-tools gebruiken
-
-::: {.callout-note}
-## Dit hoofdstuk is in vertaling
-De Nederlandse versie van dit hoofdstuk is nog in ontwikkeling. Raadpleeg voorlopig de Engelstalige versie:
-
-**[Using AI Tools](../../ai-tools.html)**
-:::

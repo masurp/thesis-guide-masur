@@ -1,8 +1,0 @@
-# Het scriptietraject
-
-::: {.callout-note}
-## Dit hoofdstuk is in vertaling
-De Nederlandse versie van dit hoofdstuk is nog in ontwikkeling. Raadpleeg voorlopig de Engelstalige versie:
-
-**[The Thesis Trajectory](../../trajectory.html)**
-:::

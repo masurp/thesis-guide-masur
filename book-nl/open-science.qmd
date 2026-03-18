@@ -1,8 +1,0 @@
-# Open science
-
-::: {.callout-note}
-## Dit hoofdstuk is in vertaling
-De Nederlandse versie van dit hoofdstuk is nog in ontwikkeling. Raadpleeg voorlopig de Engelstalige versie:
-
-**[Open Science](../../open-science.html)**
-:::
