@@ -1,10 +1,10 @@
 # The Thesis Trajectory
 
-The MA thesis project unfolds in three main phases: **preparation (P4)**, **research and writing (P5)**, and **finalizing and submission (P6)**. This chapter explains what is expected at each stage.
+The MA thesis project consists of three main phases: **preparation (P4)**, **research and writing (P5)**, and **finalizing and submission (P6)**. In this chapter, I explain what is expected at each stage.
 
 ## Phase 1 (P4): Preparation
 
-Period 4 runs from **February to late March**. During this period, the thesis course runs in parallel with your two elective courses. You should plan to spend approximately **4 hours per week** on your thesis in this phase. It is crucial to develop first ideas and narrow down your focus. 
+Period 4 runs from **February to late March**. During this period, the thesis course runs in parallel with your two elective courses. You should plan to spend approximately **4 hours per week** on your thesis in this phase. It is crucial to develop first ideas and narrow down your focus. You will meet several times with me to discuss and brainstorm. 
 
 Your main tasks in P4:
 
@@ -20,7 +20,7 @@ As soon as you start reading, do it systematically: collect articles, write down
 
 ### The MA Thesis Plan (end of P4)
 
-By the **end of Period 4** (see [Timeline & Deadlines](timeline.qmd)), you submit a so-called **Thesis Plan** (sometimes also called **Exposé**) to me via email. This is a **minimum two-page document** that outlines your proposed project. The further you have developed it, the better. It should include at minimum:
+By the **end of Period 4** (see [Timeline & Deadlines](timeline.qmd)), you submit a so-called **Thesis Plan** (sometimes also called **Exposé**) to me via email (see also [Writing the Thesis Plan](thesis-plan.qmd)). This is a **minimum two-page document** that outlines your proposed project. The further you have developed it, the better. It should include at minimum:
 
 1. A first description of the relevant literature and core theory, and a research "gap" that justifies your focus (theoretical and societal relevance)
 2. Your over-arching research question, i.e., what you would like to answer with your study
@@ -49,11 +49,11 @@ In the **first two weeks of P5**, you should intensively develop your **Research
 I evaluate the proposal as *sufficient* or *insufficient*. An **approved** Research Proposal is required to continue the thesis trajectory. If it is rejected, you have up to two resits (within 10 working days each). Failing both resits means you must stop and restart in the following academic year.
 :::
 
-Upload your Research Proposal on Canvas and email it to me before the deadline. Give peer feedback to fellow students first, and process their feedback before submitting.
+Upload your Research Proposal on Canvas and email it to me before the deadline. Give peer feedback to fellow students first, and incorporate their feedback before submitting.
 
 ### Complete Methodology
 
-As soon as possible after the Research Proposal is approved, submit your **complete methodology**. This is the final, detailed operationalization of your method — the exact content of your questionnaire, experimental materials, codebook, Qualtrics setup, etc. A lof this information usually will be included in appendix in your final thesis.
+As soon as possible after the Research Proposal is approved, submit your **complete methodology**. This is the final, detailed operationalization of your method, which may include the exact content of your questionnaire, experimental materials, codebook, Qualtrics setup, etc. A lot this information will be included in the appendix of your final thesis.
 
 ### Ethical Review
 

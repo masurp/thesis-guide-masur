@@ -1,6 +1,6 @@
 # Conclusion & Discussion
 
-The conclusion and discussion chapter is the final major section of your thesis. It is where you step back from the data and reflect on the meaning, implications, and limitations of your findings.
+The conclusion and discussion chapter is the final section of your thesis. It is where you step back from the data and reflect on the meaning, implications, and limitations of your findings.
 
 ::: {.callout-tip}
 ## Language tense
@@ -24,15 +24,15 @@ For each hypothesis or sub-question:
 
 - Summarize the finding
 - Relate it to the **specific literature** used to motivate the hypothesis
-- Explain whether it is consistent or inconsistent with prior work — and *why*
-- For unexpected findings: introduce possible explanations, potentially drawing on additional literature
+- Explain whether it is consistent or inconsistent with prior work and *why*
+- For unexpected findings: introduce possible explanations, potentially drawing on additional literature or theories
 - Offer multiple interpretations where relevant
 - Make cross-connections between findings
 
 Common mistakes to avoid:
 
-- Saying *"This finding is in line with previous research (ref1, ref2)"* — explain *how* and *why*
-- Ignoring non-significant findings — discuss them and consider whether the study was adequately powered
+- Saying *"This finding is in line with previous research (ref1, ref2)"*, also explain *how* and *why*
+- Ignoring non-significant findings. Instead, discuss them and consider limitations, e.g., whether the study was adequately powered
 
 **Middle part — broader implications:**
 
@@ -65,7 +65,7 @@ Common mistakes to avoid:
 
 ### 3. Closing paragraph / final conclusion
 
-End with a strong, clear paragraph:
+End with a strong, clear and short paragraph:
 
 - Concisely restate the goal of the study
 - State a clear and well-founded conclusion

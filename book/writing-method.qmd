@@ -10,19 +10,18 @@ The method chapter is written in **past tense** and must be detailed enough that
 
 ## Quantitative research (survey and experiment)
 
-### Participants
+### Sample and Participants
 
-Report:
-- Method of **recruitment**
-- **Demographics**: frequency and percentage for gender, age, education, etc.
-- **Sample size**, including justification (power analysis)
+- Method of **recruitment** (convenience sampling, snowballing - How were participants recruited?)
+- **Sample size**, including justification (a priori power analysis)
 - **Exclusions**: exactly how many participants were excluded and for what reason(s)
 - The **final *N*** (must match the *N* reported in the results section)
+- **Demographics**: frequency and percentage for gender, age, education, etc.
 
 ### Design
 
 - State the **type of design** clearly: survey, experiment, between-subjects, within-subjects, mixed
-- Briefly describe the **task** (e.g., *"Participants were exposed to a news article and then completed a questionnaire"*)
+- Describe the **task** if there was one (e.g., *"Participants were exposed to a news article and then completed a questionnaire"*)
 - Name the **independent and dependent variables**
 - For experiments: describe factors and conditions clearly using design notation (e.g., *"a 2 [logo color: red, blue] × 2 [medium: TV, newspaper] between-subjects design"*), and confirm randomization
 
@@ -37,7 +36,7 @@ Describe in **chronological order**:
 ### Materials
 
 - Describe **experimental stimuli** or materials, including exact differences between conditions
-- All materials must be provided in the appendix
+- All materials must be provided in the appendix (or even in the text itself if it helps the reader)
 
 ### Measures
 
@@ -50,12 +49,12 @@ For each variable, report:
 - Example item(s) — or all items if few; refer to appendix for longer scales
 - Response format (e.g., *"5-point Likert scale from 1 = strongly disagree to 5 = strongly agree"*)
 - *M* and *SD* in your sample, along with minimum and maximum values
-- Reliability (Cronbach's α)
+- Reliability (Cronbach's α and/or McDonald's omega), but also results of confirmatory factor analyses if applicable!
 - How the final score was computed (e.g., average of items; recoded items)
 - Direction (e.g., *"Higher scores indicate greater vaccine hesitancy"*)
-- For experiments: a **manipulation check**
+- For experiments: a **manipulation check**!
 
-Organize measures under subheadings: Independent variables, Dependent variables, Control variables.
+Eventually organize measures under subheadings: Independent variables, Dependent variables, Control variables.
 
 ::: {.callout-warning}
 ## Consistency is critical
@@ -68,9 +67,9 @@ The method chapter for a content analysis includes:
 
 - A short description of the **research design**
 - **Data collection**: how the corpus was assembled (sampling strategy, date range, sources)
-- **Content analysis method**: manual (intercoder reliability) or automated (tool used, e.g., R, AmCat, Coosto)
+- **Content analysis method**: manual (intercoder reliability) or automated (tool used, e.g., R, AmCat, Coosto, LLMs)
 - **Operationalization**: search terms or codebook
-- **Reliability**: intercoder agreement or precision/recall of search terms
+- **Reliability**: intercoder agreement or precision/recall in relation to a gold standard
 
 ## Qualitative research
 

@@ -20,14 +20,14 @@ I hold final responsibility for the accuracy of your answers. **Never complete t
 
 ### If your research does not pass the self-check
 
-1. Discuss the issue with me — in many cases, a small design adjustment solves the problem
-2. If the issue cannot be resolved, contact the RERC at rerc.ssc@vu.nl
+1. Discuss the issue with me. In many cases, a small design adjustment solves the problem
+2. If the issue cannot be resolved, I will contact the RERC (not you!)
 3. Note: thesis projects are generally **not eligible** for full RERC review, unless the project is part of a larger, supervised research line that will be published. In that case, I must prepare materials for full review.
 
 ### Practical notes
 
 - Save the self-check PDF output and store it in your surfdrive folder and attach it as an appendix to your thesis
-- You can change your answers before the final submission of the form — discuss all answers with me before pressing submit
+- You can change your answers before the final submission of the form, but always discuss all answers with me before pressing submit
 - In some cases, I have already applied for ethical review for a research line you are joining. Check with me whether you need to complete the self-check separately.
 
 ### Qualtrics: disable personal data collection
@@ -37,21 +37,21 @@ By default, Qualtrics stores personal data (IP address and geolocation). If you 
 1. Go to *Survey Options* in Qualtrics
 2. Under *Survey Termination*, enable: **"Anonymize Response — Do NOT record any personal information and remove contact association"**
 
-If you do not do this, you must answer "yes" to the question about collecting personal/sensitive data in the self-check, and you must store the data securely.
+If you do not do this, you must answer "yes" to the question about collecting personal/sensitive data in the self-check, and you must store the data securely. We almost never need to collect IP addresses or geo location. 
 
 ## Data management
 
 Careful and secure handling of research data is required throughout your thesis.
 
-### Storing your data (surfdrive)
+### Storing your data (surfdrive/research drive)
 
-The accepted secure method for storing and sharing data with me is a **shared SURFdrive folder**, protected by a password. I will create this folder and grant you access.
+The accepted secure method for storing and sharing data with me is a **shared SURFdrive or Research Drive folder**, protected by a password. I will create this folder and grant you access.
 
 Workflow:
 
 1. Place the **complete raw data file** in the shared folder with a clear name (e.g., `ALL_RAW_DATA_StudyName_StudentName.sav`)
 2. Make a **duplicate** of the raw file — work only in the copy
-3. **Remove all personal/sensitive data** from the working file (e.g., geolocation, IP addresses, names, email addresses)
+3. **Remove all personal/sensitive data** from the working file (e.g., geolocation, IP addresses, names, email addresses, in case these data are still included)
 4. Clean the working file and create new variables as needed
 5. Keep your **syntax** (R or SPSS) updated and annotated throughout
 

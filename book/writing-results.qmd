@@ -1,8 +1,8 @@
 # Results Chapter
 
-The results section is a **matter-of-fact description** of your findings. It is written in **past tense** and focuses on answering your research questions and testing your hypotheses. Extensive interpretation belongs in the Discussion — here you report what you found.
+The results section is a **matter-of-fact description** of your findings. It is written in **past tense** and focuses on answering your research questions and testing your hypotheses. Extensive interpretation belongs in the Discussion. Here you only report what you found.
 
-That said, good results sections are well-structured and tell a coherent "story" that guides the reader through the analyses step by step.
+That said, good results sections are well-structured and nonetheless tell a coherent "story" that guides the reader through the analyses step by step. It should usually align with the order of the hypotheses or research questions. 
 
 ## Structure for quantitative research
 
@@ -10,15 +10,16 @@ Report sections in this order:
 
 ### 1. Descriptive statistics
 
-Report means (*M*), standard deviations (*SD*), and correlations among measured variables. Present these in a table or figure. In the text, describe the main and noteworthy correlations. Note whether control variables correlate with (in)dependent variables — if so, you may want to include them in follow-up analyses.
+Report means (*M*), standard deviations (*SD*), and correlations among measured variables. Present these in a table or figure. In the text, describe the main and noteworthy correlations. Note whether control variables correlate with (in)dependent variables. If so, you may want to include them in follow-up analyses.
 
 ### 2. Manipulation check (for experiments)
 
 Verify that the experimental manipulation worked as intended. Also check randomization: are demographic variables (gender, age, education) balanced across conditions? Report these checks even if no significant differences were found.
 
-### 3. Hypothesis testing
+### 3. Hypothesis testing (confirmatory analyses)
 
 For each hypothesis:
+
 1. **Restate** the hypothesis briefly
 2. **Name the test** used and which variables are included (e.g., *"We conducted a linear regression with X as predictor and Y as outcome"*)
 3. **Report results** with all relevant statistics
@@ -26,7 +27,7 @@ For each hypothesis:
 
 Follow the same order as in the Theory chapter. Also briefly report non-significant findings — do not omit them.
 
-### 4. Secondary / exploratory analyses (optional)
+### 4. Secondary (exploratory analyses, usually optional)
 
 If you want to explore the data further (e.g., covariate analyses with control variables), include these in a clearly labeled separate section.
 
@@ -36,8 +37,8 @@ Follow APA 7th edition formatting:
 
 - Statistical symbols are italicized: *M*, *SD*, *N*, *n*, *F*, *t*, *r*, *p*, *b*, *β*, *χ²*
 - Round all numbers to **two decimal places**
-- No leading zero on *p* values and correlations: *p* = .03, *r* = .45 (not 0.03, 0.45)
-- Report **exact *p* values**: *p* = .03 — except use *p* < .001 for very small values
+- No leading zero on *p* values, correlations, or standardized effect sizes that have an upper bound of 1: *p* = .03, *r* = .45 (not 0.03, 0.45)
+- Report **exact *p* values**: *p* = .003 — except use *p* < .001 for very small values
 - Put spaces after = and <
 - Report **effect sizes** (Cohen's *d*, η², *f²*, etc.)
 

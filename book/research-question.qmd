@@ -2,7 +2,18 @@
 
 ## Starting with a topic
 
-A thesis begins with a **topic of interest** — a broad area within communication science that you want to explore. I offer research themes within my expertise. Working within my themes ensures your project is relevant and that you benefit fully from my expertise.
+A thesis begins with a **topic of interest**, a broad area within communication science that you want to explore. I offer research themes within my expertise. Working within my themes ensures your project is relevant and that you benefit fully from my expertise. My key research areas include:
+
+1. Privacy and Self-Disclosure Dynamics in various Online Environments
+2. Social Norms and Social Influence on Social Media
+3. Digital Literacy (incl. e.g., Privacy Literacy, Algorithm Literacy, and AI literacy)
+
+Beyond those core topics, I am also willing to supervise topics related to the following areas:
+
+4. Consequences of using Generative AI for Individuals and Society
+5. Social Media Use Effects on Individual Well-Being
+
+To gain a better understanding of my research, have a look at my [publications](https://www.philippmasur.de/publications). 
 
 If you propose your own topic, make sure it is:
 
@@ -35,20 +46,26 @@ A good research question is:
 "What is the role of social media in society?" is too broad. A better version: "To what extent does exposure to ideologically congruent social media content predict political polarization among Dutch adults?"
 :::
 
-In **quantitative research**, the main RQ is typically followed by **hypotheses** that predict specific relationships. These are derived from existing theory.
+In **quantitative, confirmatory research**, the main RQ is typically followed by **hypotheses** that predict specific relationships. These are derived from existing theory.
 
-In **qualitative research** (e.g., grounded theory, thematic analysis), the main RQ is followed by **sub-questions** that guide your data collection and analysis.
+In **qualitative research** (e.g., grounded theory, thematic analysis) or **exploratory, quantitative research**, the main RQ is usually followed by **sub-questions** that guide your data collection and analysis.
 
 ## Hypotheses
 
 A hypothesis proposes a specific, testable relationship between variables. Good hypotheses:
 
-- Propose **one effect** (not multiple effects in one statement)
+- Propose **one effect** or **relationship** (not multiple effects/relations in one statement)
 - Follow **logically** from the theoretical argument
-- Are supported by **3–5 previous studies** pointing in the same direction
-- Use **consistent terminology** with the theory section, conceptual model, and method section
+- Are supported by theory and/or **3–5 previous studies** pointing in the same direction
+- Use **consistent terminology** with the theory section, conceptual model, and method section that further aligns with the existing terminology in the field
 
 Example: *"H1: Higher exposure to health misinformation on social media will be positively associated with vaccine hesitancy."*
+
+::: {.callout-important}
+## Common problem: Non-falsifiable hypotheses
+Hypotheses must be falsifiable, i.e., it should be possible that the data does not support them. For example, a hypothesis like this *"Exposure to health misinformation has an effect on vaccine hesitancy"* is almost not falsifiable as it doesn't specify a direction and thus any found effect would support it. 
+:::
+
 
 ::: {.callout-important}
 ## Moderation and mediation in separate hypotheses
@@ -61,7 +78,7 @@ In qualitative projects, the main RQ is broken down into **sub-questions** that:
 
 - Follow logically from the main RQ
 - Address specific aspects or steps of your research
-- Are grounded in 3–5 previous studies
+- Are likewise grounded in 3–5 previous studies
 - Are formulated distinctively (each addresses a clearly different focus)
 
 Each sub-question ends with a **single question mark** — a common mistake is combining multiple questions before one question mark.
@@ -74,6 +91,6 @@ Use consistent terminology throughout: the same construct should have the same n
 
 **Example conceptual model:**
 
-![Conceptual model from Masur, Bazarova, & DiFranzo (2023)](img/conceptual_model.png){fig-align="center" width="80%"}
+![](img/conceptual_model.png){fig-align="center" width="80%"}
 
 *Source: Masur, P. K., Bazarova, N. N., & DiFranzo, D. (2023). The impact of what others do, approve of, and expect you to do: An in-depth analysis of social norms and self-disclosure on social media. *Social Media + Society*, 9*(1), 1–14. [https://doi.org/10.1177/20563051231156401](https://doi.org/10.1177/20563051231156401)*

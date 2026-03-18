@@ -11,6 +11,7 @@ The proposal is not the final thesis. It is a detailed plan that shows your rese
 The introduction frames your study and states your research question. It follows the same structure as the introduction in the final thesis (see [Introduction & Theory Chapter](writing-intro-theory.qmd)), but at this stage it may not yet be in final form.
 
 The introduction must contain:
+
 - A clear **motivation** for the topic (why does this matter?)
 - An identification of the **research gap**
 - A clear, explicitly stated **research question**
@@ -19,6 +20,7 @@ The introduction must contain:
 **Length:** 1–2 pages.
 
 **Common mistakes:**
+
 - Stating why the topic is interesting in general, without identifying a specific gap
 - Formulating a research question that is too broad, too vague, or not empirically answerable
 - Relevance that is disconnected from the gap (e.g., claiming societal relevance for a purely theoretical contribution)
@@ -28,6 +30,7 @@ The introduction must contain:
 The theory chapter reviews relevant literature and builds a theoretical argument that culminates in your hypotheses. In the proposal, this chapter should be substantially developed, though it need not be fully polished.
 
 Structure:
+
 1. Define and explain your central constructs
 2. Review prior empirical work, organized thematically
 3. Build theoretical arguments linking constructs
@@ -37,6 +40,7 @@ Structure:
 **Length:** 4–6 pages in the proposal (6–8 in the final thesis).
 
 **Common mistakes:**
+
 - Summarizing papers one by one instead of synthesizing them thematically
 - Hypotheses that appear out of nowhere without a theoretical build-up
 - Inconsistent naming of constructs (use the same term throughout)
@@ -50,6 +54,7 @@ Each section of your theory chapter should start broad (definitions, background)
 ### 3. Hypotheses (or sub-questions)
 
 State all hypotheses clearly and separately. Each hypothesis:
+
 - Proposes exactly **one effect** (one direction, one pair of variables)
 - Is numbered (H1, H2, H3 etc.; sub-hypotheses as H1a, H1b)
 - Uses the **same variable names** as your theory, conceptual model, and method
@@ -66,22 +71,27 @@ For **qualitative research**: state sub-questions instead. Each sub-question sho
 The method section describes how you will answer your research question. At the proposal stage, it should be as detailed as possible, even if some specifics will be refined later.
 
 #### Participants / data source
+
 - Who are the participants (or what is the corpus)?
 - How will you recruit them (or sample the data)?
 - What is the intended sample size? Include a **power analysis** or justify your *N* (e.g., for experimental research: a medium effect size with 80% power for a between-subjects ANOVA requires ~52 per cell)
 - For qualitative research: how many participants, using what sampling logic?
 
 #### Design
+
 - State the type of design clearly
 - For experiments: write out the full design notation (e.g., *"a 2 [X: condition A vs. condition B] × 2 [Y: high vs. low] between-subjects experiment"*)
 - Name all independent, dependent, and control variables
 
 #### Procedure
+
 - Describe the study sequence step by step
 - For experiments: describe exactly what each condition will look like
 
 #### Measures / operationalization
+
 For each variable:
+
 - Name the scale or instrument
 - Cite the original source
 - State the number of items and the response format

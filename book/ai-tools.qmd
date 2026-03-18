@@ -5,7 +5,7 @@
 :::
 
 
-(Generative) AI tools are increasingly part of the academic workflow. The Department of Communication Science at VU Amsterdam permits the use of these tools — provided you use them **responsibly and transparently**. And don't be fooled, these tools may output text that sounds coherent or logical while being based on dubious sources. 
+(Generative) AI tools are increasingly part of the academic workflow. The Department of Communication Science at VU Amsterdam permits the use of these tools, provided you use them **responsibly and transparently**! And don't be fooled, these tools may output text that sounds coherent or logical while being based on dubious sources or being completely hallucinated. 
 
 ::: {.callout-important}
 ## The core principle: Human in the Lead
@@ -37,7 +37,7 @@ VU rules on generative AI: [vu.nl/en/student/examinations/generative-ai-your-use
 
 ### VU-licensed tools (recommended)
 
-Log in with your **VU email account** — your data will not be used to train the model:
+Log in with your **VU email account**, then your data will not be used to train the model:
 
 | Tool | Access |
 |------|--------|
@@ -55,7 +55,7 @@ Tools like **[ChatGPT](https://chatgpt.com)**, **[Elicit](https://elicit.com)**,
 
 ::: {.callout-warning}
 ## GDPR and data protection
-Never upload sensitive or personal data to any AI tool — not even VU-licensed ones. This includes: names, email addresses, research data, financial records, or company details from internships or partnerships.
+Never (!!!!) upload sensitive or personal data to any AI tool, not even VU-licensed ones. This includes: names, email addresses, research data, financial records, or company details from internships or partnerships. THERE IS NO EXCEPTION TO THIS!
 :::
 
 ## Responsible AI use by thesis phase
@@ -73,7 +73,7 @@ Never upload sensitive or personal data to any AI tool — not even VU-licensed 
 
 ::: {.callout-tip}
 ## Sustainability
-Every query to a generative AI system requires significant computing energy and thus has a large environmental impact. Use these tools mindfully and purposefully.
+Every query to a generative AI system requires significant computing energy and thus has a large environmental impact. Use these tools mindfully and purposefully. 
 :::
 
 ## The AI statement (required)

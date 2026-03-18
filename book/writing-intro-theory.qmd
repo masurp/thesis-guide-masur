@@ -9,7 +9,7 @@ Although it appears first in your thesis, the abstract is the **last section you
 - The key findings
 - The main conclusion
 
-Keep it to approximately half a page. Focus on the most important points — do not include citations.
+Keep it to approximately half a page. Focus on the most important points and do not include citations.
 
 ## The Introduction
 
@@ -17,11 +17,11 @@ The introduction presents your topic and frames the study. A good introduction i
 
 ### Standard structure
 
-1. **Reason** (*aanleiding*) — Why is this topic relevant now? What social or scientific development motivates this study?
-2. **Topic introduction and knowledge gap** — Briefly introduce the topic and name the gap in existing research (keep it short here; details follow in the Theory chapter)
-3. **Problem statement** — Articulate the specific research problem
-4. **Research question** — State the central RQ explicitly and clearly
-5. **Societal and scientific relevance** — Explain why answering this RQ matters
+1. **Reason** (*aanleiding*): Why is this topic relevant now? What social or scientific development motivates this study?
+2. **Topic introduction and knowledge gap**: Briefly introduce the topic and name the gap in existing research (keep it short here; details follow in the Theory chapter)
+3. **Problem statement**: Articulate the specific research problem
+4. **Research question**:  State the central RQ explicitly and clearly
+5. **Societal and scientific relevance**: Explain why answering this RQ matters
 
 For **qualitative research**, also briefly summarize your methodology (e.g., grounded theory) and methods (e.g., interviews, thematic analysis) at the end of the introduction.
 
@@ -37,7 +37,7 @@ For **qualitative research**, also briefly summarize your methodology (e.g., gro
 
 ## The Theory Chapter
 
-The theory chapter reviews the relevant literature and major theories, shows how your research builds on existing work, and leads to your hypotheses (or sub-questions for qualitative research).
+The theory chapter reviews the relevant literature and major theories, shows how your research builds on existing work, and leads to your hypotheses (or sub-questions for qualitative research). It is of utmost importance that it guides the reader towards the key goal (i.e., testing the hypotheses, answering the research questions). It should represent a logical rationale, not just a mix of found studies and summaries of their findings. 
 
 ### Structure
 
@@ -82,5 +82,5 @@ Each sub-section should follow a **cone shape**: start with general definitions 
 
 ::: {.callout-tip}
 ## The golden thread
-Your research question should be visible in every paragraph of your thesis. Whenever you are unsure whether a paragraph belongs, ask yourself: *does this contribute to answering my research question?*
+Your research question should be "visible" in every paragraph of your thesis. Whenever you are unsure whether a paragraph belongs, ask yourself: *does this contribute to answering my research question?* If not, it probably should not be included!
 :::

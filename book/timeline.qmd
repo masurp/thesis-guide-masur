@@ -1,5 +1,7 @@
 # Timeline & Key Deadlines
 
+On this page, you'll find a rough overview of the timeline and important deadlines. Some of them are fixed and you cannot miss them. Otherwise are more of a rough estimation of when certain milestones should happen. 
+
 ## Monthly overview
 
 The table below shows the typical tasks and tips for each month in the **February track** (P4–P6). The same structure applies to the September track, shifted by approximately seven months.
@@ -51,6 +53,6 @@ Not submitting at the first opportunity is treated the same as not showing up fo
 
 ## My availability
 
-I am available for guidance during the regular thesis period, **up to and including the first submission deadline**. During July and August**: Here I am generally not available for feedback
+I am available for supervision meetings during the regular thesis period, **up to and including the first submission deadline**. During July and August**, I am generally not available for feedback. 
 
-Plan accordingly — do not rely on my feedback during the summer months.
+Plan accordingly. Do not rely on my feedback during the summer months.

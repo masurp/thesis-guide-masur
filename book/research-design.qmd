@@ -4,15 +4,15 @@ Choosing the right research design is one of the most important decisions you ma
 
 ## Quantitative vs. qualitative research
 
-| | Quantitative | Qualitative |
+| | Quantitative (Confirmatory) | Qualitative |
 |---|---|---|
 | **Goal** | Test hypotheses about relationships between variables | Explore meanings, experiences, patterns |
 | **Data** | Numerical (survey responses, coded content) | Text, images, audio (interviews, documents) |
 | **Analysis** | Statistical tests (regression, ANOVA, etc.) | Thematic analysis, grounded theory, discourse analysis |
-| **Output** | Generalizable findings across populations | Rich, contextualized insights |
+| **Output** | Generalizable findings across populations | Rich, contextualized insights about individuals |
 | **Thesis structure** | Hypotheses + conceptual model | Sub-questions |
 
-Both approaches are valid in Communication Science. The choice depends on your research question and the state of knowledge in your area.
+Both approaches are valid in Communication Science. The choice depends on your research question and the state of knowledge in your area. I generally supervise quantitative research, but am open to qualitative or mixed-method approaches as well. 
 
 ## Survey research
 
@@ -21,7 +21,8 @@ A survey measures variables via a questionnaire administered to a sample of part
 **When to use it:** When you want to assess the prevalence of variables and/or examine associations and relationships between them in a larger sample.
 
 **Key considerations:**
-- Sample size and recruitment (specify power analysis rationale)
+
+- Sample size and recruitment (you need to conduct a power analysis beforehand, see e.g., [this blogpost](https://philippmasur.de/2024/05/28/what-is-statistical-power-and-how-can-i-conduct-power-analysis-in-r/))
 - Validated scales vs. self-constructed items
 - Platform (Qualtrics is the standard at VU)
 - Online convenience sampling vs. probability sampling
@@ -32,11 +33,19 @@ An experiment manipulates one or more independent variables and measures effects
 
 **When to use it:** When you want to establish causal effects.
 
+**Key considerations:**
+
+- Sample size and recruitment (you likewise need to conduct a power analysis beforehand, see e.g., [this blogpost](https://philippmasur.de/2024/05/28/what-is-statistical-power-and-how-can-i-conduct-power-analysis-in-r/))
+- Online convenience sampling vs. probability sampling
+- Stimulus design and setting
+- Use of deception (should participants know about the purpose of the study?)
+
 **Design notation:** Describe your design clearly, e.g.:
 
 > *"A 2 (color of logo: red vs. blue) × 2 (medium: TV vs. newspaper) between-subjects experiment with purchase intention as the dependent variable."*
 
 Always specify:
+
 - Whether it is between-subjects, within-subjects, or mixed
 - Whether randomization was used (it should be)
 - Whether you conducted a **manipulation check**
@@ -46,10 +55,12 @@ Always specify:
 Content analysis systematically codes and analyzes a corpus of media content (text, images, video, social media posts).
 
 **Types:**
+
 - **Manual content analysis**: human coders apply a codebook; requires intercoder reliability testing
 - **Automated content analysis**: computational methods (e.g., dictionary-based, supervised machine learning, LLMs) via R, AmCat, or Coosto
 
 **Key considerations:**
+
 - How was the corpus assembled? (sampling strategy)
 - What is the unit of analysis?
 - How were variables operationalized and coded?
@@ -60,11 +71,13 @@ Content analysis systematically codes and analyzes a corpus of media content (te
 Qualitative designs explore social phenomena in depth without the goal of statistical generalization.
 
 **Common approaches in Communication Science:**
+
 - **Interviews** (semi-structured, in-depth)
 - **Focus groups**
 - **Ethnographic observation**
 
 **Analysis frameworks:**
+
 - **Thematic analysis** — identifying recurring patterns across data
 - **Grounded theory** — building theory inductively from the data
 - **Discourse analysis** — analyzing how language constructs meaning
@@ -73,13 +86,13 @@ In qualitative theses, the method chapter describes the methodology (e.g., groun
 
 ## The analysis plan
 
-Your **Research Proposal must include an analysis plan** that specifies — for each hypothesis or sub-question — exactly which statistical test on which variables will be used to answer it. For example:
+Your **Research Proposal must include an analysis plan** that specifies (for each hypothesis or sub-question) exactly which statistical test on which variables will be used to answer it. For example:
 
 > *"H1 will be tested with a simple linear regression with social media exposure as the predictor and vaccine hesitancy as the outcome variable."*
 
-This plan prevents ad-hoc analysis decisions later. In the final thesis, the analysis plan is not a separate chapter — it is integrated into the Results section.
+This plan prevents ad-hoc analysis decisions later. In the final thesis, the analysis plan is not a separate chapter. Instead, it is integrated into the Results section.
 
 ::: {.callout-tip}
 ## Pre-registration
-Consider pre-registering your analysis plan on the Open Science Framework (OSF) before data collection. See [Open Science](open-science.qmd) for details.
+I strongly suggest to preregister your analysis plan on the Open Science Framework (OSF) before data collection. See [Open Science](open-science.qmd) for details. We will discuss this right before data collection. 
 :::

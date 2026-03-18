@@ -1,5 +1,7 @@
 # Supervision & Peer Feedback
 
+Supervision is generally very project-specific. If you are highly independent and highly motivated, I will gently guide you and otherwise leave you alone. If you feel completely lost and anxious, I will support you a bit more. Below, please find, however, how I usually approach supervision during MA thesis projects. 
+
 ## What you can expect from me as your supervisor
 
 I will guide you in:
@@ -7,25 +9,25 @@ I will guide you in:
 - Formulating an interesting and well-grounded research question and hypotheses
 - Writing a coherent, well-structured, and theoretically sound thesis
 - Designing a proper methodology and analysis plan
-- Giving focused feedback on each chapter — **once per chapter**
+- Giving focused feedback on each chapter (**once per chapter**)
 
 As a rule of thumb, I will provide feedback on:
 
 1. Your **introduction** (as part of the Thesis Plan feedback)
 2. Your **theory chapter and research design** (as part of the Research Proposal feedback)
-3. Your **complete methodology**
+3. Your **complete methodology** (right before data collection=)
 4. Your **method and results chapters**
 5. The **complete concept version** (focus: coherence and discussion/conclusion)
 
 ## What I expect from you
 
-A master's thesis student is expected to demonstrate the capacity to **independently** set up, conduct, and report an empirical research project. I am a guide — not a co-author.
+A master's thesis student is expected to demonstrate the capacity to **independently** set up, conduct, and report an empirical research project. I am a guide and supervisor — not a co-author.
 
 This means:
 
 - Show **initiative**: contact me with a clear agenda, not just general questions
 - Submit **high-quality drafts**: only submit versions that you (and your peers) cannot improve further on your own
-- **Do not ask me* about basic matters such as how to conduct a literature search, spell-checking, APA formatting, how to run R/SPSS tests, or things you have already been taught in your coursework
+- **Do not ask me* about basic matters such as how to conduct a literature search, spell-checking, APA formatting, how to run R/SPSS tests, or things you have already been taught in your coursework (many answers can also be found on this website!)
 
 For technical analysis questions (how to run tests in R or SPSS, how to report results), use:
 
@@ -36,12 +38,12 @@ For technical analysis questions (how to run tests in R or SPSS, how to report r
 
 ::: {.callout-warning}
 ## Feedback is only useful if you've done your part
-Feedback is pointless on text you know has flaws. Submit drafts only when you have already done everything you can to improve them — including peer feedback.
+Feedback is pointless on text you know has flaws. Submit drafts only when you have already done everything you can to improve them, including peer feedback.
 :::
 
 ## Thesis groups and peer feedback
 
-At times, I organize supervision in **thesis groups** of 2–4 students working on related topics. If that is the case, you will meet together especially in P4. As projects become more individualized, groups may split into smaller subgroups. Across the full trajectory, expect approximately **6–8 meetings** with me. 
+At times, I organize supervision in **thesis groups** of 2–4 students working on related topics or even collecting data together. If that is the case, you will meet together especially in P4. As projects become more individualized, groups may split into smaller subgroups or even individual meetings. Across the full trajectory, expect approximately **6–8 meetings** with me. 
 
 ### Peer feedback process
 
