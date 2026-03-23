@@ -2,11 +2,12 @@
 
 The method chapter is written in **past tense** and must be detailed enough that another researcher could fully **replicate your study**. It is highly standardized in structure.
 
-## Overall checklist
+::: {.callout-tip}
+## Language: Past tense
+Descriptions of *your* findings in the result section → **past tense** (*"The results showed that…"*)
 
-- [ ] Is the method section written in past tense?
-- [ ] Is the level of detail sufficient for replication?
-- [ ] Is there a clear fit between the method and the hypotheses/sub-questions?
+:::
+
 
 ## Quantitative research (survey and experiment)
 
@@ -82,3 +83,11 @@ The method chapter for qualitative research describes:
 - **Data analysis**: analytical approach (thematic analysis, grounded theory coding, discourse analysis), analytical materials
 
 All choices should be supported by methodological literature with proper APA citations.
+
+
+## Overall checklist
+
+- [ ] Is the method section written in past tense?
+- [ ] Is the level of detail sufficient for replication?
+- [ ] Is there a clear fit between the method and the hypotheses/sub-questions?
+

@@ -3,9 +3,9 @@
 The conclusion and discussion chapter is the final section of your thesis. It is where you step back from the data and reflect on the meaning, implications, and limitations of your findings.
 
 ::: {.callout-tip}
-## Language tense
+## Language: Present tense
 Descriptions of *your* findings → **past tense** (*"The results showed that…"*)
-Theoretical implications and conclusions → **present tense** (*"This suggests that…"*)
+But theoretical implications and conclusions → **present tense** (*"This suggests that…"*)
 :::
 
 ## Standard structure (use max. 3 subheadings)
@@ -49,7 +49,7 @@ Common mistakes to avoid:
 
 **Strengths:**
 
-- What methodological or conceptual strengths does your study have? (These give meaning to the limitations — there are always trade-offs)
+- What methodological or conceptual strengths does your study have? (These give meaning to the limitations. There are always trade-offs)
 
 **Limitations:**
 

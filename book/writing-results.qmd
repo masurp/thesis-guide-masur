@@ -4,6 +4,12 @@ The results section is a **matter-of-fact description** of your findings. It is 
 
 That said, good results sections are well-structured and nonetheless tell a coherent "story" that guides the reader through the analyses step by step. It should usually align with the order of the hypotheses or research questions. 
 
+::: {.callout-tip}
+## Language: Past tense
+Descriptions of *your* findings in the result section → **past tense** (*"The results showed that…"*)
+:::
+
+
 ## Structure for quantitative research
 
 Report sections in this order:
@@ -24,6 +30,12 @@ For each hypothesis:
 2. **Name the test** used and which variables are included (e.g., *"We conducted a linear regression with X as predictor and Y as outcome"*)
 3. **Report results** with all relevant statistics
 4. **State a brief conclusion** (e.g., *"H1 was supported"* or *"H1 was not supported"*)
+
+**Example:**
+
+>The percentage of posts with faces in the activity feed likewise had a moderate, positive
+effect on the intention to disclose oneself on the platform (F(2,567) = 53.97, p <.001, f = 0.436;
+see Fig 2B). H1d was hence supported. (Masur et al., 2021)
 
 Follow the same order as in the Theory chapter. Also briefly report non-significant findings — do not omit them.
 
@@ -77,3 +89,8 @@ In qualitative results, the chapter demonstrates your analysis and presents empi
 **Quotes** serve as illustrations — not as substitutes for analysis. Contextualize each quote. Format quotes in italics, indented. Use a respondent ID rather than identifying information.
 
 Avoid discussing theoretical implications extensively in the results section — save that for the Discussion.
+
+
+## References
+
+- Masur, P. K., DiFranzo, D. J., & Bazarova, N. N. (2021). Behavioral Contagion on Social Media: Effects of Social Norms, Design Interventions, and Critical Media Literacy on Self-Disclosure. PLOS One, 16(7). e0254670. https://doi.org/10.1371/journal.pone.0254670

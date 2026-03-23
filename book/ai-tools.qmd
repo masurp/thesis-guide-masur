@@ -5,7 +5,13 @@
 :::
 
 
-(Generative) AI tools are increasingly part of the academic workflow. The Department of Communication Science at VU Amsterdam permits the use of these tools, provided you use them **responsibly and transparently**! And don't be fooled, these tools may output text that sounds coherent or logical while being based on dubious sources or being completely hallucinated. 
+(Generative) AI tools are increasingly part of the academic workflow and will continue to be implemented in even more diverse ways. The Department of Communication Science at VU Amsterdam generally permits the use of these tools, provided you use them **responsibly, ethically, and transparently**! What constitutes such use, depends entirely on the nature of your research and the specific type of AI use you are planning to implement. 
+
+::: {.callout-warning}
+## Key problem: The stochastic parrot
+Current AIs, such as chatGPT, Gemini or Claude, are based on an architecture called transformers, which are - simply speaking - large prediction machines. Based on an input (e.g., a question), they deliver the most likely answer. They do not "know", "reason" or "think" in the human-sense. Their answer thus entirely depends on their training data and word similarities, which can be misleading and plain wrong. 
+Don't be fooled: these tools may output text that sounds coherent or logical, even convincing, while being based on dubious sources or completely hallucinated! 
+:::
 
 ::: {.callout-important}
 ## The core principle: Human in the Lead
@@ -25,7 +31,7 @@ Generative AI can be a useful sparring partner for brainstorming, gaining an ove
 
 ## Academic misconduct and fraud
 
-- **Never copy-paste AI-generated text** into your thesis without attribution — this is plagiarism
+- **Never copy-paste AI-generated text** into your thesis without attribution. This is plagiarism!
 - Using AI without transparency is **academic fraud**
 - If I doubt whether you have used AI responsibly, I will discuss this with you; persistent doubts go to the Examination Board
 
@@ -55,7 +61,9 @@ Tools like **[ChatGPT](https://chatgpt.com)**, **[Elicit](https://elicit.com)**,
 
 ::: {.callout-warning}
 ## GDPR and data protection
-Never (!!!!) upload sensitive or personal data to any AI tool, not even VU-licensed ones. This includes: names, email addresses, research data, financial records, or company details from internships or partnerships. THERE IS NO EXCEPTION TO THIS!
+Never (!!!!) upload sensitive or personal data (e.g., data you collected from participants) to any AI tool, not even VU-licensed ones. This includes: names, email addresses, research data, financial records, or company details from internships or partnerships. 
+
+THERE IS NO EXCEPTION TO THIS!
 :::
 
 ## Responsible AI use by thesis phase
@@ -63,17 +71,17 @@ Never (!!!!) upload sensitive or personal data to any AI tool, not even VU-licen
 | Thesis Phase | Responsible Use | Useful Tools |
 |---|---|---|
 | **Topic selection** | Brainstorming ideas, identifying research gaps, but always verify by cross-checking with relevant literature | [Gemini](https://gemini.google.com), [Elicit](https://elicit.com), [Perplexity](https://www.perplexity.ai) |
-| **Literature review** | Finding keywords/synonyms, searching articles, generating summaries (always verify originals) | [Elicit](https://elicit.com), [Scite](https://scite.ai), [Research Rabbit](https://www.researchrabbit.ai), [NotebookLM](https://notebooklm.google.com), [Undermind](https://www.undermind.ai), [Perplexity](https://www.perplexity.ai) |
-| **Research design** | Generating ideas, creating experimental stimuli (justify all choices yourself), cross-validate | [Gemini](https://gemini.google.com), [Qualtrics AI](https://www.qualtrics.com) |
+| **Literature review** | Finding keywords/synonyms, searching articles (although this is very limited and cannot replace a classic literature search), generating summaries (always verify based original source material) | [Gemini](https://gemini.google.com), [Elicit](https://elicit.com), [Scite](https://scite.ai), [Research Rabbit](https://www.researchrabbit.ai), [NotebookLM](https://notebooklm.google.com), [Undermind](https://www.undermind.ai), [Perplexity](https://www.perplexity.ai) |
+| **Research design** | Generating ideas, creating experimental stimuli (justify all choices yourself), cross-validate, develop items (evaluate carefully) | [Gemini](https://gemini.google.com), [Qualtrics AI](https://www.qualtrics.com) |
 | **Proposal writing** | Feedback on text you wrote; rephrasing, shortening, grammar | [Gemini](https://gemini.google.com), [Grammarly](https://www.grammarly.com), [Wordtune](https://www.wordtune.com) |
 | **Data collection** | In some cases, automating data collection (verify quality yourself, implemented validation procedures if possible) | [Gemini](https://gemini.google.com), [Google Forms](https://forms.google.com) |
-| **Data analysis** | Generating/debugging R code, creating visualizations (verify all output) | [Gemini](https://gemini.google.com), [NVivo](https://lumivero.com/products/nvivo/), [Orange3](https://orangedatamining.com) |
+| **Data analysis** | Generating/debugging R code, creating visualizations (verify all output), automated content analysis... | [Gemini](https://gemini.google.com), [Orange3](https://orangedatamining.com) |
 | **Writing the thesis** | Improving clarity and structure of your own text | [Gemini](https://gemini.google.com), [Grammarly](https://www.grammarly.com), [QuillBot](https://quillbot.com), [Wordtune](https://www.wordtune.com) |
 | **Revision & feedback** | Improving academic style, tone, consistency | [Gemini](https://gemini.google.com), [Grammarly](https://www.grammarly.com), [Hemingway Editor](https://hemingwayapp.com), [Trinka AI](https://www.trinka.ai) |
 
 ::: {.callout-tip}
 ## Sustainability
-Every query to a generative AI system requires significant computing energy and thus has a large environmental impact. Use these tools mindfully and purposefully. 
+Every query to a generative AI system requires significant computing energy and thus has a large environmental impact. Use these tools mindfully and purposefully! 
 :::
 
 ## The AI statement (required)

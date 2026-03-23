@@ -2,7 +2,7 @@
 
 ## The Abstract
 
-Although it appears first in your thesis, the abstract is the **last section you write**. It concisely summarizes:
+Although it appears first in your thesis, the abstract should be the **last section you write**. It concisely summarizes:
 
 - The reason for the study and the research question or hypotheses
 - The method used
@@ -11,9 +11,14 @@ Although it appears first in your thesis, the abstract is the **last section you
 
 Keep it to approximately half a page. Focus on the most important points and do not include citations.
 
+::: {.callout-tip}
+## The Perfect Abstract
+Check out this resource for how to write a top-notch abstract: https://www.nature.com/documents/nature-summary-paragraph.pdf
+:::
+
 ## The Introduction
 
-The introduction presents your topic and frames the study. A good introduction is **concise** and focuses on two questions: *"What has been done in this area?"* and *"Why is the current study useful?"*
+The introduction introduces the reader to your thesis. It presents your topic and frames the study by providing its scientific and societal relevance. A good introduction is **concise** and focuses on two questions: *"What has been done in this area?"* and *"Why is the current study useful?"*
 
 ### Standard structure
 
@@ -24,6 +29,65 @@ The introduction presents your topic and frames the study. A good introduction i
 5. **Societal and scientific relevance**: Explain why answering this RQ matters
 
 For **qualitative research**, also briefly summarize your methodology (e.g., grounded theory) and methods (e.g., interviews, thematic analysis) at the end of the introduction.
+
+### Example introduction 
+
+Mattis and colleagues (2025, Journal of Communication) begin their article on nudges in news recommenders with a statement on societal relevance: 
+
+>In recent years, there has been a growing interest in the notion
+of “democratic news recommender design” (Helberger,
+2019; Mattis et al., 2024b; Mitova et al., 2023; Vrijenhoek
+et al., 2021). Drawing on nudge theory (Thaler & Sunstein,
+2009), this line of research posits that news recommender
+systems can be viewed as choice architectures, where decisions
+on how to select, rank, and present news items can have
+implications for how people engage with and process news
+content (Knudsen, 2023; Mattis et al., 2024b). This may
+have positive downstream effects on democratically relevant
+outcomes, such as citizens’ political learning, political participation,
+or tolerance (Helberger & Wojcieszak, 2018; Mattis
+et al., 2024b).
+
+Their argument is basically that news recommenders needs to be better understood because they can influence how people learn about the world and thus participate in democracies. 
+
+They then move on to outline the research gap:
+
+> As of now, work on democratic news recommender design
+is still in its infancy, as many studies predominantly focus on
+conceptualizing potential approaches (Lorenz-Spreen et al.,
+2020; Mattis et al., 2024b; Vrijenhoek et al., 2021) and their
+ethical implications (Vermeulen, 2022). These studies often
+point to the potential of diversity-aware recommender design
+or nudging, but rarely test these assumptions (for exceptions
+see Heitz et al., 2022, 2023; Mattis et al., 2024a). Moreover,
+while the effects of democratic news recommender design are
+likely to transpire over longer periods of time, there are still
+rather few longitudinal research studies (for long-term studies
+that are an exception to this, see Heitz et al., 2022, 2023; Lee
+& Suh, 2022). Hence, we still know little about how nudging
+news engagement works over extended periods of time.
+
+They denote that experimental work in this area, particularly over longer periods of time, are missing. 
+
+Last, they explain how their present work addresses this app, while simultaneously summarizing the research design already: 
+
+>To provide more realistic insights into the promises of
+democratic news recommender design, we conducted a preregistered
+seven-day long field experiment with Informfully
+(Heitz et al., 2024a),1 a fully customizable content delivery
+platform that we used to mimic a news aggregator app;
+Informfully can be downloaded directly from Google Play
+and the iOS app store and provided respondents with a realistic
+news use experience, thereby maximizing external validity.
+Within this externally valid news aggregator app, we
+tested how a position nudge and accessibility nudge affect (a)
+the selection of, (b) the engagement with, and (c) the learning
+from environmental news. The position nudge denotes the
+deliberate prominent positioning of a particular article,
+whereas the accessibility nudge describes changes to an article
+that make its content easier to understand by lowering its
+syntactic text complexity.
+
 
 ### Checklist for the introduction
 
@@ -46,9 +110,44 @@ A theory chapter typically:
 1. Defines and explains the central constructs/concepts
 2. Builds a theoretical argument for the relationships between constructs
 3. Discusses relevant prior empirical findings
-4. Culminates in clearly formulated hypotheses (or sub-questions) and a conceptual model
+4. Combines both theory and empirical findings into a coherent rationale for your study
+5. Culminates in clearly formulated hypotheses (or sub-questions) and a conceptual model
 
 Each sub-section should follow a **cone shape**: start with general definitions and background, then narrow to specific relationships relevant to your hypotheses.
+
+::: {.callout-tip}
+## The golden thread
+Your research question should be "visible" in every paragraph of your thesis. Whenever you are unsure whether a paragraph belongs, ask yourself: *does this contribute to answering my research question?* If not, it probably should not be included!
+:::
+
+
+### Example theory section
+
+At the end of the first part of their paper, Schemer et al.. (2021) write e.g., the following:
+
+> Taken together, previous studies are inconclusive with respect to the overall relationship between
+the frequency of Internet or SNS use and subjective well-being. Some Internet applications or modes
+of use may be beneficial while others may be detrimental. A look at reviews and meta-analysis that
+summarized the primarily cross-sectional evidence suggests that studies documenting negative relationships
+outweigh those that found positive relationships (Huang, 2010; Steers, 2015). This finding
+may reflect that passive use of Internet applications is dominant (Escobar-Viera et al., 2018; Verduyn
+et al., 2015) or that processes that are detrimental to subjective well-being (negative feedback, upward
+comparisons, displacement of offline relationships) occur more frequently than processes that produce
+positive outcomes (positive feedback, building social capital, engage in identity exploration)
+when using Internet application like SNS (de Vries & Ku¨hne, 2015; Haferkamp & Kra¨mer, 2011).
+
+From this, they deduce the following hypothesis in this way:
+
+>Facing these negative net effects, the present study starts from the following between-person
+hypothesis (H1): Frequency of: (a) Internet use in general; and (b) SNS use in particular are negatively related
+to subjective well-being (between-person correlation).
+
+
+::: {.callout-warning}
+### Not just a summary of existing literature
+A good theory section present theoretical arguments that are supported by the existing literature and thus serves to rationalize the hypotheses. It is not a unstructured list of some related findings!
+:::
+
 
 ### Content checklist
 
@@ -80,7 +179,11 @@ Each sub-section should follow a **cone shape**: start with general definitions 
 - [ ] Are terms used consistently across theory, conceptual model, and method?
 - [ ] Is each hypothesis supported by 3–5 prior studies?
 
-::: {.callout-tip}
-## The golden thread
-Your research question should be "visible" in every paragraph of your thesis. Whenever you are unsure whether a paragraph belongs, ask yourself: *does this contribute to answering my research question?* If not, it probably should not be included!
-:::
+
+
+
+## References
+
+- Mattis, N., Heitz, L., Masur, P. K., Moeller, J., & van Atteveldt, W. (2025). Nudges for news recommenders: Prominent article positioning increases selection, engagement, and recall of environmental news, but reducing complexity does not. Journal of Communication. https://doi.org/10.1093/joc/jqaf019
+
+- Schemer, C., Masur, P. K., Geiss, S., Müller, P. & Schäfer, S. (2021). The impact of Internet and Social Media Use on Well-Being: A Longitudinal Analysis of Adolescents Across Nine Years. Journal of Computer-Mediated Communication, 26(1),1–21. https://doi.org/10.1093/jcmc/zmaa014
