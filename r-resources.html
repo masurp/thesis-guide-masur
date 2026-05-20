@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.3">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -76,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e44360b8a8db1e130c7792fece1c8032.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-08a5c36b55fd1a51d38bbe330105d6a3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -370,26 +370,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#getting-started-with-r" id="toc-getting-started-with-r" class="nav-link active" data-scroll-target="#getting-started-with-r"><span class="header-section-number">19.1</span> Getting started with R</a></li>
   <li><a href="#essential-packages" id="toc-essential-packages" class="nav-link" data-scroll-target="#essential-packages"><span class="header-section-number">19.2</span> Essential packages</a></li>
-  <li><a href="#common-analyses" id="toc-common-analyses" class="nav-link" data-scroll-target="#common-analyses"><span class="header-section-number">19.3</span> Common analyses</a>
+  <li><a href="#power-analysis" id="toc-power-analysis" class="nav-link" data-scroll-target="#power-analysis"><span class="header-section-number">19.3</span> Power analysis</a></li>
+  <li><a href="#common-analyses" id="toc-common-analyses" class="nav-link" data-scroll-target="#common-analyses"><span class="header-section-number">19.4</span> Common analyses</a>
   <ul class="collapse">
-  <li><a href="#descriptive-statistics-and-correlations" id="toc-descriptive-statistics-and-correlations" class="nav-link" data-scroll-target="#descriptive-statistics-and-correlations"><span class="header-section-number">19.3.1</span> Descriptive statistics and correlations</a></li>
-  <li><a href="#reliability-cronbachs-α" id="toc-reliability-cronbachs-α" class="nav-link" data-scroll-target="#reliability-cronbachs-α"><span class="header-section-number">19.3.2</span> Reliability (Cronbach’s α)</a></li>
-  <li><a href="#independent-samples-t-test" id="toc-independent-samples-t-test" class="nav-link" data-scroll-target="#independent-samples-t-test"><span class="header-section-number">19.3.3</span> Independent samples <em>t</em>-test</a></li>
-  <li><a href="#one-way-and-factorial-anova" id="toc-one-way-and-factorial-anova" class="nav-link" data-scroll-target="#one-way-and-factorial-anova"><span class="header-section-number">19.3.4</span> One-way and factorial ANOVA</a></li>
-  <li><a href="#linear-regression" id="toc-linear-regression" class="nav-link" data-scroll-target="#linear-regression"><span class="header-section-number">19.3.5</span> Linear regression</a></li>
-  <li><a href="#moderation-interaction-effects" id="toc-moderation-interaction-effects" class="nav-link" data-scroll-target="#moderation-interaction-effects"><span class="header-section-number">19.3.6</span> Moderation (interaction effects)</a></li>
-  <li><a href="#mediation-analysis" id="toc-mediation-analysis" class="nav-link" data-scroll-target="#mediation-analysis"><span class="header-section-number">19.3.7</span> Mediation analysis</a></li>
-  <li><a href="#manipuation-check-experiment" id="toc-manipuation-check-experiment" class="nav-link" data-scroll-target="#manipuation-check-experiment"><span class="header-section-number">19.3.8</span> Manipuation check (experiment)</a></li>
+  <li><a href="#descriptive-statistics-and-correlations" id="toc-descriptive-statistics-and-correlations" class="nav-link" data-scroll-target="#descriptive-statistics-and-correlations"><span class="header-section-number">19.4.1</span> Descriptive statistics and correlations</a></li>
+  <li><a href="#reliability-cronbachs-α-and-mcdonalds-ω" id="toc-reliability-cronbachs-α-and-mcdonalds-ω" class="nav-link" data-scroll-target="#reliability-cronbachs-α-and-mcdonalds-ω"><span class="header-section-number">19.4.2</span> Reliability (Cronbach’s α and McDonald’s ω)</a></li>
+  <li><a href="#independent-samples-t-test" id="toc-independent-samples-t-test" class="nav-link" data-scroll-target="#independent-samples-t-test"><span class="header-section-number">19.4.3</span> Independent samples <em>t</em>-test</a></li>
+  <li><a href="#one-way-and-factorial-anova" id="toc-one-way-and-factorial-anova" class="nav-link" data-scroll-target="#one-way-and-factorial-anova"><span class="header-section-number">19.4.4</span> One-way and factorial ANOVA</a></li>
+  <li><a href="#linear-regression" id="toc-linear-regression" class="nav-link" data-scroll-target="#linear-regression"><span class="header-section-number">19.4.5</span> Linear regression</a></li>
+  <li><a href="#moderation-interaction-effects" id="toc-moderation-interaction-effects" class="nav-link" data-scroll-target="#moderation-interaction-effects"><span class="header-section-number">19.4.6</span> Moderation (interaction effects)</a></li>
+  <li><a href="#cfa-and-sem-with-lavaan" id="toc-cfa-and-sem-with-lavaan" class="nav-link" data-scroll-target="#cfa-and-sem-with-lavaan"><span class="header-section-number">19.4.7</span> CFA and SEM with lavaan</a></li>
+  <li><a href="#mediation-analysis" id="toc-mediation-analysis" class="nav-link" data-scroll-target="#mediation-analysis"><span class="header-section-number">19.4.8</span> Mediation analysis</a></li>
+  <li><a href="#manipulation-check-experiment" id="toc-manipulation-check-experiment" class="nav-link" data-scroll-target="#manipulation-check-experiment"><span class="header-section-number">19.4.9</span> Manipulation check (experiment)</a></li>
   </ul></li>
-  <li><a href="#apa-formatted-reporting-in-r" id="toc-apa-formatted-reporting-in-r" class="nav-link" data-scroll-target="#apa-formatted-reporting-in-r"><span class="header-section-number">19.4</span> APA-formatted reporting in R</a>
+  <li><a href="#apa-formatted-reporting-in-r" id="toc-apa-formatted-reporting-in-r" class="nav-link" data-scroll-target="#apa-formatted-reporting-in-r"><span class="header-section-number">19.5</span> APA-formatted reporting in R</a>
   <ul class="collapse">
-  <li><a href="#the-report-package" id="toc-the-report-package" class="nav-link" data-scroll-target="#the-report-package"><span class="header-section-number">19.4.1</span> The <code>report</code> package</a></li>
-  <li><a href="#the-apatables-package" id="toc-the-apatables-package" class="nav-link" data-scroll-target="#the-apatables-package"><span class="header-section-number">19.4.2</span> The <code>apaTables</code> package</a></li>
-  <li><a href="#papaja-apa-manuscripts-in-quartor-markdown" id="toc-papaja-apa-manuscripts-in-quartor-markdown" class="nav-link" data-scroll-target="#papaja-apa-manuscripts-in-quartor-markdown"><span class="header-section-number">19.4.3</span> papaja (APA manuscripts in Quarto/R Markdown)</a></li>
-  <li><a href="#visualizations-with-ggplot2" id="toc-visualizations-with-ggplot2" class="nav-link" data-scroll-target="#visualizations-with-ggplot2"><span class="header-section-number">19.4.4</span> Visualizations with ggplot2</a></li>
+  <li><a href="#the-report-package" id="toc-the-report-package" class="nav-link" data-scroll-target="#the-report-package"><span class="header-section-number">19.5.1</span> The <code>report</code> package</a></li>
+  <li><a href="#the-apatables-package" id="toc-the-apatables-package" class="nav-link" data-scroll-target="#the-apatables-package"><span class="header-section-number">19.5.2</span> The <code>apaTables</code> package</a></li>
+  <li><a href="#papaja-apa-manuscripts-in-quartor-markdown" id="toc-papaja-apa-manuscripts-in-quartor-markdown" class="nav-link" data-scroll-target="#papaja-apa-manuscripts-in-quartor-markdown"><span class="header-section-number">19.5.3</span> papaja (APA manuscripts in Quarto/R Markdown)</a></li>
+  <li><a href="#visualizations-with-ggplot2" id="toc-visualizations-with-ggplot2" class="nav-link" data-scroll-target="#visualizations-with-ggplot2"><span class="header-section-number">19.5.4</span> Visualizations with ggplot2</a></li>
   </ul></li>
-  <li><a href="#keeping-your-syntax-clean" id="toc-keeping-your-syntax-clean" class="nav-link" data-scroll-target="#keeping-your-syntax-clean"><span class="header-section-number">19.5</span> Keeping your syntax clean</a></li>
-  <li><a href="#getting-help-with-r-code" id="toc-getting-help-with-r-code" class="nav-link" data-scroll-target="#getting-help-with-r-code"><span class="header-section-number">19.6</span> Getting help with R code</a></li>
+  <li><a href="#keeping-your-syntax-clean" id="toc-keeping-your-syntax-clean" class="nav-link" data-scroll-target="#keeping-your-syntax-clean"><span class="header-section-number">19.6</span> Keeping your syntax clean</a></li>
+  <li><a href="#getting-help-with-r-code" id="toc-getting-help-with-r-code" class="nav-link" data-scroll-target="#getting-help-with-r-code"><span class="header-section-number">19.7</span> Getting help with R code</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/masurp/thesis-guide-masur/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -478,203 +480,258 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>,   <span class="co"># data manipulation and visualization (dplyr, ggplot2, tidyr, ...)</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"haven"</span>,       <span class="co"># import SPSS (.sav) and Stata files</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"psych"</span>,       <span class="co"># reliability (alpha), descriptive stats, factor analysis</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"psych"</span>,       <span class="co"># reliability (alpha, omega), descriptive stats, factor analysis</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"car"</span>,         <span class="co"># ANOVA, Levene's test, recoding</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lme4"</span>,        <span class="co"># multilevel / mixed models</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lavaan"</span>,      <span class="co"># SEM and mediation/moderation (alternative to PROCESS)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"lavaan"</span>,      <span class="co"># SEM and CFA</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"mediation"</span>,   <span class="co"># causal mediation analysis</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"effectsize"</span>,  <span class="co"># Cohen's d, eta-squared, omega-squared</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"apaTables"</span>,   <span class="co"># export APA-formatted tables to Word</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"papaja"</span>,      <span class="co"># APA-style reporting in R Markdown / Quarto</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"report"</span>       <span class="co"># automatic plain-language results reporting</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"pwr"</span>,         <span class="co"># a priori power analysis</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"interactions"</span>,<span class="co"># interaction plots for moderation</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"apaTables"</span>,   <span class="co"># export APA-formatted tables to Word</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"papaja"</span>,      <span class="co"># APA-style reporting in R Markdown / Quarto</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">"report"</span>       <span class="co"># automatic plain-language results reporting</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="common-analyses" class="level2" data-number="19.3">
-<h2 data-number="19.3" class="anchored" data-anchor-id="common-analyses"><span class="header-section-number">19.3</span> Common analyses</h2>
-<section id="descriptive-statistics-and-correlations" class="level3" data-number="19.3.1">
-<h3 data-number="19.3.1" class="anchored" data-anchor-id="descriptive-statistics-and-correlations"><span class="header-section-number">19.3.1</span> Descriptive statistics and correlations</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Descriptive statistics</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(data[, <span class="fu">c</span>(<span class="st">"var1"</span>, <span class="st">"var2"</span>, <span class="st">"var3"</span>)])</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation matrix (APA-ready)</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(apaTables)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">apa.cor.table</span>(data[, <span class="fu">c</span>(<span class="st">"var1"</span>, <span class="st">"var2"</span>, <span class="st">"var3"</span>)],</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">filename =</span> <span class="st">"Table1_correlations.doc"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="power-analysis" class="level2" data-number="19.3">
+<h2 data-number="19.3" class="anchored" data-anchor-id="power-analysis"><span class="header-section-number">19.3</span> Power analysis</h2>
+<p>Run an <strong>a priori power analysis</strong> before data collection to determine the required sample size. The <code>pwr</code> package covers the most common designs. See the <a href="./writing-method.html">Method chapter</a> for guidance on choosing and justifying the effect size, and <a href="https://philippmasur.de/2024/05/28/what-is-statistical-power-and-how-can-i-conduct-power-analysis-in-r/">this blog post</a> for a detailed conceptual introduction.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pwr)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Experiment: independent-samples t-test (two groups)</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">pwr.t.test</span>(<span class="at">d =</span> <span class="fl">0.40</span>, <span class="at">sig.level =</span> .<span class="dv">05</span>, <span class="at">power =</span> .<span class="dv">80</span>, <span class="at">type =</span> <span class="st">"two.sample"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Survey: correlation or simple regression</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">pwr.r.test</span>(<span class="at">r =</span> .<span class="dv">20</span>, <span class="at">sig.level =</span> .<span class="dv">05</span>, <span class="at">power =</span> .<span class="dv">80</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiple regression (u = number of predictors; f2 = R²/(1−R²))</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">pwr.f2.test</span>(<span class="at">u =</span> <span class="dv">3</span>, <span class="at">f2 =</span> .<span class="dv">06</span>, <span class="at">sig.level =</span> .<span class="dv">05</span>, <span class="at">power =</span> .<span class="dv">80</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Leave the argument you want to solve for out of the call — <code>pwr</code> will compute it. The examples above all solve for <code>n</code> (sample size). To check achieved power for a given <em>N</em>, replace <code>power = .80</code> with <code>n = &lt;your N&gt;</code> and omit <code>power</code>.</p>
+<p><strong>Reporting template:</strong></p>
+<blockquote class="blockquote">
+<p><em>“Based on [cite prior study], we expected a small-to-medium effect (r = .20 / d = 0.40). A power analysis (α = .05, 1 − β = .80) indicated a required sample of N = XX (pwr package; Champely, 2020).”</em></p>
+</blockquote>
 </section>
-<section id="reliability-cronbachs-α" class="level3" data-number="19.3.2">
-<h3 data-number="19.3.2" class="anchored" data-anchor-id="reliability-cronbachs-α"><span class="header-section-number">19.3.2</span> Reliability (Cronbach’s α)</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Select items belonging to one scale</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">alpha</span>(data[, <span class="fu">c</span>(<span class="st">"item1"</span>, <span class="st">"item2"</span>, <span class="st">"item3"</span>, <span class="st">"item4"</span>)])</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at: raw_alpha (Cronbach's α)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="common-analyses" class="level2" data-number="19.4">
+<h2 data-number="19.4" class="anchored" data-anchor-id="common-analyses"><span class="header-section-number">19.4</span> Common analyses</h2>
+<section id="descriptive-statistics-and-correlations" class="level3" data-number="19.4.1">
+<h3 data-number="19.4.1" class="anchored" data-anchor-id="descriptive-statistics-and-correlations"><span class="header-section-number">19.4.1</span> Descriptive statistics and correlations</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Descriptive statistics</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(data[, <span class="fu">c</span>(<span class="st">"var1"</span>, <span class="st">"var2"</span>, <span class="st">"var3"</span>)])</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation matrix (APA-ready)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(apaTables)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">apa.cor.table</span>(data[, <span class="fu">c</span>(<span class="st">"var1"</span>, <span class="st">"var2"</span>, <span class="st">"var3"</span>)],</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">filename =</span> <span class="st">"Table1_correlations.doc"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="independent-samples-t-test" class="level3" data-number="19.3.3">
-<h3 data-number="19.3.3" class="anchored" data-anchor-id="independent-samples-t-test"><span class="header-section-number">19.3.3</span> Independent samples <em>t</em>-test</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test whether group means differ</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(outcome <span class="sc">~</span> group, <span class="at">data =</span> data, <span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect size</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">cohens_d</span>(outcome <span class="sc">~</span> group, <span class="at">data =</span> data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="reliability-cronbachs-α-and-mcdonalds-ω" class="level3" data-number="19.4.2">
+<h3 data-number="19.4.2" class="anchored" data-anchor-id="reliability-cronbachs-α-and-mcdonalds-ω"><span class="header-section-number">19.4.2</span> Reliability (Cronbach’s α and McDonald’s ω)</h3>
+<p>APA 7 recommends reporting McDonald’s ω alongside or instead of Cronbach’s α. Both are available in the <code>psych</code> package.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Cronbach's α</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">alpha</span>(data[, <span class="fu">c</span>(<span class="st">"item1"</span>, <span class="st">"item2"</span>, <span class="st">"item3"</span>, <span class="st">"item4"</span>)])</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at: raw_alpha</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># McDonald's ω (preferred in APA 7)</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">omega</span>(data[, <span class="fu">c</span>(<span class="st">"item1"</span>, <span class="st">"item2"</span>, <span class="st">"item3"</span>, <span class="st">"item4"</span>)], <span class="at">nfactors =</span> <span class="dv">1</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at: omega.tot (total omega)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Report as: <em>“The scale showed good reliability (α = .84, ω = .86).”</em></p>
+</section>
+<section id="independent-samples-t-test" class="level3" data-number="19.4.3">
+<h3 data-number="19.4.3" class="anchored" data-anchor-id="independent-samples-t-test"><span class="header-section-number">19.4.3</span> Independent samples <em>t</em>-test</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Test whether group means differ</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(outcome <span class="sc">~</span> group, <span class="at">data =</span> data, <span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect size</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">cohens_d</span>(outcome <span class="sc">~</span> group, <span class="at">data =</span> data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Report as: <em>t</em>(df) = X.XX, <em>p</em> = .XXX, <em>d</em> = X.XX</p>
 </section>
-<section id="one-way-and-factorial-anova" class="level3" data-number="19.3.4">
-<h3 data-number="19.3.4" class="anchored" data-anchor-id="one-way-and-factorial-anova"><span class="header-section-number">19.3.4</span> One-way and factorial ANOVA</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Factorial ANOVA (e.g., 2x2 between-subjects experiment)</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> factor_a <span class="sc">*</span> factor_b, <span class="at">data =</span> data)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(model, <span class="at">type =</span> <span class="st">"III"</span>)   <span class="co"># Type III sums of squares</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect size</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">eta_squared</span>(model, <span class="at">partial =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="one-way-and-factorial-anova" class="level3" data-number="19.4.4">
+<h3 data-number="19.4.4" class="anchored" data-anchor-id="one-way-and-factorial-anova"><span class="header-section-number">19.4.4</span> One-way and factorial ANOVA</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Factorial ANOVA (e.g., 2x2 between-subjects experiment)</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> factor_a <span class="sc">*</span> factor_b, <span class="at">data =</span> data)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">Anova</span>(model, <span class="at">type =</span> <span class="st">"III"</span>)   <span class="co"># Type III sums of squares</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Effect size</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">eta_squared</span>(model, <span class="at">partial =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Report as: <em>F</em>(df1, df2) = X.XX, <em>p</em> = .XXX, η²_p = .XX</p>
 </section>
-<section id="linear-regression" class="level3" data-number="19.3.5">
-<h3 data-number="19.3.5" class="anchored" data-anchor-id="linear-regression"><span class="header-section-number">19.3.5</span> Linear regression</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple regression</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> predictor, <span class="at">data =</span> data)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiple regression</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> predictor1 <span class="sc">+</span> predictor2 <span class="sc">+</span> covariate, <span class="at">data =</span> data)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model2)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardized coefficients</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">standardize_parameters</span>(model2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="linear-regression" class="level3" data-number="19.4.5">
+<h3 data-number="19.4.5" class="anchored" data-anchor-id="linear-regression"><span class="header-section-number">19.4.5</span> Linear regression</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple regression</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> predictor, <span class="at">data =</span> data)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiple regression</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> predictor1 <span class="sc">+</span> predictor2 <span class="sc">+</span> covariate, <span class="at">data =</span> data)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model2)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardized coefficients</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="fu">standardize_parameters</span>(model2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Report as: <em>b</em> = X.XX, <em>SE</em> = X.XX, 95% CI [XX, XX], <em>β</em> = X.XX, <em>p</em> = .XXX</p>
 <p>For more comprehensive tutorials, see <a href="https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/simple_modeling.md">here</a>.</p>
 </section>
-<section id="moderation-interaction-effects" class="level3" data-number="19.3.6">
-<h3 data-number="19.3.6" class="anchored" data-anchor-id="moderation-interaction-effects"><span class="header-section-number">19.3.6</span> Moderation (interaction effects)</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Center continuous predictors before creating interaction term</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>pred_c     <span class="ot">&lt;-</span> <span class="fu">scale</span>(data<span class="sc">$</span>predictor, <span class="at">center =</span> <span class="cn">TRUE</span>, <span class="at">scale =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>moderator_c <span class="ot">&lt;-</span> <span class="fu">scale</span>(data<span class="sc">$</span>moderator, <span class="at">center =</span> <span class="cn">TRUE</span>, <span class="at">scale =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>model_mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> pred_c <span class="sc">*</span> moderator_c, <span class="at">data =</span> data)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_mod)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize interaction with ggplot2 or the 'interactions' package</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(interactions)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="fu">interact_plot</span>(model_mod, <span class="at">pred =</span> pred_c, <span class="at">modx =</span> moderator_c)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="moderation-interaction-effects" class="level3" data-number="19.4.6">
+<h3 data-number="19.4.6" class="anchored" data-anchor-id="moderation-interaction-effects"><span class="header-section-number">19.4.6</span> Moderation (interaction effects)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Center continuous predictors before creating interaction term</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>pred_c     <span class="ot">&lt;-</span> <span class="fu">scale</span>(data<span class="sc">$</span>predictor, <span class="at">center =</span> <span class="cn">TRUE</span>, <span class="at">scale =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>moderator_c <span class="ot">&lt;-</span> <span class="fu">scale</span>(data<span class="sc">$</span>moderator, <span class="at">center =</span> <span class="cn">TRUE</span>, <span class="at">scale =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>model_mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> pred_c <span class="sc">*</span> moderator_c, <span class="at">data =</span> data)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_mod)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize interaction with ggplot2 or the 'interactions' package</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(interactions)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="fu">interact_plot</span>(model_mod, <span class="at">pred =</span> pred_c, <span class="at">modx =</span> moderator_c)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="mediation-analysis" class="level3" data-number="19.3.7">
-<h3 data-number="19.3.7" class="anchored" data-anchor-id="mediation-analysis"><span class="header-section-number">19.3.7</span> Mediation analysis</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using the 'mediation' package (bootstrapped indirect effects)</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mediation)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: model for mediator</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>m_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(mediator <span class="sc">~</span> predictor, <span class="at">data =</span> data)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: model for outcome</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>y_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> predictor <span class="sc">+</span> mediator, <span class="at">data =</span> data)</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Bootstrap mediation</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>med_out <span class="ot">&lt;-</span> <span class="fu">mediate</span>(m_model, y_model,</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>                   <span class="at">treat =</span> <span class="st">"predictor"</span>, <span class="at">mediator =</span> <span class="st">"mediator"</span>,</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>                   <span class="at">boot =</span> <span class="cn">TRUE</span>, <span class="at">sims =</span> <span class="dv">5000</span>)</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(med_out)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="cfa-and-sem-with-lavaan" class="level3" data-number="19.4.7">
+<h3 data-number="19.4.7" class="anchored" data-anchor-id="cfa-and-sem-with-lavaan"><span class="header-section-number">19.4.7</span> CFA and SEM with lavaan</h3>
+<p>The <code>lavaan</code> package handles confirmatory factor analysis (CFA) and structural equation modeling (SEM). Use CFA to validate your measurement model before testing structural paths.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lavaan)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># --- CFA: validate a single scale ---</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>model_cfa <span class="ot">&lt;-</span> <span class="st">'</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="st">  privacy_concern =~ pc1 + pc2 + pc3 + pc4</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="st">'</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>fit_cfa <span class="ot">&lt;-</span> <span class="fu">cfa</span>(model_cfa, <span class="at">data =</span> data)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit_cfa, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Key fit indices: CFI, RMSEA (+ 90% CI), SRMR</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Target: CFI ≥ .95, RMSEA ≤ .06, SRMR ≤ .08</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># --- SEM: test structural paths ---</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>model_sem <span class="ot">&lt;-</span> <span class="st">'</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="st">  # Measurement model</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="st">  privacy_concern =~ pc1 + pc2 + pc3 + pc4</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="st">  disclosure      =~ sd1 + sd2 + sd3</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="st">  # Structural path</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="st">  disclosure ~ privacy_concern</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="st">'</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>fit_sem <span class="ot">&lt;-</span> <span class="fu">sem</span>(model_sem, <span class="at">data =</span> data)</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit_sem, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Report fit indices and standardized path coefficients (see <a href="./writing-results.html">Results chapter</a> for reporting conventions).</p>
+<p>For a step-by-step tutorial, see the <a href="https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/mediation_analysis.md">CCS Amsterdam SEM tutorial</a>.</p>
+</section>
+<section id="mediation-analysis" class="level3" data-number="19.4.8">
+<h3 data-number="19.4.8" class="anchored" data-anchor-id="mediation-analysis"><span class="header-section-number">19.4.8</span> Mediation analysis</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using the 'mediation' package (bootstrapped indirect effects)</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mediation)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: model for mediator</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>m_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(mediator <span class="sc">~</span> predictor, <span class="at">data =</span> data)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: model for outcome</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>y_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> predictor <span class="sc">+</span> mediator, <span class="at">data =</span> data)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Bootstrap mediation</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>med_out <span class="ot">&lt;-</span> <span class="fu">mediate</span>(m_model, y_model,</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>                   <span class="at">treat =</span> <span class="st">"predictor"</span>, <span class="at">mediator =</span> <span class="st">"mediator"</span>,</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>                   <span class="at">boot =</span> <span class="cn">TRUE</span>, <span class="at">sims =</span> <span class="dv">5000</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(med_out)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Alternatively, you can also use <strong>lavaan</strong> for structural equation modeling in R to run similar analyses (see <a href="https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/mediation_analysis.md">this tutorial</a>)</p>
 </section>
-<section id="manipuation-check-experiment" class="level3" data-number="19.3.8">
-<h3 data-number="19.3.8" class="anchored" data-anchor-id="manipuation-check-experiment"><span class="header-section-number">19.3.8</span> Manipuation check (experiment)</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Did participants in different conditions perceive the manipulation differently?</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(manipulation_check <span class="sc">~</span> condition, <span class="at">data =</span> data)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># For 2x2 design</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>aov_result <span class="ot">&lt;-</span> <span class="fu">aov</span>(manipulation_check <span class="sc">~</span> factor_a <span class="sc">*</span> factor_b, <span class="at">data =</span> data)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(aov_result)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="manipulation-check-experiment" class="level3" data-number="19.4.9">
+<h3 data-number="19.4.9" class="anchored" data-anchor-id="manipulation-check-experiment"><span class="header-section-number">19.4.9</span> Manipulation check (experiment)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Did participants in different conditions perceive the manipulation differently?</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(manipulation_check <span class="sc">~</span> condition, <span class="at">data =</span> data)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># For 2x2 design</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>aov_result <span class="ot">&lt;-</span> <span class="fu">aov</span>(manipulation_check <span class="sc">~</span> factor_a <span class="sc">*</span> factor_b, <span class="at">data =</span> data)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(aov_result)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
-<section id="apa-formatted-reporting-in-r" class="level2" data-number="19.4">
-<h2 data-number="19.4" class="anchored" data-anchor-id="apa-formatted-reporting-in-r"><span class="header-section-number">19.4</span> APA-formatted reporting in R</h2>
-<section id="the-report-package" class="level3" data-number="19.4.1">
-<h3 data-number="19.4.1" class="anchored" data-anchor-id="the-report-package"><span class="header-section-number">19.4.1</span> The <code>report</code> package</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(report)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> predictor, <span class="at">data =</span> data)</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">report</span>(model)</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Returns a plain-language sentence you can adapt for your results section</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="apa-formatted-reporting-in-r" class="level2" data-number="19.5">
+<h2 data-number="19.5" class="anchored" data-anchor-id="apa-formatted-reporting-in-r"><span class="header-section-number">19.5</span> APA-formatted reporting in R</h2>
+<section id="the-report-package" class="level3" data-number="19.5.1">
+<h3 data-number="19.5.1" class="anchored" data-anchor-id="the-report-package"><span class="header-section-number">19.5.1</span> The <code>report</code> package</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(report)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(outcome <span class="sc">~</span> predictor, <span class="at">data =</span> data)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">report</span>(model)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Returns a plain-language sentence you can adapt for your results section</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="the-apatables-package" class="level3" data-number="19.4.2">
-<h3 data-number="19.4.2" class="anchored" data-anchor-id="the-apatables-package"><span class="header-section-number">19.4.2</span> The <code>apaTables</code> package</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(apaTables)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># APA regression table exported to Word</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">apa.reg.table</span>(model1, model2,</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">filename =</span> <span class="st">"Table2_regression.doc"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="papaja-apa-manuscripts-in-quartor-markdown" class="level3" data-number="19.4.3">
-<h3 data-number="19.4.3" class="anchored" data-anchor-id="papaja-apa-manuscripts-in-quartor-markdown"><span class="header-section-number">19.4.3</span> papaja (APA manuscripts in Quarto/R Markdown)</h3>
-<p>If you are writing your thesis in R Markdown or Quarto, the <a href="https://frederikaust.com/papaja_man/">papaja</a> package provides APA-formatted output. Use <code>apa_print()</code> to inline statistics:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(papaja)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="fu">t.test</span>(outcome <span class="sc">~</span> group, <span class="at">data =</span> data)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">apa_print</span>(result)<span class="sc">$</span>statistic   <span class="co"># → "t(48) = 2.34, p = .023"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="visualizations-with-ggplot2" class="level3" data-number="19.4.4">
-<h3 data-number="19.4.4" class="anchored" data-anchor-id="visualizations-with-ggplot2"><span class="header-section-number">19.4.4</span> Visualizations with ggplot2</h3>
-<p><code>ggplot2</code> (part of the tidyverse) is the standard tool for creating publication-quality figures in R. It builds plots in layers using a consistent grammar: data → aesthetics → geometric objects.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<section id="the-apatables-package" class="level3" data-number="19.5.2">
+<h3 data-number="19.5.2" class="anchored" data-anchor-id="the-apatables-package"><span class="header-section-number">19.5.2</span> The <code>apaTables</code> package</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(apaTables)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot with a regression line</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> predictor, <span class="at">y =</span> outcome)) <span class="sc">+</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Effect of X on Y"</span>,</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Predictor"</span>, <span class="at">y =</span> <span class="st">"Outcome"</span>) <span class="sc">+</span></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Bar chart of group means with error bars</span></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(condition) <span class="sc">|&gt;</span></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(outcome), <span class="at">se =</span> <span class="fu">sd</span>(outcome) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>())) <span class="sc">|&gt;</span></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean, <span class="at">fill =</span> condition)) <span class="sc">+</span></span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> mean <span class="sc">-</span> se, <span class="at">ymax =</span> mean <span class="sc">+</span> se), <span class="at">width =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Condition"</span>, <span class="at">y =</span> <span class="st">"Mean outcome"</span>) <span class="sc">+</span></span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># APA regression table exported to Word</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">apa.reg.table</span>(model1, model2,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">filename =</span> <span class="st">"Table2_regression.doc"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="papaja-apa-manuscripts-in-quartor-markdown" class="level3" data-number="19.5.3">
+<h3 data-number="19.5.3" class="anchored" data-anchor-id="papaja-apa-manuscripts-in-quartor-markdown"><span class="header-section-number">19.5.3</span> papaja (APA manuscripts in Quarto/R Markdown)</h3>
+<p>If you are writing your thesis in R Markdown or Quarto, the <a href="https://frederikaust.com/papaja_man/">papaja</a> package provides APA-formatted output. Use <code>apa_print()</code> to inline statistics:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(papaja)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="fu">t.test</span>(outcome <span class="sc">~</span> group, <span class="at">data =</span> data)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">apa_print</span>(result)<span class="sc">$</span>statistic   <span class="co"># → "t(48) = 2.34, p = .023"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="visualizations-with-ggplot2" class="level3" data-number="19.5.4">
+<h3 data-number="19.5.4" class="anchored" data-anchor-id="visualizations-with-ggplot2"><span class="header-section-number">19.5.4</span> Visualizations with ggplot2</h3>
+<p><code>ggplot2</code> (part of the tidyverse) is the standard tool for creating publication-quality figures in R. It builds plots in layers using a consistent grammar: data → aesthetics → geometric objects.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot with a regression line</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> predictor, <span class="at">y =</span> outcome)) <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Effect of X on Y"</span>,</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Predictor"</span>, <span class="at">y =</span> <span class="st">"Outcome"</span>) <span class="sc">+</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Bar chart of group means with error bars</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>data <span class="sc">|&gt;</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(condition) <span class="sc">|&gt;</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(outcome), <span class="at">se =</span> <span class="fu">sd</span>(outcome) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>())) <span class="sc">|&gt;</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> condition, <span class="at">y =</span> mean, <span class="at">fill =</span> condition)) <span class="sc">+</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> mean <span class="sc">-</span> se, <span class="at">ymax =</span> mean <span class="sc">+</span> se), <span class="at">width =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Condition"</span>, <span class="at">y =</span> <span class="st">"Mean outcome"</span>) <span class="sc">+</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>For a comprehensive step-by-step tutorial on data visualization with ggplot2, see the <a href="https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/r-tidy-3_7-visualization.md">CCS Amsterdam visualization tutorial</a>.</p>
 </section>
 </section>
-<section id="keeping-your-syntax-clean" class="level2" data-number="19.5">
-<h2 data-number="19.5" class="anchored" data-anchor-id="keeping-your-syntax-clean"><span class="header-section-number">19.5</span> Keeping your syntax clean</h2>
+<section id="keeping-your-syntax-clean" class="level2" data-number="19.6">
+<h2 data-number="19.6" class="anchored" data-anchor-id="keeping-your-syntax-clean"><span class="header-section-number">19.6</span> Keeping your syntax clean</h2>
 <p>Good syntax habits matter — I need to be able to reproduce your analyses from your raw data. You can use both a standard R file (.r) or an RMarkdown file (.rmd).</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================================</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># MA Thesis Analysis — [Your Name] — [Date]</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================================</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 0. Load packages ----</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Import data ----</span></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>data_raw <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="st">"data/raw_data.sav"</span>)</span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Data cleaning ----</span></span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove incomplete responses (n = 9)</span></span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>data_clean <span class="ot">&lt;-</span> data_raw <span class="sc">|&gt;</span></span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(progress <span class="sc">==</span> <span class="dv">100</span>)</span>
-<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Compute scale scores ----</span></span>
-<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Scale: Vaccine Hesitancy (α = .82 in original; check below)</span></span>
-<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>data_clean <span class="ot">&lt;-</span> data_clean <span class="sc">|&gt;</span></span>
-<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">vacc_hes =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">c</span>(vh1, vh2, vh3, vh4, vh5)),</span>
-<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>                              <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Descriptive statistics ----</span></span>
-<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(data_clean[, <span class="fu">c</span>(<span class="st">"vacc_hes"</span>, <span class="st">"soc_media_exp"</span>, <span class="st">"age"</span>)])</span>
-<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. H1: Regression of social media exposure on vaccine hesitancy ----</span></span>
-<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>h1_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(vacc_hes <span class="sc">~</span> soc_media_exp, <span class="at">data =</span> data_clean)</span>
-<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(h1_model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================================</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># MA Thesis Analysis — [Your Name] — [Date]</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================================</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 0. Load packages ----</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Import data ----</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>data_raw <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="st">"data/raw_data.sav"</span>)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Data cleaning ----</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove incomplete responses (n = 9)</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>data_clean <span class="ot">&lt;-</span> data_raw <span class="sc">|&gt;</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(progress <span class="sc">==</span> <span class="dv">100</span>)</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Compute scale scores ----</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Scale: Vaccine Hesitancy (α = .82 in original; check below)</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>data_clean <span class="ot">&lt;-</span> data_clean <span class="sc">|&gt;</span></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">vacc_hes =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">c</span>(vh1, vh2, vh3, vh4, vh5)),</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>                              <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Descriptive statistics ----</span></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(data_clean[, <span class="fu">c</span>(<span class="st">"vacc_hes"</span>, <span class="st">"soc_media_exp"</span>, <span class="st">"age"</span>)])</span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. H1: Regression of social media exposure on vaccine hesitancy ----</span></span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a>h1_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(vacc_hes <span class="sc">~</span> soc_media_exp, <span class="at">data =</span> data_clean)</span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(h1_model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -689,8 +746,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="getting-help-with-r-code" class="level2" data-number="19.6">
-<h2 data-number="19.6" class="anchored" data-anchor-id="getting-help-with-r-code"><span class="header-section-number">19.6</span> Getting help with R code</h2>
+<section id="getting-help-with-r-code" class="level2" data-number="19.7">
+<h2 data-number="19.7" class="anchored" data-anchor-id="getting-help-with-r-code"><span class="header-section-number">19.7</span> Getting help with R code</h2>
 <p>Beyond the statistics helpdesk and Canvas resources, AI tools can be genuinely useful for R:</p>
 <table class="caption-top table">
 <colgroup>

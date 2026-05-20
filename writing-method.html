@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.3">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e44360b8a8db1e130c7792fece1c8032.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-08a5c36b55fd1a51d38bbe330105d6a3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -389,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="12.1.1" class="anchored" data-anchor-id="sample-and-participants"><span class="header-section-number">12.1.1</span> Sample and Participants</h3>
 <ul>
 <li>Method of <strong>recruitment</strong> (convenience sampling, snowballing - How were participants recruited?)</li>
-<li><strong>Sample size</strong>, including justification (a priori power analysis)</li>
+<li><strong>Sample size</strong>, including justification (a priori power analysis — see below)</li>
 <li><strong>Exclusions</strong>: exactly how many participants were excluded and for what reason(s)</li>
 <li>The <strong>final <em>N</em></strong> (must match the <em>N</em> reported in the results section)</li>
 <li><strong>Demographics</strong>: frequency and percentage for gender, age, education, etc.</li>
@@ -398,6 +398,71 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p><em>“Participants were recruited via Prolific Academic. A power analysis based on an expected small-to-medium effect (r = .20, α = .05, power = .80) indicated a required sample of N = 197. A total of 231 participants were recruited. After excluding 19 participants who failed two or more attention checks and 12 who completed the survey in under four minutes, the final sample consisted of N = 200 participants (54% female; M<sub>age</sub> = 29.8, SD = 7.6, range: 18–61; 51% with a university degree).”</em></p>
 </blockquote>
+<section id="a-priori-power-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="a-priori-power-analysis">A priori power analysis</h4>
+<p>Every quantitative study must justify its sample size with an <strong>a priori power analysis</strong> — conducted <em>before</em> data collection, not after. The logic is straightforward: four quantities are mathematically linked, and fixing three determines the fourth.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Typical value</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Effect size</strong></td>
+<td>Estimated from prior work</td>
+<td>The smallest effect you want to be able to detect</td>
+</tr>
+<tr class="even">
+<td><strong>Alpha (α)</strong></td>
+<td>.05</td>
+<td>Acceptable Type I error rate (false positive)</td>
+</tr>
+<tr class="odd">
+<td><strong>Power (1 − β)</strong></td>
+<td>.80</td>
+<td>Probability of detecting the effect if it truly exists</td>
+</tr>
+<tr class="even">
+<td><strong>Sample size (<em>N</em>)</strong></td>
+<td>→ Solve for this</td>
+<td>The output of the power analysis</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choosing and justifying an effect size:</strong> The effect size estimate is the most consequential input and must be explicitly justified — not assumed. Use one of the following approaches:</p>
+<ul>
+<li><strong>Prior literature:</strong> Report the effect size from the most relevant prior study (or a meta-analytic estimate if available). Explain why that study is a reasonable benchmark for yours.</li>
+<li><strong>Smallest effect size of interest (SESOI):</strong> Define the minimum effect that would be theoretically or practically meaningful, and explain why smaller effects would not matter.</li>
+<li><strong>Conservative estimate:</strong> If prior evidence is sparse, use a small effect size and explain that choice.</li>
+</ul>
+<p>In Communication Science, effects are typically small to medium (<em>r</em> = .10–.30, <em>d</em> = 0.20–0.50). Do not default to a “medium effect” without justification — this inflates your assumed power and may leave your study underpowered for the effects you actually expect.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Do not run a post-hoc power analysis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Post-hoc power analysis — calculating power after data collection using the observed effect size — is circular and uninformative. It tells you nothing beyond the <em>p</em>-value you already have. Always run power analysis <em>a priori</em>, before collecting data.</p>
+</div>
+</div>
+<p><strong>Reporting:</strong> Report the expected effect size and its justification, α, desired power, the resulting <em>N</em>, and the software used:</p>
+<blockquote class="blockquote">
+<p><em>“Based on prior work by Masur et al.&nbsp;(2021), who found a moderate effect of peer disclosure on disclosure intentions (β = .24), we expected a small-to-medium effect (r = .20). A power analysis (α = .05, power = .80) indicated a required sample of N = 197 (calculated using the <code>pwr</code> package in R; Champely, 2020).”</em></p>
+</blockquote>
+<p>For the R code to run the power analysis, see the <a href="./r-resources.html">R for Data Analysis</a> chapter. For a detailed conceptual introduction, see <a href="https://philippmasur.de/2024/05/28/what-is-statistical-power-and-how-can-i-conduct-power-analysis-in-r/">this blog post</a>.</p>
+</section>
 </section>
 <section id="design" class="level3" data-number="12.1.2">
 <h3 data-number="12.1.2" class="anchored" data-anchor-id="design"><span class="header-section-number">12.1.2</span> Design</h3>
