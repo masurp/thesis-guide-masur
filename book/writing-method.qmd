@@ -102,25 +102,206 @@ The variable names in your method section must be **identical** to those used in
 
 ## Content analysis
 
-The method chapter for a content analysis includes:
+A content analysis method chapter is structured similarly to a survey/experiment chapter but with different building blocks. The core sections below should appear in this order.
 
-- A short description of the **research design**
-- **Data collection**: how the corpus was assembled (sampling strategy, date range, sources)
-- **Content analysis method**: manual (intercoder reliability) or automated (tool used, e.g., R, AmCat, Coosto, LLMs)
-- **Operationalization**: search terms or codebook
-- **Reliability**: intercoder agreement or precision/recall in relation to a gold standard
+### Research design
+
+State explicitly that this is a content analysis and whether it is **manual**, **automated**, or **hybrid** (e.g., automated classification with a human-validated subsample). Briefly state the purpose: what is being classified and why.
+
+### Corpus and sampling
+
+Describe how the corpus was assembled. Be precise:
+
+- **Sources**: which platforms, outlets, archives, or datasets
+- **Date range**: exact start and end dates
+- **Search/inclusion criteria**: keywords, hashtags, account lists, filters
+- **Sampling strategy**: full population (census), random sample, stratified sample (e.g., across time or sources), or systematic sample
+- **Final *N***: total number of items in the corpus, and how many were excluded and why
+- **Replication**: state whether the corpus is shareable (and if not, why — e.g., platform ToS)
+
+### Unit of analysis
+
+State explicitly what is being coded — this is a frequent gap in MA theses. Common units:
+
+- **Document level**: full article, full post, full video
+- **Paragraph/sentence level**: useful when one document contains multiple frames or stances
+- **Utterance/turn**: in interviews or dialogue data
+- **Image or modality slice**: for multimodal content
+
+Justify the choice: the unit should match the granularity of your construct (e.g., if you study "stance toward a policy," the sentence may be more appropriate than the article).
+
+### Coding approach
+
+Describe the analytical procedure. **Manual** and **automated** approaches have different reporting requirements.
+
+#### Manual coding
+
+- **Codebook**: which categories, with definitions and decision rules. The full codebook belongs in the **appendix**.
+- **Coders**: how many, who (background, training)
+- **Training**: how coders were trained on the codebook (number of pilot rounds, refinement steps)
+- **Double-coding**: what proportion of the corpus was coded by ≥ 2 coders for reliability (typically 10–20%)
+- **Disagreement resolution**: how disagreements were resolved (discussion, third coder, retention as disagreement)
+
+#### Automated coding
+
+State which approach you used and why. The main families, in increasing order of flexibility and resource cost:
+
+| Approach | When to use | Tools |
+|---|---|---|
+| **Dictionary / keyword-based** | Concept is well-defined by a closed list of terms | LIWC, custom R/Python dictionaries |
+| **Supervised machine learning** | Sufficient hand-coded training data; concept is too fuzzy for a dictionary | scikit-learn, quanteda |
+| **Transformer models (e.g., BERT)** | Modest training data; want strong generalization | HuggingFace, transformers in R/Python |
+| **Large language models (zero/few-shot)** | Limited labeled data, but concept can be described to a model | OpenAI API, Anthropic API, open-weight LLMs |
+
+For all approaches, report: the **model/tool used**, **version**, **prompt or training data** (in appendix), and **preprocessing steps**.
+
+::: {.callout-warning}
+## Validation is non-negotiable for automated approaches
+Every automated method — including dictionaries, ML, BERT, and LLMs — must be validated against a **human-coded gold standard**. An unvalidated automated classification is not a measurement; it is a guess at scale. The CADC course materials and the [CCS Amsterdam tutorials](https://github.com/ccs-amsterdam/r-course-material) provide guidance on building validation sets.
+:::
+
+::: {.callout-tip}
+## A note on LLMs
+LLMs are convenient but not always the best tool. Small, fine-tuned transformer models (e.g., BERT-NLI) often outperform general-purpose LLMs on narrow classification tasks and are reproducible and cheap to run. If you do use an LLM, the **prompt** is part of your method and must be reported in full — small wording changes can shift results substantially.
+:::
+
+### Reliability and validation
+
+| Approach | What to report | Threshold |
+|---|---|---|
+| Manual | Krippendorff's α (preferred) or Cohen's κ for each category | α/κ ≥ .70 acceptable; ≥ .80 good |
+| Automated | Precision, Recall, F1, and Accuracy against a hand-coded gold standard | F1 ≥ .70 acceptable for most constructs; higher for high-stakes claims |
+
+Report reliability **per category**, not as an aggregate — categories often differ substantially in difficulty.
+
+**Example (manual content analysis):**
+
+> *"We conducted a manual content analysis of N = 800 Instagram posts collected via the CrowdTangle API between January and March 2025. The unit of analysis was the individual post (image + caption). Two trained coders independently coded all posts using a codebook developed through three iterative pilot rounds (see Appendix B). Twenty percent of the sample (n = 160) was double-coded to assess intercoder reliability. Krippendorff's α was .82 for frame type, .76 for affective tone, and .91 for the presence of a call to action — all above the conventional threshold of .70 (Krippendorff, 2018). Disagreements on the remaining 80% were resolved through discussion between the two coders."*
+
+**Example (automated content analysis):**
+
+> *"Posts were classified for the presence of misinformation cues using a fine-tuned RoBERTa-base model. A gold-standard validation set of n = 500 posts was hand-coded by two annotators (κ = .81). The model achieved precision = .84, recall = .79, F1 = .81 on this validation set, indicating acceptable performance for downstream analysis. The training data, prompts, and validation set are available at [OSF link]."*
+
+### Reporting checklist
+
+- [ ] Research design (manual / automated / hybrid) is stated explicitly
+- [ ] Corpus sources, date range, and sampling strategy are fully specified
+- [ ] Unit of analysis is named and justified
+- [ ] Codebook is in the appendix (manual) or training data/prompt is in the appendix (automated)
+- [ ] Reliability is reported per category with the appropriate metric
+- [ ] Automated approaches are validated against a human-coded gold standard
 
 ## Qualitative research
 
-The method chapter for qualitative research describes:
+A qualitative method chapter is structured around six subsections. Every choice — from the framework to the coding approach — must be supported by **methodological literature** with proper APA citations. Avoid the common mistake of citing only your substantive literature; you also need to ground your methods (Braun & Clarke, Charmaz, Lincoln & Guba, etc.).
 
-- **Methodology**: the chosen framework (e.g., grounded theory) and its rationale
-- **Case study** (if applicable): why this case is appropriate for the research question
-- **Participants/key informants**: recruitment method, demographics, sample size, inclusion/exclusion criteria
-- **Data collection**: method (interviews, observation, etc.), materials used (topic guide, prompts), where conducted
-- **Data analysis**: analytical approach (thematic analysis, grounded theory coding, discourse analysis), analytical materials
+### Methodology
 
-All choices should be supported by methodological literature with proper APA citations.
+State and justify the qualitative framework you used. The most common in Communication Science MA theses are:
+
+| Framework | When to use | Key reference |
+|---|---|---|
+| **Thematic analysis** | Identifying patterns across cases; flexible, not tied to one epistemology | Braun & Clarke (2006, 2022) |
+| **Grounded theory** | Building theory inductively from data, with no strong prior framework | Charmaz (2014); Strauss & Corbin (1998) |
+| **Discourse analysis** | Studying how language constructs meaning, identity, or power | Potter & Wetherell (1987); Fairclough (2003) |
+| **Phenomenology** | Exploring lived experience of a phenomenon | Smith et al. (2009) |
+| **Case study** | In-depth examination of a single case (org, event, platform) bounded in time/space | Yin (2018); Stake (1995) |
+
+State your **epistemological position** briefly (e.g., constructivist, critical realist, interpretivist) if it shapes your analytical choices. For case studies, also justify the case: why this case, why now, why it can speak to your RQ.
+
+### Participants and sampling
+
+- **Recruitment**: how and where participants were recruited (e.g., snowballing via networks, social media advertisements, organisational gatekeepers)
+- **Sampling strategy**: name and justify it — **purposive** (selected for relevant characteristics), **theoretical** (selected to develop emerging concepts in GT), **maximum variation** (diverse cases), or **snowball**
+- **Inclusion/exclusion criteria**: explicit criteria participants had to meet
+- **Sample size and saturation**: state the final *N* and how saturation was assessed. Typical MA ranges: 10–20 in-depth interviews, 4–6 focus groups, or one detailed case
+- **Demographics**: provide a participant table in the appendix (pseudonymised ID, age range, gender, relevant background) and summarise key characteristics in the text
+
+::: {.callout-tip}
+## Saturation, not arbitrary numbers
+Sample size in qualitative research is not justified by power but by **theoretical or thematic saturation** — the point at which new data no longer yields new themes or categories. State explicitly when and how you judged saturation to have been reached.
+:::
+
+### Data collection
+
+Describe the method of data collection in concrete, replicable detail:
+
+- **Method**: semi-structured interviews, focus groups, participant observation, document analysis, AI-conducted interviews (an emerging option — see [Masur's wiki on AI as interviewer](https://philippmasur.de) for considerations)
+- **Setting**: where the data were collected (online via Zoom/Teams, in-person at participant's home/office, public space)
+- **Topic guide / interview protocol**: a brief description in text and the full guide in the **appendix**. Note how it was developed (literature + pilot interviews)
+- **Duration**: average length and range (e.g., *"Interviews lasted between 45 and 80 minutes, M = 62 min"*)
+- **Recording and transcription**: how data were recorded (audio/video) and transcribed (verbatim, intelligent verbatim, automated + corrected). Note any software used (e.g., Whisper, Otter.ai, Amberscript)
+- **Language**: the language interviews were conducted in, and whether/how quotes were translated for the thesis
+
+### Data analysis
+
+Describe the analytical procedure step by step. The level of detail should allow another researcher to follow your reasoning.
+
+#### Thematic analysis (Braun & Clarke)
+
+Report the six phases:
+
+1. Familiarisation with the data (reading, re-reading)
+2. Generating initial codes
+3. Searching for themes
+4. Reviewing themes
+5. Defining and naming themes
+6. Producing the report
+
+Specify whether coding was **inductive** (codes emerge from data) or **deductive** (codes derived from theory), or a **hybrid** approach.
+
+#### Grounded theory
+
+Report the coding stages:
+
+1. **Open coding**: line-by-line generation of initial codes
+2. **Axial coding**: grouping codes into categories and identifying relationships
+3. **Selective coding**: identifying the core category and integrating around it
+
+Also report use of **memos**, **constant comparison**, and **theoretical sampling** — these are not optional features in GT.
+
+#### Software
+
+State whether coding was done manually or with software (NVivo, Atlas.ti, MAXQDA, Taguette, Dedoose). Software does not do the analysis — it organises it. State which functions you used (coding, queries, code co-occurrence, visualisations).
+
+### Trustworthiness and reflexivity
+
+Qualitative work requires explicit discussion of quality criteria. The standard framework is Lincoln & Guba (1985):
+
+| Criterion | Quantitative analogue | How to address it |
+|---|---|---|
+| **Credibility** | Internal validity | Member checking, triangulation, prolonged engagement, peer debriefing |
+| **Transferability** | External validity | Thick description so the reader can judge applicability |
+| **Dependability** | Reliability | Audit trail; detailed documentation of analytical decisions |
+| **Confirmability** | Objectivity | Reflexivity; making researcher influence transparent |
+
+Include a brief **reflexivity statement**: who you are in relation to the topic, what assumptions you brought to the analysis, and how this might have shaped your interpretation. This is not optional in most qualitative traditions.
+
+### Ethical considerations
+
+Qualitative data are often intimate or identifiable. State explicitly:
+
+- Ethics approval (committee, reference number)
+- Informed consent procedure (oral or written, recorded or signed)
+- Anonymisation and pseudonymisation (when and how)
+- Data storage and retention policies
+- Right to withdraw and how it was communicated
+
+**Example:**
+
+> *"We conducted semi-structured interviews with 17 young adults (aged 18–28) about their experiences with algorithmic content curation on TikTok. Participants were recruited via purposive sampling on Instagram and through university networks; inclusion criteria were daily TikTok use and willingness to discuss their feed. Interviews were conducted in Dutch via Zoom between February and April 2025, lasted on average 58 minutes (range: 41–82), and were audio-recorded with participant consent. Recordings were transcribed verbatim using Amberscript and manually corrected. Data were analysed following Braun and Clarke's (2022) six-phase reflexive thematic analysis, with a hybrid inductive/deductive coding approach in Atlas.ti 23. Two researchers independently coded the first three interviews and discussed discrepancies before continuing individually. Quotes used in the results were translated to English and pseudonymised (R01–R17). The study was approved by the VU Amsterdam Ethics Committee (ref. 2025-CW-0142)."*
+
+### Reporting checklist
+
+- [ ] Methodological framework is named and justified with appropriate references
+- [ ] Sampling strategy is named (purposive, theoretical, snowball, maximum variation) and justified
+- [ ] Sample size is supported by an explicit saturation argument
+- [ ] Topic guide / interview protocol is in the appendix
+- [ ] Transcription method and language handling are documented
+- [ ] Analytical procedure is described step by step, with citations to method literature
+- [ ] Trustworthiness criteria are explicitly addressed (credibility, transferability, dependability, confirmability)
+- [ ] A reflexivity statement is included
+- [ ] Ethics approval and consent procedures are reported
 
 
 ## Overall checklist
