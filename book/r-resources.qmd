@@ -223,7 +223,7 @@ summary(med_out)
 
 Alternatively, you can also use **lavaan** for structural equation modeling in R to run similar analyses (see [this tutorial](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/mediation_analysis.md))
 
-### Manipuation check (experiment)
+### Manipulation check (experiment)
 
 ```r
 # Did participants in different conditions perceive the manipulation differently?
