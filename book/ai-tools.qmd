@@ -116,6 +116,7 @@ Your statement must answer:
 ### In-chapter disclosure
 
 If you used AI for specific chapter-level tasks, also note this within the relevant chapter. For example:
+
 - *Theory section*: used AI to generate an initial reading list on a topic
 - *Method section*: used AI to generate experimental stimuli
 - *Results section*: used AI to generate or refine analysis code

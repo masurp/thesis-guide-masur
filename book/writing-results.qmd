@@ -2,7 +2,12 @@
 
 The results section is a **matter-of-fact description** of your findings. It is written in **past tense** and focuses on answering your research questions and testing your hypotheses. Extensive interpretation belongs in the Discussion. Here you only report what you found.
 
-That said, good results sections are well-structured and nonetheless tell a coherent "story" that guides the reader through the analyses step by step. It should usually align with the order of the hypotheses or research questions. 
+That said, good results sections are well-structured and nonetheless tell a coherent "story" that guides the reader through the analyses step by step. It should usually align with the order of the hypotheses or research questions.
+
+::: {.callout-warning}
+## Do not interpret in the Results section
+Reporting a finding (*"H1 was supported"*) is fine. Explaining *why* it occurred, what it means theoretically, or how it relates to prior literature is **not** — save that for the Discussion.
+:::
 
 ::: {.callout-tip}
 ## Language: Past tense
@@ -17,6 +22,14 @@ Report sections in this order:
 ### 1. Descriptive statistics
 
 Report means (*M*), standard deviations (*SD*), and correlations among measured variables. Present these in a table or figure. In the text, describe the main and noteworthy correlations. Note whether control variables correlate with (in)dependent variables. If so, you may want to include them in follow-up analyses.
+
+**Missing data:** Briefly state how missing data were handled (e.g., listwise deletion, multiple imputation) and how many cases were excluded or imputed. Reviewers will expect this.
+
+**Scale reliability:** For each multi-item scale, report internal consistency using Cronbach's α or McDonald's ω (preferred in APA 7). This can appear in the descriptive statistics table or in a brief sentence in text.
+
+**Example:**
+
+> *"All scales showed acceptable reliability: social media use (α = .84), privacy concern (ω = .79), and self-disclosure intentions (α = .91)."*
 
 ### 2. Manipulation check (for experiments)
 
@@ -35,13 +48,51 @@ For each hypothesis:
 3. **Report results** with all relevant statistics
 4. **State a brief conclusion** (e.g., *"H1 was supported"* or *"H1 was not supported"*)
 
-**Example:**
+**Example (all four steps):**
 
->The percentage of posts with faces in the activity feed likewise had a moderate, positive
-effect on the intention to disclose oneself on the platform (F(2,567) = 53.97, p <.001, f = 0.436;
-see Fig 2B). H1d was hence supported. (Masur et al., 2021)
+> *H1 predicted that higher exposure to peer disclosures would increase participants' own disclosure intentions. We tested this using a simple linear regression with peer disclosure exposure as the predictor and disclosure intentions as the outcome. The analysis revealed a significant positive effect, b = 0.34, SE = 0.08, 95% CI [0.18, 0.50], t(298) = 4.25, p < .001, β = .24. H1 was supported.*
 
 Follow the same order as in the Theory chapter. Also briefly report non-significant findings — do not omit them.
+
+### 3a. Reporting regression models
+
+When reporting a multiple regression, first report the overall model, then individual predictors.
+
+**Overall model:** Report R², adjusted R², *F*(df1, df2), *p*, and — if comparing nested models — ΔR² and its significance.
+
+**Individual predictors:** For each predictor, report *b*, *SE*, 95% CI, *t*(df), *p*, and *β*.
+
+**Example:**
+
+> *"A multiple regression was conducted with social media use and age as predictors of well-being. The model was significant, F(2, 297) = 14.32, p < .001, R² = .09, adjusted R² = .08, indicating that the predictors explained 9% of the variance in well-being. Social media use was a significant negative predictor, b = −0.31, SE = 0.07, 95% CI [−0.45, −0.17], t(297) = −4.43, p < .001, β = −.28. Age was not a significant predictor, b = 0.04, SE = 0.03, 95% CI [−0.02, 0.10], t(297) = 1.33, p = .184, β = .07."*
+
+### 3b. Mediation and moderation (if applicable)
+
+**Mediation** (indirect effects): Report the indirect effect with a bootstrap confidence interval. If the CI excludes zero, mediation is supported.
+
+**Example:**
+
+> *"The indirect effect of social media use on well-being through social comparison was b = −0.12, SE = 0.04, 95% CI [−0.21, −0.04], indicating significant mediation."*
+
+**Moderation** (interaction effects): Report the interaction term and, if significant, follow up with a simple slopes analysis or plot to illustrate the pattern.
+
+**Example:**
+
+> *"The interaction between social media use and gender was significant, b = 0.18, SE = 0.06, t(296) = 3.01, p = .003, β = .15. Simple slopes analysis showed that the effect of social media use was significant for women (b = 0.31, p < .001) but not for men (b = 0.08, p = .21)."*
+
+### 3c. SEM and CFA (if applicable)
+
+If you use **confirmatory factor analysis (CFA)** to validate your measurement model, report it before hypothesis testing. If you use **structural equation modeling (SEM)**, report model fit before presenting path coefficients.
+
+**Fit indices to report:** χ²(df), *p*, CFI, RMSEA (with 90% CI), SRMR. Common thresholds: CFI ≥ .95, RMSEA ≤ .06, SRMR ≤ .08 — but treat these as guidelines, not hard cutoffs.
+
+**Example (CFA):**
+
+> *"A CFA confirmed the three-factor structure of the scale. Model fit was acceptable: χ²(84) = 112.43, p = .024, CFI = .97, RMSEA = .04, 90% CI [.01, .06], SRMR = .05. All factor loadings were significant and exceeded .50."*
+
+**Example (SEM path):**
+
+> *"The structural model showed a significant direct path from social media use to privacy concern (β = .31, SE = .06, p < .001) and from privacy concern to protective behavior (β = .24, SE = .07, p = .001). Model fit was good: CFI = .96, RMSEA = .05, SRMR = .06."*
 
 ### 4. Secondary (exploratory analyses, usually optional)
 
@@ -57,14 +108,15 @@ Follow APA 7th edition formatting:
 - Report **exact *p* values**: *p* = .003 — except use *p* < .001 for very small values
 - Put spaces after = and <
 - Report **effect sizes** (Cohen's *d*, η², *f²*, etc.)
+- Report **95% confidence intervals** where applicable: *b* = 0.34, 95% CI [0.18, 0.50]
 
 **Examples:**
 
-> The regression analysis revealed a significant positive effect of social media exposure on vaccine hesitancy, *b* = 0.34, *SE* = 0.08, *t*(298) = 4.25, *p* < .001, *β* = .24.
+> The regression analysis revealed a significant positive effect of social media exposure on vaccine hesitancy, *b* = 0.34, *SE* = 0.08, 95% CI [0.18, 0.50], *t*(298) = 4.25, *p* < .001, *β* = .24.
 
-> An independent-samples *t*-test showed no significant difference between conditions, *t*(148) = 1.12, *p* = .264, *d* = 0.18.
+> An independent-samples *t*-test showed no significant difference between conditions, *t*(148) = 1.12, *p* = .264, *d* = 0.18, 95% CI [−0.15, 0.51].
 
-> The ANOVA yielded a significant main effect of logo color, *F*(1, 196) = 8.34, *p* = .004, η² = .04.
+> The ANOVA yielded a significant main effect of logo color, *F*(1, 196) = 8.34, *p* = .004, η² = .04, 95% CI [.01, .10].
 
 ::: {.callout-important}
 ## Report all effects, including non-significant ones
@@ -83,17 +135,49 @@ Non-significant findings are still findings and should also be reported fully!
 
 ## Results in qualitative research
 
-In qualitative results, the chapter demonstrates your analysis and presents empirical findings. Structure it around your **sub-questions** (usually resulting in three main sections). For each sub-question:
+In qualitative results, the chapter demonstrates your analysis and presents empirical findings. The exact structure depends on your analytical approach, but the general logic is the same: organize around your **sub-questions or themes**, present your analytical interpretation, and support it with data.
 
-1. Restate the sub-question
-2. Present the analytical findings (from selective coding)
+| Approach | Typical structure |
+|---|---|
+| Thematic analysis (Braun & Clarke) | Organized by themes derived from the data |
+| Grounded theory | Organized by categories from selective coding |
+| Discourse/content analysis | Organized by discursive patterns or code categories |
+
+For each sub-question or theme:
+
+1. Introduce the theme or sub-question
+2. Present the analytical finding (your interpretation, not just a summary)
 3. Support findings with representative quotes from the data
-4. Briefly conclude
+4. Briefly conclude what this finding means for the sub-question
 
-**Quotes** serve as illustrations — not as substitutes for analysis. Contextualize each quote. Format quotes in italics, indented. Use a respondent ID rather than identifying information.
+**Quotes** serve as illustrations — not as substitutes for analysis. Contextualize each quote before and after: explain what it illustrates and why it is representative. Format quotes in italics, indented. Use a respondent ID (e.g., *R04*, *P12*) rather than identifying information.
+
+**Example:**
+
+> *Participants frequently described feeling pressure to present an idealized version of themselves online. One respondent captured this tension clearly:*
+>
+> > *"I know it's not real, but I still spend like 20 minutes picking the right photo. You want people to think you're doing well, you know?" (R07)*
+>
+> *This illustrates the gap between participants' awareness of impression management norms and their continued compliance with them — a pattern present across 14 of the 18 interviews.*
+
+**How many quotes?** Aim for 2–4 quotes per sub-question. Each quote should be the clearest illustration of its point — prefer fewer, well-contextualized quotes over many loosely connected ones.
+
+**On saturation and frequency:** You may note how widespread a theme was (e.g., *"this pattern appeared across 12 of 18 interviews"*), but avoid reducing qualitative findings to counts. The goal is analytical depth, not frequency tallying.
 
 Avoid discussing theoretical implications extensively in the results section — save that for the Discussion.
 
+
+## Results checklist
+
+- [ ] Descriptive statistics (means, SDs, correlations) are reported in a table or figure
+- [ ] For experiments: manipulation check and randomization check are included
+- [ ] Each hypothesis or research question is addressed in order
+- [ ] Every test names the statistical method, variables, full statistics, and a brief conclusion
+- [ ] Non-significant findings are reported, not omitted
+- [ ] All statistics follow APA 7 formatting (italics, no leading zeros, exact *p* values)
+- [ ] Effect sizes are reported for every test
+- [ ] Tables and figures are APA-formatted (not raw software output)
+- [ ] No interpretation or theoretical discussion — that belongs in the Discussion
 
 ## References
 
