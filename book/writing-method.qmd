@@ -14,7 +14,7 @@ Descriptions of *your* findings in the result section → **past tense** (*"The 
 ### Sample and Participants
 
 - Method of **recruitment** (convenience sampling, snowballing - How were participants recruited?)
-- **Sample size**, including justification (a priori power analysis)
+- **Sample size**, including justification (a priori power analysis — see below)
 - **Exclusions**: exactly how many participants were excluded and for what reason(s)
 - The **final *N*** (must match the *N* reported in the results section)
 - **Demographics**: frequency and percentage for gender, age, education, etc.
@@ -22,6 +22,36 @@ Descriptions of *your* findings in the result section → **past tense** (*"The 
 **Example:**
 
 > *"Participants were recruited via Prolific Academic. A power analysis based on an expected small-to-medium effect (r = .20, α = .05, power = .80) indicated a required sample of N = 197. A total of 231 participants were recruited. After excluding 19 participants who failed two or more attention checks and 12 who completed the survey in under four minutes, the final sample consisted of N = 200 participants (54% female; M~age~ = 29.8, SD = 7.6, range: 18–61; 51% with a university degree)."*
+
+#### A priori power analysis
+
+Every quantitative study must justify its sample size with an **a priori power analysis** — conducted *before* data collection, not after. The logic is straightforward: four quantities are mathematically linked, and fixing three determines the fourth.
+
+| Quantity | Typical value | What it means |
+|---|---|---|
+| **Effect size** | Estimated from prior work | The smallest effect you want to be able to detect |
+| **Alpha (α)** | .05 | Acceptable Type I error rate (false positive) |
+| **Power (1 − β)** | .80 | Probability of detecting the effect if it truly exists |
+| **Sample size (*N*)** | → Solve for this | The output of the power analysis |
+
+**Choosing and justifying an effect size:** The effect size estimate is the most consequential input and must be explicitly justified — not assumed. Use one of the following approaches:
+
+- **Prior literature:** Report the effect size from the most relevant prior study (or a meta-analytic estimate if available). Explain why that study is a reasonable benchmark for yours.
+- **Smallest effect size of interest (SESOI):** Define the minimum effect that would be theoretically or practically meaningful, and explain why smaller effects would not matter.
+- **Conservative estimate:** If prior evidence is sparse, use a small effect size and explain that choice.
+
+In Communication Science, effects are typically small to medium (*r* = .10–.30, *d* = 0.20–0.50). Do not default to a "medium effect" without justification — this inflates your assumed power and may leave your study underpowered for the effects you actually expect.
+
+::: {.callout-warning}
+## Do not run a post-hoc power analysis
+Post-hoc power analysis — calculating power after data collection using the observed effect size — is circular and uninformative. It tells you nothing beyond the *p*-value you already have. Always run power analysis *a priori*, before collecting data.
+:::
+
+**Reporting:** Report the expected effect size and its justification, α, desired power, the resulting *N*, and the software used:
+
+> *"Based on prior work by Masur et al. (2021), who found a moderate effect of peer disclosure on disclosure intentions (β = .24), we expected a small-to-medium effect (r = .20). A power analysis (α = .05, power = .80) indicated a required sample of N = 197 (calculated using the `pwr` package in R; Champely, 2020)."*
+
+For the R code to run the power analysis, see the [R for Data Analysis](r-resources.qmd) chapter. For a detailed conceptual introduction, see [this blog post](https://philippmasur.de/2024/05/28/what-is-statistical-power-and-how-can-i-conduct-power-analysis-in-r/).
 
 ### Design
 

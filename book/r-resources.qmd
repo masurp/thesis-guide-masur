@@ -32,17 +32,42 @@ Install these packages to cover most analyses you'll need:
 install.packages(c(
   "tidyverse",   # data manipulation and visualization (dplyr, ggplot2, tidyr, ...)
   "haven",       # import SPSS (.sav) and Stata files
-  "psych",       # reliability (alpha), descriptive stats, factor analysis
+  "psych",       # reliability (alpha, omega), descriptive stats, factor analysis
   "car",         # ANOVA, Levene's test, recoding
   "lme4",        # multilevel / mixed models
-  "lavaan",      # SEM and mediation/moderation (alternative to PROCESS)
+  "lavaan",      # SEM and CFA
   "mediation",   # causal mediation analysis
   "effectsize",  # Cohen's d, eta-squared, omega-squared
+  "pwr",         # a priori power analysis
+  "interactions",# interaction plots for moderation
   "apaTables",   # export APA-formatted tables to Word
   "papaja",      # APA-style reporting in R Markdown / Quarto
   "report"       # automatic plain-language results reporting
 ))
 ```
+
+## Power analysis
+
+Run an **a priori power analysis** before data collection to determine the required sample size. The `pwr` package covers the most common designs. See the [Method chapter](writing-method.qmd) for guidance on choosing and justifying the effect size, and [this blog post](https://philippmasur.de/2024/05/28/what-is-statistical-power-and-how-can-i-conduct-power-analysis-in-r/) for a detailed conceptual introduction.
+
+```r
+library(pwr)
+
+# Experiment: independent-samples t-test (two groups)
+pwr.t.test(d = 0.40, sig.level = .05, power = .80, type = "two.sample")
+
+# Survey: correlation or simple regression
+pwr.r.test(r = .20, sig.level = .05, power = .80)
+
+# Multiple regression (u = number of predictors; f2 = R²/(1−R²))
+pwr.f2.test(u = 3, f2 = .06, sig.level = .05, power = .80)
+```
+
+Leave the argument you want to solve for out of the call — `pwr` will compute it. The examples above all solve for `n` (sample size). To check achieved power for a given *N*, replace `power = .80` with `n = <your N>` and omit `power`.
+
+**Reporting template:**
+
+> *"Based on [cite prior study], we expected a small-to-medium effect (r = .20 / d = 0.40). A power analysis (α = .05, 1 − β = .80) indicated a required sample of N = XX (pwr package; Champely, 2020)."*
 
 ## Common analyses
 
@@ -62,15 +87,23 @@ apa.cor.table(data[, c("var1", "var2", "var3")],
 ```
 
 
-### Reliability (Cronbach's α)
+### Reliability (Cronbach's α and McDonald's ω)
+
+APA 7 recommends reporting McDonald's ω alongside or instead of Cronbach's α. Both are available in the `psych` package.
 
 ```r
 library(psych)
 
-# Select items belonging to one scale
+# Cronbach's α
 alpha(data[, c("item1", "item2", "item3", "item4")])
-# Look at: raw_alpha (Cronbach's α)
+# Look at: raw_alpha
+
+# McDonald's ω (preferred in APA 7)
+omega(data[, c("item1", "item2", "item3", "item4")], nfactors = 1)
+# Look at: omega.tot (total omega)
 ```
+
+Report as: *"The scale showed good reliability (α = .84, ω = .86)."*
 
 ### Independent samples *t*-test
 
@@ -135,6 +168,39 @@ summary(model_mod)
 library(interactions)
 interact_plot(model_mod, pred = pred_c, modx = moderator_c)
 ```
+
+### CFA and SEM with lavaan
+
+The `lavaan` package handles confirmatory factor analysis (CFA) and structural equation modeling (SEM). Use CFA to validate your measurement model before testing structural paths.
+
+```r
+library(lavaan)
+
+# --- CFA: validate a single scale ---
+model_cfa <- '
+  privacy_concern =~ pc1 + pc2 + pc3 + pc4
+'
+fit_cfa <- cfa(model_cfa, data = data)
+summary(fit_cfa, fit.measures = TRUE, standardized = TRUE)
+# Key fit indices: CFI, RMSEA (+ 90% CI), SRMR
+# Target: CFI ≥ .95, RMSEA ≤ .06, SRMR ≤ .08
+
+# --- SEM: test structural paths ---
+model_sem <- '
+  # Measurement model
+  privacy_concern =~ pc1 + pc2 + pc3 + pc4
+  disclosure      =~ sd1 + sd2 + sd3
+
+  # Structural path
+  disclosure ~ privacy_concern
+'
+fit_sem <- sem(model_sem, data = data)
+summary(fit_sem, fit.measures = TRUE, standardized = TRUE)
+```
+
+Report fit indices and standardized path coefficients (see [Results chapter](writing-results.qmd) for reporting conventions).
+
+For a step-by-step tutorial, see the [CCS Amsterdam SEM tutorial](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/mediation_analysis.md).
 
 ### Mediation analysis
 

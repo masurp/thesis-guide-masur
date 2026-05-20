@@ -46,6 +46,20 @@ A good research question is:
 "What is the role of social media in society?" is too broad. A better version: "To what extent does exposure to ideologically congruent social media content predict political polarization among Dutch adults?"
 :::
 
+### RQ wording conventions
+
+The phrasing of your RQ signals what kind of study you are doing. Use the following as a guide:
+
+| Phrasing | Use when… | Example |
+|---|---|---|
+| *"To what extent does X affect/predict Y?"* | Quantitative, confirmatory; you expect an effect and want to measure its size | *"To what extent does social media use predict feelings of loneliness among adolescents?"* |
+| *"What is the relationship between X and Y?"* | Quantitative, exploratory or correlational; you are uncertain about direction | *"What is the relationship between algorithmic awareness and news consumption diversity?"* |
+| *"Under what conditions does X affect Y?"* | Quantitative, moderation focus; you expect the effect to vary | *"Under what conditions does peer disclosure exposure increase users' own disclosure intentions?"* |
+| *"How does X influence/shape Y?"* | Qualitative or process-oriented; you want to understand mechanisms, not measure effect sizes | *"How does privacy concern shape self-disclosure decisions in online health communities?"* |
+| *"What are the…?"* | Qualitative, exploratory; you are mapping a phenomenon rather than testing a relationship | *"What are users' experiences with algorithmic content curation on TikTok?"* |
+
+Avoid *"Does X affect Y?"* — it invites a yes/no answer and implies a binary rather than a magnitude question. Avoid *"Why does X affect Y?"* unless your design can actually answer causal questions (e.g., an experiment with process measures).
+
 In **quantitative, confirmatory research**, the main RQ is typically followed by **hypotheses** that predict specific relationships. These are derived from existing theory.
 
 In **qualitative research** (e.g., grounded theory, thematic analysis) or **exploratory, quantitative research**, the main RQ is usually followed by **sub-questions** that guide your data collection and analysis.
@@ -86,6 +100,31 @@ The following hypothesis looks specific but is actually two separate predictions
 This should be split into three hypotheses: one main effect (H1) and two moderation effects (H2, H3). Main effects and moderation/mediation effects must always be stated in separate hypotheses.
 :::
 
+### Directional vs. non-directional hypotheses
+
+A **directional hypothesis** predicts the sign of an effect (*positively*, *negatively*, *stronger*, *weaker*). A **non-directional hypothesis** predicts that a relationship exists without specifying its direction (*"X is associated with Y"*).
+
+**Use a directional hypothesis when:**
+- Multiple prior studies point consistently in the same direction
+- The theoretical mechanism clearly implies one direction
+
+**Use a non-directional hypothesis (or an RQ) when:**
+- Prior evidence is mixed or scarce
+- Theory is ambiguous about which direction to expect
+
+| Type | Example |
+|---|---|
+| Directional | *"H1: Higher privacy literacy will be **negatively** associated with self-disclosure depth."* |
+| Non-directional | *"H1: Privacy literacy will be associated with self-disclosure depth."* |
+| Research question (no prediction) | *"RQ1: What is the relationship between privacy literacy and self-disclosure depth?"* |
+
+A directional hypothesis is stronger — it is easier to falsify and more informative if supported. But it is only justified when the literature genuinely supports the predicted direction. Do not predict a direction just to appear more certain.
+
+::: {.callout-tip}
+## Rule of thumb
+If you can cite at least 3 studies that consistently found effects in the same direction, a directional hypothesis is appropriate. If findings are mixed or you have fewer than 3 studies, use a non-directional hypothesis or an RQ instead.
+:::
+
 ## Sub-questions (qualitative research)
 
 In qualitative projects, the main RQ is broken down into **sub-questions** that:
@@ -99,9 +138,45 @@ Each sub-question ends with a **single question mark** — a common mistake is c
 
 ## The conceptual model
 
-For quantitative research, your Theory chapter ends with a **conceptual model** — a visual diagram that maps out the constructs and their hypothesized relationships. Every variable mentioned in your hypotheses must appear in the model. Every variable in the model must appear in your hypotheses and method section.
+For quantitative research, your Theory chapter ends with a **conceptual model** — a visual diagram that maps out the constructs and their hypothesized relationships. It appears at the end of the Theory chapter, immediately before (or after) your list of hypotheses. Every variable mentioned in your hypotheses must appear in the model. Every variable in the model must appear in your hypotheses and method section.
 
 Use consistent terminology throughout: the same construct should have the same name in the introduction, theory, conceptual model, method, and results.
+
+### Shape conventions
+
+| Shape | Meaning |
+|---|---|
+| **Rectangle** | Manifest (observed) variable — measured directly with a single item or scale score |
+| **Oval / ellipse** | Latent variable — an unobserved construct measured indirectly through multiple indicators (common in SEM/CFA) |
+
+Most MA theses use rectangles throughout. Use ovals only if you are explicitly modeling latent variables in a CFA or SEM framework.
+
+### What to include
+
+- **Boxes/ovals** represent constructs (independent, dependent, mediating, moderating variables)
+- **Arrows** represent hypothesized relationships — label each arrow with its hypothesis number (H1, H2, …)
+- **Control variables** may be included but are often omitted to keep the model readable; if omitted, note this in the figure caption
+- **Do not include** your sample, measures, or analytical method — the conceptual model shows theoretical relationships, not your procedure
+
+### Arrow conventions
+
+| Relationship | How to draw it |
+|---|---|
+| Direct effect (X → Y) | Single-headed arrow from X to Y |
+| Mediation (X → M → Y) | Arrow from X to mediator M, arrow from M to Y; often also a direct arrow from X to Y |
+| Moderation (Z moderates X → Y) | Arrow from Z pointing to the arrow between X and Y (drawn as a crossing or intersecting arrow) |
+
+### Complexity
+
+A good conceptual model is readable at a glance. As a rule of thumb:
+
+- **3–7 constructs** is typical for an MA thesis
+- If your model has more than 8 constructs or arrows that cross repeatedly, consider whether every element is truly necessary
+- Separate models for separate research questions are preferable to one overloaded diagram
+
+### Tools
+
+You can draw your model in PowerPoint, Keynote, draw.io, or Lucidchart. Export as PNG or PDF and insert it into your Quarto/Word document. Avoid hand-drawn or screenshot-from-SPSS diagrams.
 
 **Example conceptual model:**
 
