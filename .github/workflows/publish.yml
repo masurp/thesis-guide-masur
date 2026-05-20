@@ -23,7 +23,8 @@ jobs:
 
       - name: Install R packages
         run: |
-          install.packages(c("rmarkdown", "knitr"), repos = "https://cloud.r-project.org")
+          install.packages(c("rmarkdown", "knitr", "tinytex"), repos = "https://cloud.r-project.org")
+          tinytex::install_tinytex()
         shell: Rscript {0}
 
       - name: Publish to GitHub Pages
