@@ -1,6 +1,8 @@
 # Supervision & Peer Feedback
 
-Supervision is generally very project-specific. If you are highly independent and highly motivated, I will gently guide you and otherwise leave you alone. If you feel completely lost and anxious, I will support you a bit more. Below, please find, however, how I usually approach supervision during MA thesis projects. 
+Supervision is generally very project-specific. My general approach is one of **scaffolded independence**: early in the project, when the research question and design are still being developed, I provide more structured guidance and frequent feedback. As the project matures and you gain confidence, I step back and you take the lead — I become a sounding board rather than a co-pilot. The goal is that by the time you submit, you are capable of designing and executing rigorous research independently.
+
+In practice: if you are highly independent and motivated, I will guide you lightly and otherwise leave you to work. If you feel lost or stuck, I will support you more. Below you find how I usually structure supervision across the trajectory.
 
 ## What you can expect from me as your supervisor
 
@@ -40,6 +42,20 @@ For technical analysis questions (how to run tests in R or SPSS, how to report r
 ## Feedback is only useful if you've done your part
 Feedback is pointless on text you know has flaws. Submit drafts only when you have already done everything you can to improve them, including peer feedback.
 :::
+
+### What level of thinking is expected?
+
+A useful way to think about intellectual expectations is the **SOLO taxonomy** (Biggs & Collis, 1982), which describes five levels of understanding:
+
+| Level | Description | Typical sign |
+|---|---|---|
+| **Pre-structural** | No real understanding | Misses the point; irrelevant content |
+| **Uni-structural** | Can identify or recall single facts | Defines concepts correctly but does nothing with them |
+| **Multi-structural** | Can list or describe multiple elements | Summarizes several studies without connecting them |
+| **Relational** | Can link, compare, and integrate | Builds a coherent theoretical argument; connects findings to hypotheses |
+| **Extended abstract** | Can generalize and theorize | Situates findings in broader debates; proposes new theoretical directions |
+
+A passing MA thesis demonstrates **relational** thinking throughout — you connect theory to empirical evidence, link findings to hypotheses, and build a coherent argument. An excellent thesis reaches **extended abstract** thinking in the discussion — you generalize beyond your data, consider alternative explanations, and make a genuine theoretical contribution. Simply summarizing what others have found (uni- or multi-structural) is not sufficient at this level.
 
 ## Thesis groups and peer feedback
 

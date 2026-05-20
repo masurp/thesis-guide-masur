@@ -4,7 +4,7 @@
 ![](https://www.curatore.es/uc3m2OpenScience/wp-content/uploads/2024/06/open-data-meme.jpg){fig-align="center" width="50%"}
 :::
 
-Open science refers to a set of practices that make scientific research more transparent, reproducible, and accessible. Adopting open science practices in your thesis not only strengthens the quality of your work, but also aligns it with the standards increasingly expected in Communication Science. I, myself, strongly advocate for the implementation of open science practices (see [this](https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqz052/5803422#200712879) or [this](https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqz052/5803422#200712879) paper) and thus expect you to engage with these practices as well. 
+Open science refers to a set of practices that make scientific research more transparent, reproducible, and accessible. Adopting open science practices in your thesis not only strengthens the quality of your work, but also aligns it with the standards increasingly expected in Communication Science. I, myself, strongly advocate for the implementation of open science practices (see [this paper](https://academic.oup.com/joc/advance-article/doi/10.1093/joc/jqz052/5803422#200712879)) and thus expect you to engage with these practices as well.
 
 ## Preregistration
 
@@ -14,11 +14,14 @@ Open science refers to a set of practices that make scientific research more tra
 - Increases credibility of your confirmatory findings
 - Distinguishes what you planned from exploratory analyses you add later
 
+Why does this matter in practice? In a landmark study, 100 published psychology findings were independently replicated: only 36% replicated successfully, and the average effect size was *half* the magnitude of the originals (Open Science Collaboration, 2015). Many of these studies had been reported selectively — only the analyses that produced significant results made it into the paper. Preregistration closes this loophole: if you commit to your hypotheses and analysis plan before seeing the data, you cannot selectively report what looks good.
+
 ### Where to preregister
 
 The standard platform is the **Open Science Framework (OSF)**: [osf.io](https://osf.io)
 
 To pre-register:
+
 1. Create a free OSF account (log in with your institutional email)
 2. Create a new project for your thesis
 3. Under *Registrations*, choose a registration template (e.g., AsPredicted or OSF Prereg)
@@ -27,8 +30,49 @@ To pre-register:
 
 ::: {.callout-tip}
 ## Discuss preregistration with me
-I strongly encourage to oreregister your MA thesis. I can help you how to do it. If you registered, include the OSF link in your method section.
+I strongly encourage you to preregister your MA thesis. I can help you how to do it. If you registered, include the OSF link in your method section.
 :::
+
+### What a preregistration looks like
+
+A preregistration is more than a brief list of hypotheses — it should contain enough detail that someone else could run the study from it. Below is a condensed example for a survey study on privacy literacy and self-disclosure:
+
+---
+
+**1. Hypotheses and theoretical rationale**
+
+> *H1: Privacy literacy will be negatively associated with self-disclosure depth on social media.*
+> Research consistently shows that privacy knowledge shapes how people evaluate disclosure risks (Masur, 2020). We therefore expect that users with higher privacy literacy will share less personal information on social media.
+>
+> *H2: The negative association between privacy literacy and self-disclosure will be stronger for users who also report high privacy concerns (moderation).*
+> Privacy concerns may serve as a motivational bridge between knowledge and behavior (Dienlin & Metzger, 2016). Without a concern for privacy, knowledge alone may not translate into reduced disclosure.
+
+**2. Study design, sample, and power analysis**
+
+> *Design:* Cross-sectional online survey.
+>
+> *Recruitment:* Participants will be recruited via Prolific Academic. Inclusion criteria: 18+ years old, active social media user (at least once per week), residing in the Netherlands.
+>
+> *Sample size:* A power analysis for a small-to-medium correlation (r = .20, α = .05, power = .80) indicates N = 197. We will recruit N = 220 to account for expected exclusions (attention check failures, incomplete responses). We will exclude participants who fail two or more of three attention checks.
+
+**3. Measures**
+
+> *Privacy literacy* will be measured with the 8-item Online Privacy Literacy Scale (OPLIS; Masur & Scharkow, 2020; e.g., "Websites are legally required to have a privacy policy"). Response format: true/false/don't know. Higher scores indicate greater privacy knowledge.
+>
+> *Self-disclosure depth* will be measured with four items adapted from Bazarova & Choi (2014; e.g., "When I post on social media, I share personal thoughts and feelings"). Responses on a 5-point scale (1 = strongly disagree; 5 = strongly agree).
+>
+> *Privacy concerns* will be measured with the 3-item scale by Malhotra et al. (2004; e.g., "I am concerned about threats to my personal privacy online"). Responses on a 5-point scale.
+
+**4. Analysis plan**
+
+> *Confirmatory analyses:*
+> H1 will be tested with a simple linear regression with OPLIS score as predictor and mean self-disclosure score as outcome (controlling for age and gender).
+> H2 will be tested by adding the OPLIS × privacy concerns interaction term to the regression model. Significant interactions will be probed at ±1 SD.
+>
+> *Exploratory analyses:*
+> We will additionally examine whether the associations differ by platform (Instagram vs. Facebook). These analyses are not pre-specified and will be clearly labeled as exploratory in the thesis.
+
+---
 
 ## Open data
 
@@ -62,6 +106,11 @@ For R users: resources are available on the Canvas page *R for Social Scientists
 - Clearly distinguish **confirmatory** (pre-registered) from **exploratory** analyses
 - If you deviated from your pre-registered plan, explain why
 - Report exact *p* values and effect sizes (not just *p* < .05)
+
+::: {.callout-note}
+## Going further: Specification curve analysis
+If you want to go beyond the minimum, **specification curve analysis** (Simonsohn et al., 2020; see also the [`specr` package for R](https://masurp.github.io/specr/)) is an advanced technique for showing how robust your findings are to different analytical choices — for example, different operationalizations of a construct, different sets of control variables, or different sample exclusion rules. Rather than picking one "best" specification, you run all defensible ones and plot the full distribution of results. This makes your analytical decisions transparent and guards against the impression that your findings depend on one convenient choice. It is not required for an MA thesis, but it is a sign of methodological sophistication and increasingly valued in Communication Science.
+:::
 
 ## Open access
 

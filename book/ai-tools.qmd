@@ -29,6 +29,19 @@ Responsible use means:
 
 Generative AI can be a useful sparring partner for brainstorming, gaining an overview, structuring your work, or improving text you have already written. It cannot replace the reading, thinking, and writing that constitute your learning process.
 
+There is a deeper reason to stay actively involved in research tasks beyond academic honesty: it is how expertise develops. Searching and reading literature builds a map of what is known and unknown in your field. Cleaning and checking data builds intuition for data quality. Coding qualitative material builds understanding of your participants' experiences. These tasks may seem routine, but they are precisely how you develop the judgment needed to recognize when something is wrong — and to evaluate whether AI output is accurate (Messeri & Crockett, 2026). Students who delegate these tasks to AI risk not developing the competence to supervise it responsibly.
+
+The following examples illustrate what responsible and irresponsible use look like in practice:
+
+| Scenario | Assessment |
+|---|---|
+| You use Gemini to brainstorm search keywords, then search and read the sources yourself | **Responsible** |
+| You ask ChatGPT "what are the main theories on social media and well-being?" and include those theories without reading the original sources | **Not responsible** — AI can hallucinate or misrepresent findings |
+| You paste an R error into Copilot, read and understand the suggested fix, and verify it works | **Responsible** |
+| You ask Gemini to "write the methods section based on these notes" and submit it with minor edits | **Not responsible** — you are not the author of that text |
+| You upload your own PDFs to NotebookLM to identify sections worth reading more carefully | **Responsible** |
+| You ask an AI to summarize papers you have not read and cite them in your theory chapter | **Not responsible** — you cannot vouch for what you have not read |
+
 ## Academic misconduct and fraud
 
 - **Never copy-paste AI-generated text** into your thesis without attribution. This is plagiarism!
@@ -108,3 +121,7 @@ If you used AI for specific chapter-level tasks, also note this within the relev
 - *Results section*: used AI to generate or refine analysis code
 
 Keep a record of your AI prompts and outputs — you may be asked to show these.
+
+## References
+
+- Messeri, L., & Crockett, M. J. (2026). The uncritical adoption of AI in science is alarming — we urgently need guard rails. *Nature*, *653*, 675–676. https://doi.org/10.1038/d41586-026-01557-x

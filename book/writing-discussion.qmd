@@ -29,6 +29,16 @@ For each hypothesis or sub-question:
 - Offer multiple interpretations where relevant
 - Make cross-connections between findings
 
+The following are illustrative examples of what good discussion paragraphs look like. They are not taken from actual publications.
+
+**Example — supported hypothesis:**
+
+> *"H1 was supported: higher exposure to peer disclosures increased participants' own disclosure intentions (b = 0.34, SE = 0.08, p < .001, β = .24). This is consistent with the behavioral contagion hypothesis (e.g., Cialdini & Goldstein, 2004; Masur et al., 2021), which predicts that observed disclosures function as descriptive social norm signals that increase perceived pressure to disclose. The effect size (β = .24) aligns with prior work on norm-based social influence online (Lapinski & Rimal, 2005), though it is somewhat smaller than found in a controlled laboratory setting (d = 0.44; Masur et al., 2021), which may reflect the more naturalistic conditions of the current survey."*
+
+**Example — unexpected null result:**
+
+> *"Contrary to H3, privacy literacy was not significantly associated with protective privacy behavior (b = 0.07, SE = 0.08, p = .38, β = .06). This is inconsistent with prior studies that found a positive link between privacy knowledge and protective action (Bartsch & Dienlin, 2016; Masur & Scharkow, 2020). One possible explanation is that knowledge alone is insufficient to motivate behavior change — a pattern documented in the privacy paradox literature (Acquisti et al., 2015). The null finding may also reflect limited variance in privacy literacy scores in the current student sample, which may have reduced statistical power to detect a small effect. Future research should replicate this test in more heterogeneous samples."*
+
 Common mistakes to avoid:
 
 - Saying *"This finding is in line with previous research (ref1, ref2)"*, also explain *how* and *why*

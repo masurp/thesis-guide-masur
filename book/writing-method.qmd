@@ -19,6 +19,10 @@ Descriptions of *your* findings in the result section → **past tense** (*"The 
 - The **final *N*** (must match the *N* reported in the results section)
 - **Demographics**: frequency and percentage for gender, age, education, etc.
 
+**Example:**
+
+> *"Participants were recruited via Prolific Academic. A power analysis based on an expected small-to-medium effect (r = .20, α = .05, power = .80) indicated a required sample of N = 197. A total of 231 participants were recruited. After excluding 19 participants who failed two or more attention checks and 12 who completed the survey in under four minutes, the final sample consisted of N = 200 participants (54% female; M~age~ = 29.8, SD = 7.6, range: 18–61; 51% with a university degree)."*
+
 ### Design
 
 - State the **type of design** clearly: survey, experiment, between-subjects, within-subjects, mixed
@@ -56,6 +60,10 @@ For each variable, report:
 - For experiments: a **manipulation check**!
 
 Eventually organize measures under subheadings: Independent variables, Dependent variables, Control variables.
+
+**Example:**
+
+> ***Privacy concerns*** *were measured with four items adapted from Malhotra et al. (2004; e.g., "I am concerned about threats to my personal privacy online"). Items were answered on a 5-point Likert scale (1 = strongly disagree; 5 = strongly agree). Confirmatory factor analysis confirmed a single-factor structure (CFI = .97, RMSEA = .05). The scale showed good reliability (ω = .84; M = 3.12, SD = 0.91, range: 1–5). Higher scores indicate greater privacy concerns. The final score was computed as the mean of all four items.*
 
 ::: {.callout-warning}
 ## Consistency is critical

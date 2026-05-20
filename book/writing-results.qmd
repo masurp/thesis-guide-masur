@@ -22,6 +22,10 @@ Report means (*M*), standard deviations (*SD*), and correlations among measured 
 
 Verify that the experimental manipulation worked as intended. Also check randomization: are demographic variables (gender, age, education) balanced across conditions? Report these checks even if no significant differences were found.
 
+**Example:**
+
+> *"As a manipulation check, participants in the high-exposure condition reported significantly more perceived peer disclosure than those in the low-exposure condition (M = 4.12, SD = 0.73 vs. M = 2.31, SD = 0.68), t(198) = 17.34, p < .001, d = 2.43, confirming that the manipulation was successful. Randomization checks showed no significant differences between conditions in age, t(198) = 0.84, p = .402, gender distribution, χ²(1) = 0.62, p = .431, or education level, χ²(2) = 1.14, p = .565."*
+
 ### 3. Hypothesis testing (confirmatory analyses)
 
 For each hypothesis:

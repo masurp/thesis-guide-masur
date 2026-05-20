@@ -1,0 +1,3667 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+  a4paper,
+]{scrbook}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=2.5cm]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={MA Thesis Guide},
+  pdfauthor={Philipp Masur},
+  colorlinks=true,
+  linkcolor={003D6B},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={00A6D6},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{MA Thesis Guide}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Communication Science · Vrije Universiteit Amsterdam}
+\author{Philipp Masur}
+\date{March 18, 2026}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter*{Welcome}\label{welcome}
+\addcontentsline{toc}{chapter}{Welcome}
+
+\markboth{Welcome}{Welcome}
+
+Welcome to the \textbf{MA Thesis Guide for Communication Science} at
+Vrije Universiteit Amsterdam. This guide is designed to support you
+throughout your master's thesis project --- from choosing a topic to
+submitting your final version.
+
+The guide brings together information from several official documents
+(the thesis manual, writing guidelines, and departmental AI policy) in
+one accessible, searchable format. Use it alongside your supervisor's
+feedback and the resources on Canvas.
+
+\section*{How to use this guide}\label{how-to-use-this-guide}
+\addcontentsline{toc}{section}{How to use this guide}
+
+\markright{How to use this guide}
+
+This guide is organized into five parts:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Getting Started} --- course details, the thesis trajectory,
+  key deadlines, and how supervision works
+\item
+  \textbf{The Research Process} --- from research question to ethics and
+  data management
+\item
+  \textbf{Writing Your Thesis} --- section-by-section writing
+  requirements and tips
+\item
+  \textbf{Academic Practices} --- literature search, APA citation, open
+  science, and AI tools
+\item
+  \textbf{Submission \& Assessment} --- grading, resits, and graduation
+\end{enumerate}
+
+Use the sidebar to navigate, the search bar to find specific topics, or
+download the full guide as a PDF or EPUB using the buttons above.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{New to the thesis process?}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Start with \href{getting-started.qmd}{Getting Started} for an overview
+of the course, then work through \href{trajectory.qmd}{The Thesis
+Trajectory} to understand what is expected at each stage.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-note-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Official documents}, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+This guide synthesizes and elaborates on the following official
+departmental documents:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Manual for the MA thesis Communication Science 2025--26}
+\item
+  \emph{Guideline Masterthesis Communication Science}
+\item
+  \emph{Use of Generative AI Tools in Your Ba/Ma Thesis 2025--26}
+\end{itemize}
+
+In case of any discrepancy, the official documents on Canvas take
+precedence.
+
+\end{tcolorbox}
+
+\section*{About this guide}\label{about-this-guide}
+\addcontentsline{toc}{section}{About this guide}
+
+\markright{About this guide}
+
+This guide was created by \textbf{Philipp Masur} (Department of
+Communication Science, VU Amsterdam). It is updated annually to reflect
+current departmental policy and best practices.
+
+If you notice an error or want to suggest an improvement, use the ``Edit
+this page'' or ``Report an issue'' links in the right margin of any
+page.
+
+\part{Getting Started}
+
+\chapter{Getting Started}\label{getting-started-1}
+
+\section{Course information}\label{course-information}
+
+The MA Thesis in Communication Science is a substantial independent
+research project that forms the capstone of your master's degree. Here
+are the key course facts:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Course code} & S\_MTcw \\
+\textbf{Credits} & 18 EC (≈ 504 hours) \\
+\textbf{Course level} & 600 \\
+\textbf{Periods} & 4--6 (February track) or 1--2 (September track) \\
+\textbf{Language} & Dutch or English \\
+\textbf{Faculty} & Faculty of Social Sciences \\
+\textbf{Coordinator} & dr. Camiel Beukeboom \\
+\textbf{Teaching format} & Individual and small-group meetings with
+supervisor, plus centralized support and student peer review \\
+\textbf{Assessment} & Evaluated by supervisor (first reviewer) and a
+second reviewer using the assessment form (see Canvas) \\
+\end{longtable}
+
+\section{Entry requirements}\label{entry-requirements}
+
+Before you can continue with the full MA thesis trajectory, you must
+meet two requirements:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  A minimum of \textbf{12 EC} in total from preceding MA courses,
+  including successful completion of \textbf{Research Methods for
+  Communication Science}
+\item
+  An \textbf{approved Research Proposal} after the first phase (see
+  \href{trajectory.qmd}{The Thesis Trajectory})
+\end{enumerate}
+
+\section{Start dates: February or September
+track}\label{start-dates-february-or-september-track}
+
+The thesis course formally starts in \textbf{early February} (Period 4).
+However, it is also possible to start after the summer, in \textbf{early
+September}.
+
+\textbf{Why choose the September track?}
+
+\begin{itemize}
+\tightlist
+\item
+  You are doing an internship or other study activity that does not fit
+  alongside the thesis
+\item
+  You did not pass all courses from Period 1 or 2
+\end{itemize}
+
+If you want to start in September, discuss this with potential
+supervisors during the thesis market in January. Note that only a few
+supervisors supervise theses in the September track. You must still
+participate in the January supervisor assignment procedure.
+
+\section{Registration}\label{registration}
+
+Preparation begins in \textbf{December} with an information lecture
+about procedures, deadlines, and available supervisor topics.
+\textbf{Register for the course before December} to receive information
+via Canvas.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Don't miss the information lecture}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+The information lecture (usually early December) is where you receive
+the full list of supervisor topics and procedural information. Missing
+it can mean missing important deadlines.
+
+\end{tcolorbox}
+
+\section{Choosing a topic and finding a
+supervisor}\label{choosing-a-topic-and-finding-a-supervisor}
+
+In \textbf{January}, a \textbf{thesis market} is organized where you can
+walk around and talk informally with different supervisors about their
+research themes.
+
+After the market, you submit an \textbf{online questionnaire} with your
+topic preferences (ranked 1--8). You can also upload your own research
+proposal via the same form (but you should still indicate topic
+preferences in case your own proposal is not feasible).
+
+Supervisors are generally assigned by the \textbf{end of January}.
+
+\subsection{Can I propose my own
+topic?}\label{can-i-propose-my-own-topic}
+
+Yes. However, not all proposals can be accommodated --- it must be
+judged as interesting and feasible, and a supervisor must be available.
+A good own proposal should contain at minimum:
+
+\begin{itemize}
+\tightlist
+\item
+  A research question
+\item
+  A brief theoretical foundation
+\item
+  The intended type of research (survey, experiment, content analysis,
+  etc.)
+\end{itemize}
+
+\subsection{Can I write my thesis in
+English?}\label{can-i-write-my-thesis-in-english}
+
+Yes. You can write in Dutch or English, in consultation with your
+supervisor. Note that some supervisors only accept theses in English. If
+you wish to write in any other language, the Examination Board must
+grant permission.
+
+\chapter{The Thesis Trajectory}\label{the-thesis-trajectory}
+
+The MA thesis project unfolds in three main phases: \textbf{preparation
+(P4)}, \textbf{research and writing (P5)}, and \textbf{finalizing and
+submission (P6)}. This chapter explains what is expected at each stage.
+
+\section{Phase 1 (P4): Preparation}\label{phase-1-p4-preparation}
+
+Period 4 runs from \textbf{February to late March}. During this period,
+the thesis course runs in parallel with your two elective courses ---
+plan to spend approximately \textbf{4 hours per week} on your thesis in
+this phase.
+
+Your main tasks in P4:
+
+\begin{itemize}
+\tightlist
+\item
+  Read relevant literature in your chosen area
+\item
+  Delineate your individual research focus
+\item
+  Develop a draft research question
+\item
+  Meet with your supervisor (and thesis group) to get feedback on your
+  ideas
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Start writing immediately}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+As soon as you start reading, write down your ideas and summaries. Keep
+an overview of sources (e.g., in Zotero) and note the relevant aspects
+of each paper. This prevents you from getting lost in the literature and
+speeds up writing later.
+
+\end{tcolorbox}
+
+\subsection{The MA Thesis Plan (end of
+P4)}\label{the-ma-thesis-plan-end-of-p4}
+
+By the \textbf{end of Period 4} (see \href{timeline.qmd}{Timeline \&
+Deadlines}), you submit a \textbf{Thesis Plan} to your supervisor via
+email. This is a \textbf{minimum two-page document} that outlines your
+proposed project. The further you have developed it, the better. It
+should include at minimum:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  A first description of the relevant literature and core theory, and a
+  research ``gap'' that justifies your focus (theoretical and societal
+  relevance)
+\item
+  Your research question
+\item
+  Related hypotheses or sub-questions
+\item
+  A description of your intended research design (e.g., \emph{``a survey
+  exploring the relationship between X and Y''}, or \emph{``a 2×2
+  between-subjects experiment with X as IV and Y as DV''})
+\end{enumerate}
+
+Think of the Thesis Plan as a blueprint for your Research Proposal: (1)
+and (2) become your Introduction, (3) goes into the Theory section, and
+(4) goes into the Method section.
+
+\section{Phase 2 (P5): Research and
+Writing}\label{phase-2-p5-research-and-writing}
+
+Period 5 begins in April. You now work \textbf{full time} on your
+thesis.
+
+\subsection{The Research Proposal (early
+P5)}\label{the-research-proposal-early-p5}
+
+In the \textbf{first two weeks of P5}, you intensively develop your
+\textbf{Research Proposal}, building on the Thesis Plan and
+incorporating feedback from your supervisor. The Research Proposal must
+contain:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Introduction} --- including a clearly formulated Research
+  Question
+\item
+  \textbf{Theory} --- theoretical grounds and argumentation for the
+  relationships you expect
+\item
+  \textbf{Final hypotheses} (or sub-questions for qualitative research)
+\item
+  A \textbf{conceptual model} (for quantitative research)
+\item
+  \textbf{Method} --- research design, (in)dependent and control
+  variables, ideas on procedure and operationalization (a first draft of
+  the questionnaire, codebook, etc. can go in the appendix)
+\item
+  \textbf{Analysis plan} --- for each hypothesis/RQ, specify exactly
+  which statistical test on which variables you will use
+\end{enumerate}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{The Research Proposal is a gate}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Your supervisor evaluates the proposal as \emph{sufficient} or
+\emph{insufficient}. An \textbf{approved Research Proposal is required
+to continue} the thesis trajectory. If it is rejected, you have up to
+two resits (within 10 working days each). Failing both resits means you
+must stop and restart in the following academic year.
+
+\end{tcolorbox}
+
+Upload your Research Proposal on Canvas \textbf{and} email it to your
+supervisor before the deadline. Give peer feedback to fellow students
+first, and process their feedback before submitting.
+
+\subsection{Complete Methodology}\label{complete-methodology}
+
+As soon as possible after the Research Proposal is approved, submit your
+\textbf{Complete Methodology} to your supervisor. This is the final,
+detailed operationalization of your method --- the exact content of your
+questionnaire, experimental materials, codebook, Qualtrics setup, etc.
+This document usually becomes an appendix in your final thesis.
+
+\subsection{Ethical Review}\label{ethical-review}
+
+Before you start collecting data, you must complete the \textbf{ethical
+self-check} via the Research Ethics Review Committee (RERC). See
+\href{ethics.qmd}{Ethics \& Data Management} for details.
+
+\subsection{Data Collection and
+Analysis}\label{data-collection-and-analysis}
+
+Once your Research Proposal and Complete Methodology are approved and
+the ethical self-check is done:
+
+\begin{itemize}
+\tightlist
+\item
+  Start \textbf{data collection}
+\item
+  Write the \textbf{Method chapter} (in past tense)
+\item
+  Conduct analyses and write the \textbf{Results chapter}
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Prepare analyses before data comes in}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+You can write your analysis syntax (R or SPSS) and structure your
+results section before the final data is collected. This saves a lot of
+time.
+
+\end{tcolorbox}
+
+\section{Phase 3 (P6): Finalizing and
+Submission}\label{phase-3-p6-finalizing-and-submission}
+
+Period 6 is the final stretch. After receiving feedback on your Method
+and Results chapters, you:
+
+\begin{itemize}
+\tightlist
+\item
+  Write the \textbf{Conclusion and Discussion} chapter
+\item
+  Polish Introduction, Theory, Method, and Results
+\item
+  Process all remaining feedback
+\item
+  Submit the \textbf{complete concept version} to your supervisor for
+  final feedback
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This round focuses on: (1) overall coherence, (2) the
+    discussion/conclusion section, and (3) any specific questions you
+    have
+  \end{itemize}
+\item
+  After processing all feedback, submit the \textbf{final version}
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-note-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Quality matters --- for you and your supervisor}, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Submit only high-quality draft versions to your supervisor, meaning:
+versions you have already peer-reviewed with fellow students and
+improved. Feedback can only be useful and focused if the text is already
+in good shape.
+
+\end{tcolorbox}
+
+\section{Peer feedback}\label{peer-feedback}
+
+Throughout the trajectory, you are expected to give and receive
+\textbf{peer feedback} with fellow students in your thesis group. Peer
+feedback is required before submitting the following to your supervisor:
+
+\begin{itemize}
+\tightlist
+\item
+  The Research Proposal
+\item
+  The Method and Results chapters
+\item
+  The complete concept version
+\end{itemize}
+
+Use the official \textbf{Guideline Masterthesis Communication Science}
+(Canvas) as your peer feedback checklist.
+
+\chapter{Timeline \& Key Deadlines}\label{timeline-key-deadlines}
+
+\section{Monthly overview}\label{monthly-overview}
+
+The table below shows the typical tasks and tips for each month in the
+\textbf{February track} (P4--P6). The same structure applies to the
+September track, shifted by approximately seven months.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Month
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tasks
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tips
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{December} & Thesis information lecture & Think about what you
+want to study. A preliminary list of supervisor topics is published
+before Christmas. \\
+\textbf{January} & Thesis market --- meet supervisors, discuss topics,
+submit preferences questionnaire & Come prepared and with an open mind.
+Talk to a range of supervisors. \\
+\textbf{February (P4 starts)} & Read relevant literature; delineate your
+individual focus; develop a draft research question & Start writing down
+your ideas immediately. Use Zotero to keep track of sources. \\
+\textbf{March} & Determine your research gap; formulate your research
+question; think about your method. Submit \textbf{MA Thesis Plan}
+(2-pager) to supervisor by end of P4. & Everything you do in P4 is
+preparation for a flying start in P5. \\
+\textbf{April (P5 starts)} & First two weeks: intensively develop your
+\textbf{Research Proposal} (intro, theory, method, analysis plan).
+Process peer feedback before submitting. & Use the knowledge clips and
+support resources on Canvas for writing and hypothesis formulation. \\
+\textbf{April} & Work out your \textbf{Complete Methodology}. Once
+Research Proposal + analysis plan + methodology are approved: do the
+ethical self-check, and optionally submit a pre-registration. Then start
+data collection. & \\
+\textbf{Late April} & Start data collection. Write method chapter;
+conduct and report analyses in results chapter. & Keep a clean SPSS/R
+syntax from the start. You can prepare your analysis syntax before data
+is in. \\
+\textbf{Early May} & Process peer feedback on method and results
+chapters before submitting to supervisor. & Relate results to hypotheses
+and theory; seek additional literature if needed. \\
+\textbf{May} & Write and polish theory, method, results; write
+discussion and conclusion. Process peer feedback on complete concept
+version before submitting. & Writing a good thesis always requires many
+revisions. \\
+\textbf{Early June} & Submit complete concept version to supervisor.
+Process feedback and refine. & Agree with your supervisor in advance
+when to submit --- this is a busy time for everyone. \\
+\textbf{End of June} & Submit \textbf{final version} & See deadline
+table below. \\
+\end{longtable}
+
+\section{Deadline tables (2025--26)}\label{deadline-tables-202526}
+
+\subsection{February track}\label{february-track}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Event & Date \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Information lecture & Tuesday, 2 December 2025 \\
+Thesis market & Tuesday, 13 January 2026 \\
+MA Thesis Plan deadline & Tuesday, 31 March 2026 \\
+Research Proposal deadline & Tuesday, 14 April 2026 \\
+\textbf{1st submission deadline} & \textbf{Friday, 26 June 2026,
+16:00} \\
+Resit deadline & Friday, 24 July 2026, 17:00 \\
+2nd resit (if allowed) & Friday, 20 November 2026 \\
+\end{longtable}
+
+\subsection{September track}\label{september-track}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Event & Date \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Supervisor assignment & January 2026 \\
+Start of trajectory & Beginning of September 2026 \\
+MA Thesis Plan deadline & Monday, 19 October 2026 \\
+Research Proposal deadline & Monday, 2 November 2026 \\
+\textbf{1st submission deadline} & \textbf{Friday, 15 January 2027,
+17:00} \\
+Resit deadline & Friday, 19 February 2027, 17:00 \\
+2nd resit (if allowed) & Friday, 18 June 2027 \\
+\end{longtable}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Missing the first deadline = missing an exam opportunity}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Not submitting at the first opportunity is treated the same as not
+showing up for an exam. You are then entitled to one resit. If you fail
+the resit as well, you have exhausted your attempts for the current
+academic year.
+
+\end{tcolorbox}
+
+\section{Supervisor availability}\label{supervisor-availability}
+
+Your supervisor is available for guidance during the regular thesis
+period, \textbf{up to and including the first submission deadline}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{During July and August}: supervisors are generally not
+  available for feedback
+\item
+  \textbf{September--November resit period}: supervisors are only
+  limitedly available
+\end{itemize}
+
+Plan accordingly --- do not rely on supervisor feedback during the
+summer months.
+
+\chapter{Supervision \& Peer Feedback}\label{supervision-peer-feedback}
+
+\section{What to expect from your
+supervisor}\label{what-to-expect-from-your-supervisor}
+
+Your supervisor will guide you in:
+
+\begin{itemize}
+\tightlist
+\item
+  Formulating an interesting and well-grounded research question and
+  hypotheses
+\item
+  Writing a coherent, well-structured, and theoretically sound thesis
+\item
+  Designing a proper methodology and analysis plan
+\item
+  Giving focused feedback on each chapter --- \textbf{once per chapter}
+\end{itemize}
+
+As a rule of thumb, your supervisor will provide feedback on:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Your \textbf{introduction} (as part of the Thesis Plan feedback)
+\item
+  Your \textbf{theory chapter and research design} (as part of the
+  Research Proposal feedback)
+\item
+  Your \textbf{complete methodology}
+\item
+  Your \textbf{method and results chapters}
+\item
+  The \textbf{complete concept version} (focus: coherence and
+  discussion/conclusion)
+\end{enumerate}
+
+\section{What your supervisor expects from
+you}\label{what-your-supervisor-expects-from-you}
+
+A master's thesis student is expected to demonstrate the capacity to
+\textbf{independently} set up, conduct, and report an empirical research
+project. Your supervisor is a guide --- not a co-author.
+
+This means:
+
+\begin{itemize}
+\tightlist
+\item
+  Show \textbf{initiative}: contact your supervisor with a clear agenda,
+  not just general questions
+\item
+  Submit \textbf{high-quality drafts}: only submit versions that you
+  (and your peers) cannot improve further on your own
+\item
+  \textbf{Do not ask your supervisor} about basic matters such as
+  spell-checking, APA formatting, how to run R/SPSS tests, or things you
+  have already been taught in your coursework
+\end{itemize}
+
+For technical analysis questions (how to run tests in R or SPSS, how to
+report results), use:
+
+\begin{itemize}
+\tightlist
+\item
+  The statistics helpdesk
+\item
+  The \emph{R for Social Scientists} Canvas page
+\item
+  The departmental knowledge clips on Canvas
+\item
+  The Guideline Masterthesis Communication Science document
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Feedback is only useful if you've done your part}, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Feedback is pointless on text you know has flaws. Submit drafts only
+when you have already done everything you can to improve them ---
+including peer feedback.
+
+\end{tcolorbox}
+
+\section{Thesis groups and peer
+feedback}\label{thesis-groups-and-peer-feedback}
+
+Most supervisors organize supervision in \textbf{thesis groups} of 2--6
+students working on related topics. You will meet together especially in
+P4. As projects become more individualized, groups may split into
+smaller subgroups. Across the full trajectory, expect approximately
+\textbf{6--8 meetings} with your supervisor.
+
+\subsection{Peer feedback process}\label{peer-feedback-process}
+
+Before submitting any draft to your supervisor, you must:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Give and receive peer feedback with fellow students
+\item
+  Process the peer feedback and improve your draft
+\item
+  \textbf{Then} submit the improved version to your supervisor
+\end{enumerate}
+
+Peer feedback is required for:
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{Research Proposal} (including introduction and theory)
+\item
+  The \textbf{Method and Results chapters}
+\item
+  The \textbf{complete concept version} of the thesis
+\end{itemize}
+
+Use the \textbf{Guideline Masterthesis Communication Science} (Canvas)
+as your peer feedback checklist. As a peer reviewer, reflect on each
+section in a few sentences and suggest concrete improvements.
+
+\section{Formal regulations}\label{formal-regulations}
+
+The formal regulations for the MA thesis are described in the
+\emph{Regulation Ma thesis} document, available on VUnet. In practice,
+supervisor and student can usually find a good working relationship
+without needing to consult the formal rules. However, in cases of
+disagreement, the regulations serve as the official reference point.
+
+\section{Getting help for personal
+circumstances}\label{getting-help-for-personal-circumstances}
+
+If personal circumstances are affecting your progress:
+
+\begin{itemize}
+\tightlist
+\item
+  Contact the \textbf{study advisor} as early as possible:
+  \href{https://vu.nl/en/student/contact-student-guidance-and-support/academic-advisors-fss}{vu.nl/en/student/contact-student-guidance-and-support/academic-advisors-fss}
+\item
+  For delays due to illness, psychological issues, or other
+  circumstances, you may be eligible for financial support from the
+  \textbf{Profileringsfonds}:
+  \href{https://vu.nl/en/student/finances/profile-fund}{vu.nl/en/student/finances/profile-fund}
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Report delays early}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+The sooner you contact your study advisor about a delay, the more
+options are available to you. Waiting too long limits what support can
+be offered.
+
+\end{tcolorbox}
+
+\chapter{Writing the Thesis Plan}\label{writing-the-thesis-plan}
+
+The \textbf{MA Thesis Plan} (sometimes called the Exposé) is the first
+formal deliverable of your thesis project. It is due at the end of
+Period 4 and should be a minimum of two pages. Think of it as a working
+blueprint: it does not need to be polished or complete, but it should
+show that you have done serious preparatory thinking.
+
+\section{What the Thesis Plan needs to
+contain}\label{what-the-thesis-plan-needs-to-contain}
+
+\subsection{1. Literature overview and research
+gap}\label{literature-overview-and-research-gap}
+
+Begin by summarizing the state of knowledge in your topic area. You do
+not need an exhaustive review --- focus on the core literature directly
+relevant to your research focus. Then clearly articulate the
+\textbf{research gap}: what is not yet known, understudied,
+inconsistent, or unresolved?
+
+A good research gap statement follows this pattern:
+
+\begin{quote}
+\emph{``While prior research has shown that X, relatively little
+attention has been paid to Y. In particular, it remains unclear
+whether/how/to what extent {[}gap{]}. This matters because
+{[}theoretical/societal reason{]}.''}
+\end{quote}
+
+\textbf{Typical length in the plan:} 1--2 paragraphs.
+
+\subsection{2. Research question}\label{research-question}
+
+State your central research question explicitly. At this stage it may
+still be somewhat provisional --- you can refine it in the Research
+Proposal. A good research question is:
+
+\begin{itemize}
+\tightlist
+\item
+  Specific about the constructs involved
+\item
+  Empirically answerable
+\item
+  Clearly connected to the gap you identified
+\end{itemize}
+
+\textbf{Example:}
+
+\begin{quote}
+\emph{``To what extent does the framing of climate change news as a
+political versus scientific issue affect readers' policy support, and
+does this effect depend on prior environmental attitudes?''}
+\end{quote}
+
+\subsection{3. Hypotheses or
+sub-questions}\label{hypotheses-or-sub-questions}
+
+List your expected hypotheses (quantitative research) or sub-questions
+(qualitative research). At this stage, these can be tentative. You
+should be able to provide at least a brief theoretical rationale for
+each.
+
+For quantitative research, a hypothesis predicts a specific directional
+or non-directional relationship:
+
+\begin{quote}
+\emph{``H1: Exposure to politically framed climate news will be
+associated with lower policy support than scientifically framed news.''}
+
+\emph{``H2: This effect will be moderated by prior environmental
+attitudes, such that the framing effect is stronger among politically
+non-engaged readers.''}
+\end{quote}
+
+\subsection{4. Research design}\label{research-design}
+
+Describe how you plan to answer your research question. Be concrete ---
+specify the type of research and the key elements. For example:
+
+\begin{quote}
+\emph{``I plan to conduct a 2 (news framing: political vs.~scientific) ×
+2 (headline valence: positive vs.~negative) between-subjects online
+experiment. Participants will be recruited via Prolific. The main
+dependent variable is policy support, measured with an established
+5-item scale.''}
+\end{quote}
+
+or
+
+\begin{quote}
+\emph{``I will use semi-structured interviews with 15--20 journalists at
+Dutch national news outlets to explore how they perceive and enact
+editorial independence norms in the context of audience metrics.''}
+\end{quote}
+
+\section{What makes a strong Thesis
+Plan?}\label{what-makes-a-strong-thesis-plan}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5714}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4286}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Strong
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Weak
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Research gap is clearly derived from the literature & Gap is vague or
+asserted without evidence \\
+RQ is specific and names constructs & RQ is too broad or not
+researchable \\
+Hypotheses follow logically from the theoretical argument & Hypotheses
+are not justified \\
+Design is clearly matched to the RQ & Design is described only in
+general terms \\
+Writing is clear and coherent & Writing is unfocused, ideas are
+scattered \\
+\end{longtable}
+
+\section{Common mistakes}\label{common-mistakes}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Describing an area of interest rather than a gap.} ``Social
+  media and mental health is an important topic'' is not a gap. What
+  specifically is unknown?
+\item
+  \textbf{Overly broad RQs.} If your RQ could be a book, it's too broad.
+  Narrow down to one specific relationship or phenomenon.
+\item
+  \textbf{Missing the connection between design and RQ.} Your design
+  must be capable of answering your RQ. If your RQ asks about causal
+  effects, a cross-sectional survey alone is insufficient.
+\item
+  \textbf{Writing the plan after the fact.} The plan is meant to guide
+  your proposal, not just describe what you decided already. Use it to
+  think through whether your project is feasible.
+\end{itemize}
+
+\section{Practical tips}\label{practical-tips}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Start earlier than you think}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+The Thesis Plan is due at the end of P4, but the earlier you start
+reading and writing, the better your plan will be --- and the easier
+your Research Proposal will become.
+
+\end{tcolorbox}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Use Zotero from the start}: track every paper you read with a
+  brief note on its relevance to your project
+\item
+  \textbf{Write in parallel with reading}: don't wait until you've read
+  everything to start writing
+\item
+  \textbf{Discuss your gap with your supervisor early}: your supervisor
+  can quickly tell you if your gap has already been addressed in
+  literature you haven't found yet
+\item
+  \textbf{Keep it focused}: two pages forces you to be precise ---
+  that's the point
+\end{itemize}
+
+\section{Template structure}\label{template-structure}
+
+A two-page Thesis Plan might be organized as follows:
+
+\begin{verbatim}
+Title (working title of the thesis)
+Name | Student number | Supervisor | Date
+
+1. Introduction and research gap (approx. ½ page)
+   Brief overview of the topic; what is known; what is the gap
+
+2. Research question (1–2 sentences)
+
+3. Hypotheses / sub-questions (bulleted list with brief rationale)
+
+4. Proposed research design (approx. ½ page)
+   Type of study; participants/corpus; key variables/concepts; method
+
+[Optional: preliminary reference list]
+\end{verbatim}
+
+\chapter{Writing the Research
+Proposal}\label{writing-the-research-proposal}
+
+The \textbf{Research Proposal} is the most important early milestone of
+your thesis. It is due in the first two weeks of Period 5 and is
+evaluated by your supervisor as \emph{sufficient} or
+\emph{insufficient}. An approved proposal is required to continue --- it
+is the green light to start collecting data.
+
+The proposal is not the final thesis. It is a detailed plan that shows
+your research design is sound, your theory is well-grounded, and you
+know exactly what you are going to do and how. Your supervisor evaluates
+it primarily on \textbf{feasibility} and the \textbf{fit between your
+method, analysis plan, and research question}.
+
+\section{Required sections}\label{required-sections}
+
+\subsection{1. Introduction}\label{introduction}
+
+The introduction frames your study and states your research question. It
+follows the same structure as the introduction in the final thesis (see
+\href{writing-intro-theory.qmd}{Introduction \& Theory Chapter}), but at
+this stage it may not yet be in final form.
+
+The introduction must contain: - A clear \textbf{motivation} for the
+topic (why does this matter?) - An identification of the
+\textbf{research gap} - A clear, explicitly stated \textbf{research
+question} - A brief argument for the \textbf{societal and scientific
+relevance}
+
+\textbf{Length:} 1--2 pages.
+
+\textbf{Common mistakes:} - Stating why the topic is interesting in
+general, without identifying a specific gap - Formulating a research
+question that is too broad, too vague, or not empirically answerable -
+Relevance that is disconnected from the gap (e.g., claiming societal
+relevance for a purely theoretical contribution)
+
+\subsection{2. Theory}\label{theory}
+
+The theory chapter reviews relevant literature and builds a theoretical
+argument that culminates in your hypotheses. In the proposal, this
+chapter should be substantially developed, though it need not be fully
+polished.
+
+Structure: 1. Define and explain your central constructs 2. Review prior
+empirical work, organized thematically 3. Build theoretical arguments
+linking constructs 4. Formulate hypotheses (or sub-questions) 5. Present
+a \textbf{conceptual model} (for quantitative research)
+
+\textbf{Length:} 4--6 pages in the proposal (6--8 in the final thesis).
+
+\textbf{Common mistakes:} - Summarizing papers one by one instead of
+synthesizing them thematically - Hypotheses that appear out of nowhere
+without a theoretical build-up - Inconsistent naming of constructs (use
+the same term throughout) - Too many or too few hypotheses --- each
+hypothesis needs a full theoretical argument
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{The cone structure}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Each section of your theory chapter should start broad (definitions,
+background) and narrow toward your specific hypotheses. Think of it as a
+funnel.
+
+\end{tcolorbox}
+
+\subsection{3. Hypotheses (or
+sub-questions)}\label{hypotheses-or-sub-questions-1}
+
+State all hypotheses clearly and separately. Each hypothesis: - Proposes
+exactly \textbf{one effect} (one direction, one pair of variables) - Is
+numbered (H1, H2, H3 etc.; sub-hypotheses as H1a, H1b) - Uses the
+\textbf{same variable names} as your theory, conceptual model, and
+method - Is supported by a clear theoretical argument in the theory
+chapter
+
+For \textbf{moderation}: \emph{``The effect of X on Y will be moderated
+by Z, such that the effect will be stronger/weaker when Z is high.''}
+
+For \textbf{mediation}: \emph{``The effect of X on Y will be mediated by
+M.''}
+
+For \textbf{qualitative research}: state sub-questions instead. Each
+sub-question should address one distinct aspect of the main RQ.
+
+\subsection{4. Method}\label{method}
+
+The method section describes how you will answer your research question.
+At the proposal stage, it should be as detailed as possible, even if
+some specifics will be refined later.
+
+\subsubsection{Participants / data
+source}\label{participants-data-source}
+
+\begin{itemize}
+\tightlist
+\item
+  Who are the participants (or what is the corpus)?
+\item
+  How will you recruit them (or sample the data)?
+\item
+  What is the intended sample size? Include a \textbf{power analysis} or
+  justify your \emph{N} (e.g., for experimental research: a medium
+  effect size with 80\% power for a between-subjects ANOVA requires
+  \textasciitilde52 per cell)
+\item
+  For qualitative research: how many participants, using what sampling
+  logic?
+\end{itemize}
+
+\subsubsection{Design}\label{design}
+
+\begin{itemize}
+\tightlist
+\item
+  State the type of design clearly
+\item
+  For experiments: write out the full design notation (e.g., \emph{``a 2
+  {[}X: condition A vs.~condition B{]} × 2 {[}Y: high vs.~low{]}
+  between-subjects experiment''})
+\item
+  Name all independent, dependent, and control variables
+\end{itemize}
+
+\subsubsection{Procedure}\label{procedure}
+
+\begin{itemize}
+\tightlist
+\item
+  Describe the study sequence step by step
+\item
+  For experiments: describe exactly what each condition will look like
+\end{itemize}
+
+\subsubsection{Measures /
+operationalization}\label{measures-operationalization}
+
+For each variable: - Name the scale or instrument - Cite the original
+source - State the number of items and the response format - Note
+reliability from the original source (if available)
+
+A first draft of the \textbf{questionnaire, experimental materials, or
+codebook} can be included as an appendix to the proposal.
+
+\subsection{5. Analysis plan}\label{analysis-plan}
+
+The analysis plan is one of the most important parts of the proposal and
+is often where students struggle. For \textbf{each hypothesis or
+sub-question}, specify:
+
+\begin{itemize}
+\tightlist
+\item
+  Which statistical test you will use
+\item
+  Which variables are included (exactly as named in the method section)
+\item
+  What the criteria are for accepting or rejecting the hypothesis
+\end{itemize}
+
+\textbf{Example analysis plan entries:}
+
+\begin{quote}
+\emph{H1 (main effect of framing on policy support) will be tested with
+an independent-samples t-test, with news framing condition (political
+vs.~scientific) as the independent variable and policy support (scale
+average) as the dependent variable. H1 will be supported if the effect
+is statistically significant (p \textless{} .05) and in the hypothesized
+direction.}
+\end{quote}
+
+\begin{quote}
+\emph{H3 (moderation of framing effect by political identity) will be
+tested with a 2-step hierarchical regression. In Step 1, news framing
+(dummy-coded) and political identity are entered as predictors of policy
+support. In Step 2, the interaction term (framing × political identity)
+is added. H3 will be supported if the interaction term in Step 2 is
+statistically significant.}
+\end{quote}
+
+\begin{quote}
+\emph{H5 (mediation of X on Y via M) will be tested using Hayes' PROCESS
+macro (Model 4) with 5,000 bootstrap samples. The indirect effect will
+be considered significant if the 95\% bootstrap confidence interval does
+not include zero.}
+\end{quote}
+
+\textbf{For qualitative research:} describe your analytical approach
+(e.g., thematic analysis following Braun \& Clarke, 2006), how you will
+code the data, and how you will ensure trustworthiness (e.g., member
+checking, peer debriefing).
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{The analysis plan is binding}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Your supervisor approves your analysis plan. Deviating from it
+substantially in the final thesis without justification is a problem. If
+circumstances require a change (e.g., your manipulation fails), discuss
+this with your supervisor immediately.
+
+\end{tcolorbox}
+
+\section{Getting to ``sufficient''}\label{getting-to-sufficient}
+
+Your supervisor evaluates the proposal primarily on:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Criterion
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What they are looking for
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Feasibility} & Can you realistically do this study within the
+timeframe? \\
+\textbf{Fit between RQ and design} & Does the design actually answer the
+research question? \\
+\textbf{Theoretical grounding} & Are the hypotheses derived from solid
+theoretical argumentation? \\
+\textbf{Analysis plan clarity} & Do you know exactly which test to run
+for each hypothesis? \\
+\textbf{Consistency} & Are the same variable names used throughout
+theory, method, and analysis plan? \\
+\end{longtable}
+
+\section{Practical tips}\label{practical-tips-1}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Don't wait for the perfect idea.} Submit the best proposal you
+  can. The proposal is a plan, not a guarantee. It can be refined.
+\item
+  \textbf{Be very specific about your design.} Vague descriptions of ``a
+  survey'' or ``an experiment'' are not enough. What exact manipulation?
+  What exact measures?
+\item
+  \textbf{Name your scales.} ``I will measure anxiety'' is not
+  sufficient. ``I will measure anxiety using the 6-item STAI-6 (Marteau
+  \& Bekker, 1992)'' is.
+\item
+  \textbf{Map your analysis plan against your hypotheses one by one.} If
+  you have 5 hypotheses, you need 5 analysis plan entries --- no more,
+  no less.
+\item
+  \textbf{Process peer feedback before submitting.} Fellow students can
+  often spot inconsistencies in variable names or gaps in the
+  theoretical argument that you miss when reading your own work.
+\end{itemize}
+
+\part{The Research Process}
+
+\chapter{From Topic to Research
+Question}\label{from-topic-to-research-question}
+
+\section{Starting with a topic}\label{starting-with-a-topic}
+
+A thesis begins with a \textbf{topic of interest} --- a broad area
+within communication science that you want to explore. Your supervisor
+offers research themes within their expertise. Working within your
+supervisor's theme ensures your project is relevant and that you benefit
+fully from their expertise.
+
+If you propose your own topic, make sure it is:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Interesting and feasible} within the timeframe
+\item
+  \textbf{Anchored in existing literature} (you must be able to find a
+  research gap)
+\item
+  \textbf{Researchable} with data you can realistically collect
+\item
+  Something a willing supervisor can guide
+\end{itemize}
+
+\section{Identifying the research
+gap}\label{identifying-the-research-gap}
+
+A good research question emerges from a \textbf{gap in the literature}.
+After reading the relevant literature in your area, ask yourself:
+
+\begin{itemize}
+\tightlist
+\item
+  What do we know already?
+\item
+  What is still unclear, inconsistent, or unexplored?
+\item
+  Why does this gap matter --- theoretically and/or for society?
+\end{itemize}
+
+The gap is your justification for doing the study. It should be clearly
+articulated in your Introduction and elaborated in your Theory chapter.
+
+\section{Formulating the research
+question}\label{formulating-the-research-question}
+
+A good research question is:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Specific} --- it names the constructs/variables you are
+  interested in
+\item
+  \textbf{Researchable} --- it can be answered with empirical data you
+  can collect
+\item
+  \textbf{Theoretically grounded} --- it follows from a gap in existing
+  knowledge
+\item
+  \textbf{Focused} --- one central question, not multiple questions
+  combined
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Common mistake: too broad}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+``What is the role of social media in society?'' is too broad. A better
+version: ``To what extent does exposure to ideologically congruent
+social media content predict political polarization among Dutch
+adults?''
+
+\end{tcolorbox}
+
+In \textbf{quantitative research}, the main RQ is typically followed by
+\textbf{hypotheses} that predict specific relationships. These are
+derived from existing theory.
+
+In \textbf{qualitative research} (e.g., grounded theory, thematic
+analysis), the main RQ is followed by \textbf{sub-questions} that guide
+your data collection and analysis.
+
+\section{Hypotheses}\label{hypotheses}
+
+A hypothesis proposes a specific, testable relationship between
+variables. Good hypotheses:
+
+\begin{itemize}
+\tightlist
+\item
+  Propose \textbf{one effect} (not multiple effects in one statement)
+\item
+  Follow \textbf{logically} from the theoretical argument
+\item
+  Are supported by \textbf{3--5 previous studies} pointing in the same
+  direction
+\item
+  Use \textbf{consistent terminology} with the theory section,
+  conceptual model, and method section
+\end{itemize}
+
+Example: \emph{``H1: Higher exposure to health misinformation on social
+media will be positively associated with vaccine hesitancy.''}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Moderation and mediation in separate hypotheses}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Main effects and moderation/mediation effects must be stated in separate
+hypotheses. Do not combine them.
+
+\end{tcolorbox}
+
+\section{Sub-questions (qualitative
+research)}\label{sub-questions-qualitative-research}
+
+In qualitative projects, the main RQ is broken down into
+\textbf{sub-questions} that:
+
+\begin{itemize}
+\tightlist
+\item
+  Follow logically from the main RQ
+\item
+  Address specific aspects or steps of your research
+\item
+  Are grounded in 3--5 previous studies
+\item
+  Are formulated distinctively (each addresses a clearly different
+  focus)
+\end{itemize}
+
+Each sub-question ends with a \textbf{single question mark} --- a common
+mistake is combining multiple questions before one question mark.
+
+\section{The conceptual model}\label{the-conceptual-model}
+
+For quantitative research, your Theory chapter ends with a
+\textbf{conceptual model} --- a visual diagram that maps out the
+constructs and their hypothesized relationships. Every variable
+mentioned in your hypotheses must appear in the model. Every variable in
+the model must appear in your hypotheses and method section.
+
+Use consistent terminology throughout: the same construct should have
+the same name in the introduction, theory, conceptual model, method, and
+results.
+
+\chapter{Research Design}\label{research-design-1}
+
+Choosing the right research design is one of the most important
+decisions you make in your thesis. Your design must fit your research
+question. This chapter outlines the main options available to you.
+
+\section{Quantitative vs.~qualitative
+research}\label{quantitative-vs.-qualitative-research}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Quantitative
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Qualitative
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Goal} & Test hypotheses about relationships between variables &
+Explore meanings, experiences, patterns \\
+\textbf{Data} & Numerical (survey responses, coded content) & Text,
+images, audio (interviews, documents) \\
+\textbf{Analysis} & Statistical tests (regression, ANOVA, etc.) &
+Thematic analysis, grounded theory, discourse analysis \\
+\textbf{Output} & Generalizable findings across populations & Rich,
+contextualized insights \\
+\textbf{Thesis structure} & Hypotheses + conceptual model &
+Sub-questions \\
+\end{longtable}
+
+Both approaches are valid in Communication Science. The choice depends
+on your research question and the state of knowledge in your area.
+
+\section{Survey research}\label{survey-research}
+
+A survey measures variables via a questionnaire administered to a sample
+of participants. It is the most common design in Communication Science
+master's theses.
+
+\textbf{When to use it:} When you want to assess the prevalence of
+variables and/or examine associations and relationships between them in
+a larger sample.
+
+\textbf{Key considerations:} - Sample size and recruitment (specify
+power analysis rationale) - Validated scales vs.~self-constructed items
+- Platform (Qualtrics is the standard at VU) - Online convenience
+sampling vs.~probability sampling
+
+\section{Experimental research}\label{experimental-research}
+
+An experiment manipulates one or more independent variables and measures
+effects on dependent variables, with random assignment of participants
+to conditions.
+
+\textbf{When to use it:} When you want to establish causal effects.
+
+\textbf{Design notation:} Describe your design clearly, e.g.:
+
+\begin{quote}
+\emph{``A 2 (color of logo: red vs.~blue) × 2 (medium: TV vs.~newspaper)
+between-subjects experiment with purchase intention as the dependent
+variable.''}
+\end{quote}
+
+Always specify: - Whether it is between-subjects, within-subjects, or
+mixed - Whether randomization was used (it should be) - Whether you
+conducted a \textbf{manipulation check}
+
+\section{Content analysis}\label{content-analysis}
+
+Content analysis systematically codes and analyzes a corpus of media
+content (text, images, video, social media posts).
+
+\textbf{Types:} - \textbf{Manual content analysis}: human coders apply a
+codebook; requires intercoder reliability testing - \textbf{Automated
+content analysis}: computational methods (e.g., dictionary-based,
+supervised machine learning, LLMs) via R, AmCat, or Coosto
+
+\textbf{Key considerations:} - How was the corpus assembled? (sampling
+strategy) - What is the unit of analysis? - How were variables
+operationalized and coded? - What are the reliability and validity of
+your coding?
+
+\section{Qualitative research}\label{qualitative-research}
+
+Qualitative designs explore social phenomena in depth without the goal
+of statistical generalization.
+
+\textbf{Common approaches in Communication Science:} -
+\textbf{Interviews} (semi-structured, in-depth) - \textbf{Focus groups}
+- \textbf{Ethnographic observation}
+
+\textbf{Analysis frameworks:} - \textbf{Thematic analysis} ---
+identifying recurring patterns across data - \textbf{Grounded theory}
+--- building theory inductively from the data - \textbf{Discourse
+analysis} --- analyzing how language constructs meaning
+
+In qualitative theses, the method chapter describes the methodology
+(e.g., grounded theory), data collection (who, how many, how recruited),
+and data analysis procedures.
+
+\section{The analysis plan}\label{the-analysis-plan}
+
+Your \textbf{Research Proposal must include an analysis plan} that
+specifies --- for each hypothesis or sub-question --- exactly which
+statistical test on which variables will be used to answer it. For
+example:
+
+\begin{quote}
+\emph{``H1 will be tested with a simple linear regression with social
+media exposure as the predictor and vaccine hesitancy as the outcome
+variable.''}
+\end{quote}
+
+This plan prevents ad-hoc analysis decisions later. In the final thesis,
+the analysis plan is not a separate chapter --- it is integrated into
+the Results section.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Pre-registration}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Consider pre-registering your analysis plan on the Open Science
+Framework (OSF) before data collection. See \href{open-science.qmd}{Open
+Science} for details.
+
+\end{tcolorbox}
+
+\chapter{Ethics \& Data Management}\label{ethics-data-management}
+
+\section{The ethical self-check}\label{the-ethical-self-check}
+
+Before you start collecting data, it is \textbf{mandatory} to complete
+the \textbf{ethical review self-check} via the Research Ethics Review
+Committee (RERC) of the Faculty of Social Sciences (FSW).
+
+You can find the self-check and all relevant information here:
+\href{https://vu.nl/en/employee/research-support/research-ethics-review-ssc}{vu.nl/en/employee/research-support/research-ethics-review-ssc}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Always complete the self-check with your supervisor}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Your supervisor holds final responsibility for the accuracy of your
+answers. \textbf{Never complete the self-check without consulting your
+supervisor first.} Inaccurate answers can invalidate the ethical
+assessment and make your data unusable.
+
+\end{tcolorbox}
+
+\subsection{How the self-check works}\label{how-the-self-check-works}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Complete the online survey in consultation with your supervisor
+\item
+  If your research \textbf{meets} the faculty's ethical guidelines → no
+  further review needed. You will receive a PDF confirmation by email.
+\item
+  If your research \textbf{does not meet} the guidelines (e.g., no
+  informed consent, stimuli that may distress participants, or
+  vulnerable populations) → further steps are needed
+\end{enumerate}
+
+\subsection{If your research does not pass the
+self-check}\label{if-your-research-does-not-pass-the-self-check}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Discuss the issue with your supervisor --- in many cases, a small
+  design adjustment solves the problem
+\item
+  If the issue cannot be resolved, contact the RERC at rerc.ssc@vu.nl
+\item
+  Note: thesis projects are generally \textbf{not eligible} for full
+  RERC review, unless the project is part of a larger, supervised
+  research line that will be published. In that case, the supervisor
+  must prepare materials for full review.
+\end{enumerate}
+
+\subsection{Practical notes}\label{practical-notes}
+
+\begin{itemize}
+\tightlist
+\item
+  Save the self-check PDF output and store it in your surfdrive folder
+  and attach it as an appendix to your thesis
+\item
+  You can change your answers before the final submission of the form
+  --- discuss all answers with your supervisor before pressing submit
+\item
+  In some cases, your supervisor has already applied for ethical review
+  for a research line you are joining. Check with your supervisor
+  whether you need to complete the self-check separately.
+\end{itemize}
+
+\subsection{Qualtrics: disable personal data
+collection}\label{qualtrics-disable-personal-data-collection}
+
+By default, Qualtrics stores personal data (IP address and geolocation).
+If you want to keep responses anonymous:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to \emph{Survey Options} in Qualtrics
+\item
+  Under \emph{Survey Termination}, enable: \textbf{``Anonymize Response
+  --- Do NOT record any personal information and remove contact
+  association''}
+\end{enumerate}
+
+If you do not do this, you must answer ``yes'' to the question about
+collecting personal/sensitive data in the self-check, and you must store
+the data securely.
+
+\section{Data management}\label{data-management}
+
+Careful and secure handling of research data is required throughout your
+thesis.
+
+\subsection{Storing your data
+(surfdrive)}\label{storing-your-data-surfdrive}
+
+The accepted secure method for storing and sharing data with your
+supervisor is a \textbf{shared SURFdrive folder}, protected by a
+password. Your supervisor creates this folder and grants you access.
+
+Workflow: 1. Place the \textbf{complete raw data file} in the shared
+folder with a clear name (e.g.,
+\texttt{ALL\_RAW\_DATA\_StudyName\_StudentName.sav}) 2. Make a
+\textbf{duplicate} of the raw file --- work only in the copy 3.
+\textbf{Remove all personal/sensitive data} from the working file (e.g.,
+geolocation, IP addresses, names, email addresses) 4. Clean the working
+file and create new variables as needed 5. Keep your \textbf{syntax} (R
+or SPSS) updated and annotated throughout
+
+\subsection{Syntax hygiene}\label{syntax-hygiene}
+
+Always work with syntax --- never run analyses from menus without
+recording them:
+
+\begin{itemize}
+\tightlist
+\item
+  In \textbf{SPSS}: click ``Paste'' for every command run from a menu;
+  add notes with \texttt{*\ comment\ text}
+\item
+  In \textbf{R}: annotate your script with \texttt{\#\ comment\ text}
+\end{itemize}
+
+Your syntax should allow anyone (including you, six months from now) to:
+
+\begin{itemize}
+\tightlist
+\item
+  Re-create the final dataset from the raw data
+\item
+  Reproduce every reported analysis
+\end{itemize}
+
+At the start of your method section, report all cases removed from the
+dataset and the reasons (e.g., \emph{``9 cases were excluded because
+they did not complete the questionnaire''}).
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Syntax is part of your grade}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Reproducible syntax is a sign of scientific rigor. Your supervisor needs
+access to your data and syntax (via surfdrive) when assessing your
+thesis.
+
+\end{tcolorbox}
+
+\part{Writing Your Thesis}
+
+\chapter{Structure \& Formalia}\label{structure-formalia}
+
+\section{Length and formatting}\label{length-and-formatting}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Requirement
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Minimum length} & 8,000 words \\
+\textbf{Maximum length} & 9,000 words (10\% margin allowed = up to
+9,900) \\
+\textbf{Word count excludes} & Title page, abstract, references, tables,
+appendices, and (for qualitative research) citations from data \\
+\textbf{Line spacing} & 1.5 \\
+\textbf{Font} & 12pt Times New Roman \\
+\textbf{Pages (approx.)} & 22--28 \\
+\textbf{Word count location} & State on title page \\
+\end{longtable}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-note-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Length is about quality, not padding}, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+If your project is genuinely complex and cannot be reported within 9,000
+words, discuss this with your supervisor. However, being overly long
+without justification may negatively affect your grade. Less-important
+material can usually be moved to an appendix.
+
+\end{tcolorbox}
+
+\section{Required structure}\label{required-structure}
+
+Your thesis must follow this structure. The page counts below are
+guidelines, not strict requirements.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1304}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3913}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4783}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Section
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Guideline
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 & \textbf{Title page} & --- \\
+1 & \textbf{Table of contents} & --- \\
+2 & \textbf{Abstract / Summary} & \textasciitilde0.5 page \\
+3 & \textbf{Introduction} & 1--2 pages \\
+4 & \textbf{Theory} & 6--8 pages \\
+5 & \textbf{Method} & 2--3 pages \\
+6 & \textbf{Results} & 3--4 pages (qualitative: 6--8 pages) \\
+7 & \textbf{Conclusion and Discussion} & 4--5 pages \\
+8 & \textbf{Reference list} & ≥ 30 references \\
+9 & \textbf{Statement about Generative AI and AI-Assisted Technology
+usage} & After references; not in word count \\
+10 & \textbf{Appendices} & --- \\
+\end{longtable}
+
+Depending on your research design, you may deviate from this structure
+--- but always consult your supervisor.
+
+\subsection{Title page}\label{title-page}
+
+The title page should include at minimum: - Title of your thesis - Your
+name and student number - Course name and code (S\_MTcw) - Supervisor's
+name - Date of submission - Word count of the main text - VU Amsterdam /
+Faculty of Social Sciences / Department of Communication Science
+
+\subsection{Abstract}\label{abstract}
+
+The abstract (approximately half a page) is written \textbf{last} but
+appears first. It concisely describes: - The reason for the study and
+the research question/hypotheses - The method - The key results - The
+main conclusion
+
+\subsection{Appendices}\label{appendices}
+
+At minimum, include: - Your questionnaire and/or stimulus materials -
+Your codebook (for content analysis) - The RERC ethical self-check PDF
+
+Variable names in the appendices should match exactly those used in your
+Method and Results sections.
+
+\section{Formatting (APA)}\label{formatting-apa}
+
+All text, tables, figures, the title page, table of contents, abstract,
+and reference list must follow \textbf{APA 7th edition} guidelines. See
+\href{citation.qmd}{Citing \& Referencing} for details and
+\href{https://apastyle.apa.org/}{apastyle.apa.org} for the full style
+guide.
+
+Key formatting rules: - Statistical symbols are italicized: \emph{M},
+\emph{SD}, \emph{F}, \emph{t}, \emph{p}, \emph{r}, \emph{N}, \emph{n} -
+All numbers rounded to \textbf{two decimal places} (except \emph{p}
+\textless{} .001) - No leading zero on \emph{p} values and correlations:
+write \emph{p} = .03, not \emph{p} = 0.03 - Report exact \emph{p}
+values: \emph{p} = .03, except when \emph{p} \textless{} .001 - Spaces
+after = and \textless{} signs - Tables and figures must include all
+necessary information and labels
+
+\section{AI disclosure statement}\label{ai-disclosure-statement}
+
+All theses must include a \textbf{Statement about Generative AI and
+AI-Assisted Technology usage} after the reference list (not counted in
+the word count). See \href{ai-tools.qmd}{Using AI Tools} for what this
+statement must contain.
+
+\section{Submission}\label{submission}
+
+Submit your final thesis: 1. \textbf{On Canvas} (where it will be
+checked for plagiarism) 2. \textbf{By email} to both your supervisor and
+second reviewer (check with your supervisor whether a paper version is
+also required) 3. \textbf{Ensure your supervisor has access} to your
+final data file and syntax via the shared surfdrive folder
+
+After receiving a passing grade, you must also \textbf{upload your
+thesis to the UBVU thesis database} --- this is a prerequisite for
+receiving your diploma. See \href{assessment.qmd}{Assessment \&
+Graduation} for details.
+
+\chapter{Introduction \& Theory
+Chapter}\label{introduction-theory-chapter}
+
+\section{The Abstract}\label{the-abstract}
+
+Although it appears first in your thesis, the abstract is the
+\textbf{last section you write}. It concisely summarizes:
+
+\begin{itemize}
+\tightlist
+\item
+  The reason for the study and the research question or hypotheses
+\item
+  The method used
+\item
+  The key findings
+\item
+  The main conclusion
+\end{itemize}
+
+Keep it to approximately half a page. Focus on the most important points
+--- do not include citations.
+
+\section{The Introduction}\label{the-introduction}
+
+The introduction presents your topic and frames the study. A good
+introduction is \textbf{concise} and focuses on two questions:
+\emph{``What has been done in this area?''} and \emph{``Why is the
+current study useful?''}
+
+\subsection{Standard structure}\label{standard-structure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Reason} (\emph{aanleiding}) --- Why is this topic relevant
+  now? What social or scientific development motivates this study?
+\item
+  \textbf{Topic introduction and knowledge gap} --- Briefly introduce
+  the topic and name the gap in existing research (keep it short here;
+  details follow in the Theory chapter)
+\item
+  \textbf{Problem statement} --- Articulate the specific research
+  problem
+\item
+  \textbf{Research question} --- State the central RQ explicitly and
+  clearly
+\item
+  \textbf{Societal and scientific relevance} --- Explain why answering
+  this RQ matters
+\end{enumerate}
+
+For \textbf{qualitative research}, also briefly summarize your
+methodology (e.g., grounded theory) and methods (e.g., interviews,
+thematic analysis) at the end of the introduction.
+
+\subsection{Checklist for the
+introduction}\label{checklist-for-the-introduction}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Is a clear motivation for the research problem provided?
+\item[$\square$]
+  Is the research problem clearly delineated?
+\item[$\square$]
+  Is the research gap clearly identified?
+\item[$\square$]
+  Are central concepts clearly defined and consistently named throughout
+  the thesis?
+\item[$\square$]
+  Is the research question stated explicitly and clearly?
+\item[$\square$]
+  Is the research question researchable?
+\item[$\square$]
+  Is both the \textbf{societal} and \textbf{scientific} relevance
+  demonstrated?
+\end{itemize}
+
+\section{The Theory Chapter}\label{the-theory-chapter}
+
+The theory chapter reviews the relevant literature and major theories,
+shows how your research builds on existing work, and leads to your
+hypotheses (or sub-questions for qualitative research).
+
+\subsection{Structure}\label{structure}
+
+A theory chapter typically:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Defines and explains the central constructs/concepts
+\item
+  Builds a theoretical argument for the relationships between constructs
+\item
+  Discusses relevant prior empirical findings
+\item
+  Culminates in clearly formulated hypotheses (or sub-questions) and a
+  conceptual model
+\end{enumerate}
+
+Each sub-section should follow a \textbf{cone shape}: start with general
+definitions and background, then narrow to specific relationships
+relevant to your hypotheses.
+
+\subsection{Content checklist}\label{content-checklist}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Is the theory relevant to the research question?
+\item[$\square$]
+  Is the literature up-to-date (primarily recent peer-reviewed journal
+  articles)?
+\item[$\square$]
+  Is a critical stance taken (noting relationships, contradictions,
+  gaps)?
+\item[$\square$]
+  Are highly relevant studies discussed in appropriate detail (including
+  their methods and findings)?
+\item[$\square$]
+  Is the labeling of variables/constructs consistent throughout?
+\end{itemize}
+
+\subsection{Structure and writing
+checklist}\label{structure-and-writing-checklist}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Is there a clear logical thread (\emph{rode lijn}) throughout?
+\item[$\square$]
+  Does each section begin with a topical sentence?
+\item[$\square$]
+  Are sections balanced in length?
+\item[$\square$]
+  Is the conceptual model (for quantitative research) included at the
+  end?
+\item[$\square$]
+  Is every construct in the hypotheses represented in the conceptual
+  model?
+\end{itemize}
+
+\subsection{Vocabulary and references}\label{vocabulary-and-references}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Is the vocabulary academic (avoiding contractions and colloquialisms)?
+\item[$\square$]
+  Is every claim supported by a reference?
+\item[$\square$]
+  Are in-text citations in correct APA format?
+\item[$\square$]
+  Are direct quotations justified, and do they include a page number?
+\end{itemize}
+
+\subsection{Hypotheses checklist}\label{hypotheses-checklist}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Does each hypothesis propose one effect only (not multiple)?
+\item[$\square$]
+  Are moderation and mediation effects in separate hypotheses?
+\item[$\square$]
+  Are terms used consistently across theory, conceptual model, and
+  method?
+\item[$\square$]
+  Is each hypothesis supported by 3--5 prior studies?
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{The golden thread}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Your research question should be visible in every paragraph of your
+thesis. Whenever you are unsure whether a paragraph belongs, ask
+yourself: \emph{does this contribute to answering my research question?}
+
+\end{tcolorbox}
+
+\chapter{Method Chapter}\label{method-chapter}
+
+The method chapter is written in \textbf{past tense} and must be
+detailed enough that another researcher could fully \textbf{replicate
+your study}. It is highly standardized in structure.
+
+\section{Overall checklist}\label{overall-checklist}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Is the method section written in past tense?
+\item[$\square$]
+  Is the level of detail sufficient for replication?
+\item[$\square$]
+  Is there a clear fit between the method and the
+  hypotheses/sub-questions?
+\end{itemize}
+
+\section{Quantitative research (survey and
+experiment)}\label{quantitative-research-survey-and-experiment}
+
+\subsection{Participants}\label{participants}
+
+Report: - Method of \textbf{recruitment} - \textbf{Demographics}:
+frequency and percentage for gender, age, education, etc. -
+\textbf{Sample size}, including justification (power analysis) -
+\textbf{Exclusions}: exactly how many participants were excluded and for
+what reason(s) - The \textbf{final \emph{N}} (must match the \emph{N}
+reported in the results section)
+
+\subsection{Design}\label{design-1}
+
+\begin{itemize}
+\tightlist
+\item
+  State the \textbf{type of design} clearly: survey, experiment,
+  between-subjects, within-subjects, mixed
+\item
+  Briefly describe the \textbf{task} (e.g., \emph{``Participants were
+  exposed to a news article and then completed a questionnaire''})
+\item
+  Name the \textbf{independent and dependent variables}
+\item
+  For experiments: describe factors and conditions clearly using design
+  notation (e.g., \emph{``a 2 {[}logo color: red, blue{]} × 2 {[}medium:
+  TV, newspaper{]} between-subjects design''}), and confirm
+  randomization
+\end{itemize}
+
+\subsection{Procedure}\label{procedure-1}
+
+Describe in \textbf{chronological order}: - What participants were
+exposed to (especially condition differences in experiments) - What
+tasks and measurements were completed - Key instructions given (purpose
+of study, debriefing)
+
+\subsection{Materials}\label{materials}
+
+\begin{itemize}
+\tightlist
+\item
+  Describe \textbf{experimental stimuli} or materials, including exact
+  differences between conditions
+\item
+  All materials must be provided in the appendix
+\end{itemize}
+
+\subsection{Measures}\label{measures}
+
+For each variable, report: - Variable name (in \textbf{bold} or
+\emph{italics}) - What it measures - Source reference (original scale) -
+Number of items - Example item(s) --- or all items if few; refer to
+appendix for longer scales - Response format (e.g., \emph{``5-point
+Likert scale from 1 = strongly disagree to 5 = strongly agree''}) -
+\emph{M} and \emph{SD} in your sample, along with minimum and maximum
+values - Reliability (Cronbach's α) - How the final score was computed
+(e.g., average of items; recoded items) - Direction (e.g.,
+\emph{``Higher scores indicate greater vaccine hesitancy''}) - For
+experiments: a \textbf{manipulation check}
+
+Organize measures under subheadings: Independent variables, Dependent
+variables, Control variables.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Consistency is critical}, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+The variable names in your method section must be \textbf{identical} to
+those used in your hypotheses, conceptual model, and results section.
+This is one of the most common sources of errors in MA theses.
+
+\end{tcolorbox}
+
+\section{Content analysis}\label{content-analysis-1}
+
+The method chapter for a content analysis includes:
+
+\begin{itemize}
+\tightlist
+\item
+  A short description of the \textbf{research design}
+\item
+  \textbf{Data collection}: how the corpus was assembled (sampling
+  strategy, date range, sources)
+\item
+  \textbf{Content analysis method}: manual (intercoder reliability) or
+  automated (tool used, e.g., R, AmCat, Coosto)
+\item
+  \textbf{Operationalization}: search terms or codebook
+\item
+  \textbf{Reliability}: intercoder agreement or precision/recall of
+  search terms
+\end{itemize}
+
+\section{Qualitative research}\label{qualitative-research-1}
+
+The method chapter for qualitative research describes:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Methodology}: the chosen framework (e.g., grounded theory) and
+  its rationale
+\item
+  \textbf{Case study} (if applicable): why this case is appropriate for
+  the research question
+\item
+  \textbf{Participants/key informants}: recruitment method,
+  demographics, sample size, inclusion/exclusion criteria
+\item
+  \textbf{Data collection}: method (interviews, observation, etc.),
+  materials used (topic guide, prompts), where conducted
+\item
+  \textbf{Data analysis}: analytical approach (thematic analysis,
+  grounded theory coding, discourse analysis), analytical materials
+\end{itemize}
+
+All choices should be supported by methodological literature with proper
+APA citations.
+
+\chapter{Results Chapter}\label{results-chapter}
+
+The results section is a \textbf{matter-of-fact description} of your
+findings. It is written in \textbf{past tense} and focuses on answering
+your research questions and testing your hypotheses. Extensive
+interpretation belongs in the Discussion --- here you report what you
+found.
+
+That said, good results sections are well-structured and tell a coherent
+``story'' that guides the reader through the analyses step by step.
+
+\section{Structure for quantitative
+research}\label{structure-for-quantitative-research}
+
+Report sections in this order:
+
+\subsection{1. Descriptive statistics}\label{descriptive-statistics}
+
+Report means (\emph{M}), standard deviations (\emph{SD}), and
+correlations among measured variables. Present these in a table or
+figure. In the text, describe the main and noteworthy correlations. Note
+whether control variables correlate with (in)dependent variables --- if
+so, you may want to include them in follow-up analyses.
+
+\subsection{2. Manipulation check (for
+experiments)}\label{manipulation-check-for-experiments}
+
+Verify that the experimental manipulation worked as intended. Also check
+randomization: are demographic variables (gender, age, education)
+balanced across conditions? Report these checks even if no significant
+differences were found.
+
+\subsection{3. Hypothesis testing}\label{hypothesis-testing}
+
+For each hypothesis: 1. \textbf{Restate} the hypothesis briefly 2.
+\textbf{Name the test} used and which variables are included (e.g.,
+\emph{``We conducted a linear regression with X as predictor and Y as
+outcome''}) 3. \textbf{Report results} with all relevant statistics 4.
+\textbf{State a brief conclusion} (e.g., \emph{``H1 was supported''} or
+\emph{``H1 was not supported''})
+
+Follow the same order as in the Theory chapter. Also briefly report
+non-significant findings --- do not omit them.
+
+\subsection{4. Secondary / exploratory analyses
+(optional)}\label{secondary-exploratory-analyses-optional}
+
+If you want to explore the data further (e.g., covariate analyses with
+control variables), include these in a clearly labeled separate section.
+
+\section{APA statistical reporting}\label{apa-statistical-reporting}
+
+Follow APA 7th edition formatting:
+
+\begin{itemize}
+\tightlist
+\item
+  Statistical symbols are italicized: \emph{M}, \emph{SD}, \emph{N},
+  \emph{n}, \emph{F}, \emph{t}, \emph{r}, \emph{p}, \emph{b}, \emph{β},
+  \emph{χ²}
+\item
+  Round all numbers to \textbf{two decimal places}
+\item
+  No leading zero on \emph{p} values and correlations: \emph{p} = .03,
+  \emph{r} = .45 (not 0.03, 0.45)
+\item
+  Report \textbf{exact \emph{p} values}: \emph{p} = .03 --- except use
+  \emph{p} \textless{} .001 for very small values
+\item
+  Put spaces after = and \textless{}
+\item
+  Report \textbf{effect sizes} (Cohen's \emph{d}, η², \emph{f²}, etc.)
+\end{itemize}
+
+\textbf{Examples:}
+
+\begin{quote}
+The regression analysis revealed a significant positive effect of social
+media exposure on vaccine hesitancy, \emph{b} = 0.34, \emph{SE} = 0.08,
+\emph{t}(298) = 4.25, \emph{p} \textless{} .001, \emph{β} = .24.
+\end{quote}
+
+\begin{quote}
+An independent-samples \emph{t}-test showed no significant difference
+between conditions, \emph{t}(148) = 1.12, \emph{p} = .264, \emph{d} =
+0.18.
+\end{quote}
+
+\begin{quote}
+The ANOVA yielded a significant main effect of logo color, \emph{F}(1,
+196) = 8.34, \emph{p} = .004, η² = .04, but no significant main effect
+of medium (\emph{F} \textless{} 1, \emph{ns}).
+\end{quote}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Report all effects, including non-significant ones}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Non-significant findings are still findings. Report them briefly:
+\emph{``We observed no main effect of {[}variable{]} (F \textless{} 1,
+ns)''}.
+
+\end{tcolorbox}
+
+\section{Tables and figures}\label{tables-and-figures}
+
+\begin{itemize}
+\tightlist
+\item
+  Use tables and figures only when they \textbf{add information} that
+  cannot be conveyed efficiently in text
+\item
+  Format all tables in \textbf{APA style} (not copy-pasted from SPSS
+  output)
+\item
+  Every table and figure needs:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A title (above for tables, below for figures)
+  \item
+    Clear axis labels or column headers
+  \item
+    A note if abbreviations are used
+  \end{itemize}
+\item
+  Variable labels in tables must match those used in the method section
+\end{itemize}
+
+\section{Results in qualitative
+research}\label{results-in-qualitative-research}
+
+In qualitative results, the chapter demonstrates your analysis and
+presents empirical findings. Structure it around your
+\textbf{sub-questions} (usually resulting in three main sections). For
+each sub-question:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Restate the sub-question
+\item
+  Present the analytical findings (from selective coding)
+\item
+  Support findings with representative quotes from the data
+\item
+  Briefly conclude
+\end{enumerate}
+
+\textbf{Quotes} serve as illustrations --- not as substitutes for
+analysis. Contextualize each quote. Format quotes in italics, indented.
+Use a respondent ID rather than identifying information.
+
+Avoid discussing theoretical implications extensively in the results
+section --- save that for the Discussion.
+
+\chapter{Conclusion \& Discussion}\label{conclusion-discussion}
+
+The conclusion and discussion chapter is the final major section of your
+thesis. It is where you step back from the data and reflect on the
+meaning, implications, and limitations of your findings.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Language tense}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Descriptions of \emph{your} findings → \textbf{past tense} (\emph{``The
+results showed that\ldots{}''}) Theoretical implications and conclusions
+→ \textbf{present tense} (\emph{``This suggests that\ldots{}''})
+
+\end{tcolorbox}
+
+\section{Standard structure (use max. 3
+subheadings)}\label{standard-structure-use-max.-3-subheadings}
+
+\subsection{1. Summary and conclusion}\label{summary-and-conclusion}
+
+\textbf{Opening paragraph:} - Restate the main focus and purpose of the
+study - Briefly mention the approach (design) - Give a clear, concise
+overall summary of the answer to your research question
+
+\textbf{Middle part --- detailed summary and discussion of findings:}
+
+For each hypothesis or sub-question: - Summarize the finding - Relate it
+to the \textbf{specific literature} used to motivate the hypothesis -
+Explain whether it is consistent or inconsistent with prior work --- and
+\emph{why} - For unexpected findings: introduce possible explanations,
+potentially drawing on additional literature - Offer multiple
+interpretations where relevant - Make cross-connections between findings
+
+Common mistakes to avoid: - Saying \emph{``This finding is in line with
+previous research (ref1, ref2)''} --- explain \emph{how} and \emph{why}
+- Ignoring non-significant findings --- discuss them and consider
+whether the study was adequately powered
+
+\textbf{Middle part --- broader implications:} - \textbf{Theoretical
+implications}: What does your study contribute to theory? Does it
+extend, refine, or challenge existing frameworks? - \textbf{Practical
+implications}: What do your findings mean for practitioners,
+policymakers, or society? - Connect back to the relevance you
+established in the Introduction
+
+\textbf{Closing of the first section:} - Consider the broader picture
+--- what has your study contributed to the field? - Do the findings
+yield new insights?
+
+\subsection{2. Strengths, limitations, and future
+research}\label{strengths-limitations-and-future-research}
+
+\textbf{Strengths:} - What methodological or conceptual strengths does
+your study have? (These give meaning to the limitations --- there are
+always trade-offs)
+
+\textbf{Limitations:} - Be thorough and honest - Address methodological
+limitations (e.g., sampling, measurement, generalizability) - For
+qualitative research: discuss applicability of findings (situations,
+variations)
+
+\textbf{Future research:} - Suggestions must go beyond just \emph{fixing
+the limitations} - Propose new, theoretically interesting research
+questions that follow from your conclusions - These suggestions should
+be grounded in your theoretical implications
+
+\subsection{3. Closing paragraph / final
+conclusion}\label{closing-paragraph-final-conclusion}
+
+End with a strong, clear paragraph: - Concisely restate the goal of the
+study - State a clear and well-founded conclusion - Provide a direct
+answer to the research question and hypotheses - End with a strong
+take-home message
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{The discussion is the last thing readers read}, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+A weak final paragraph is memorable for the wrong reasons. End
+confidently with a clear statement of what your study has contributed.
+
+\end{tcolorbox}
+
+\section{Full discussion checklist}\label{full-discussion-checklist}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Does the opening clearly restate the research focus and approach?
+\item[$\square$]
+  Does the summary use consistent terminology from the Introduction?
+\item[$\square$]
+  Is each finding linked to the specific literature that motivated it?
+\item[$\square$]
+  Are explanations given for both consistent \emph{and} inconsistent
+  findings?
+\item[$\square$]
+  Are cross-connections made between findings?
+\item[$\square$]
+  Are both theoretical and practical implications discussed?
+\item[$\square$]
+  Is the limitation section thorough (not just a brief list)?
+\item[$\square$]
+  Are future research suggestions theoretically grounded?
+\item[$\square$]
+  Is there a strong closing sentence?
+\end{itemize}
+
+\part{Academic Practices}
+
+\chapter{Literature Search}\label{literature-search}
+
+A thorough and systematic literature review is foundational to your
+thesis. This chapter offers guidance on how to find, organize, and
+manage the literature for your research.
+
+\section{Where to search}\label{where-to-search}
+
+VU Amsterdam provides access to major academic databases. Log in with
+your VU credentials at \href{https://ub.vu.nl}{ub.vu.nl}.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Database
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Best for
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Scopus} & Broad coverage of social sciences, easy citation
+tracking \\
+\textbf{Web of Science} & High-quality journals, citation analysis \\
+\textbf{PsycINFO} & Psychology and communication research \\
+\textbf{Communication Abstracts} & Communication-specific literature \\
+\textbf{Google Scholar} & Quick searches, finding grey literature \\
+\textbf{JSTOR} & Archive of humanities and social science journals \\
+\end{longtable}
+
+For \textbf{qualitative or content analysis} work, additional platforms
+like \textbf{LexisNexis} (news content) or \textbf{Coosto/ANP} (social
+media) may be relevant.
+
+\section{Search strategies}\label{search-strategies}
+
+\subsection{Keywords and Boolean
+operators}\label{keywords-and-boolean-operators}
+
+Construct your search systematically: - Use \textbf{AND} to narrow
+results (e.g., \texttt{social\ media\ AND\ misinformation\ AND\ health})
+- Use \textbf{OR} to broaden results for synonyms (e.g.,
+\texttt{vaccine\ hesitancy\ OR\ vaccine\ refusal}) - Use \textbf{NOT} to
+exclude irrelevant terms - Use \textbf{quotation marks} for exact
+phrases: \texttt{"filter\ bubble"} - Use \textbf{truncation} with
+\texttt{*} for word variations: \texttt{persuad*} finds persuade,
+persuasion, persuaded
+
+Keep a record of your search terms, databases used, and results counts
+--- you may need to report this in your method section.
+
+\subsection{Snowballing}\label{snowballing}
+
+Once you find a central paper: - \textbf{Forward snowballing}: who has
+cited this paper? (use Google Scholar or Scopus) - \textbf{Backward
+snowballing}: what does this paper cite?
+
+\subsection{Scoping and narrowing}\label{scoping-and-narrowing}
+
+\begin{itemize}
+\tightlist
+\item
+  Prioritize \textbf{peer-reviewed journal articles} from reputable
+  journals
+\item
+  Prefer \textbf{recent} literature (typically last 10--15 years, unless
+  citing foundational work)
+\item
+  Be selective --- your Theory chapter should discuss only what directly
+  contributes to your argument
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Quality over quantity}, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+The vast majority of your references should be peer-reviewed academic
+journal articles. Avoid blogs, Wikipedia, previous BA/MA theses, and PhD
+dissertations unless unavoidable.
+
+\end{tcolorbox}
+
+\section{Reference management:
+Zotero}\label{reference-management-zotero}
+
+We strongly recommend using
+\textbf{\href{https://www.zotero.org}{Zotero}} (free) to manage your
+references:
+
+\begin{itemize}
+\tightlist
+\item
+  Install the browser extension to save references directly from
+  databases
+\item
+  Organize references into collections by topic
+\item
+  Add notes to each reference summarizing relevant content
+\item
+  Generate in-text citations and reference lists in APA format
+\item
+  Export \texttt{.bib} files for Quarto, LaTeX, or Word integration
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Write as you read}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+When reading a paper, immediately write down the relevant arguments,
+findings, and how they connect to your own study. Do not rely on being
+able to recall this later. This also prevents you from losing track of
+sources.
+
+\end{tcolorbox}
+
+\section{AI tools for literature
+search}\label{ai-tools-for-literature-search}
+
+AI tools can support (but not replace) your literature search:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5455}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4545}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tool
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Use
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Elicit} & AI-powered literature search and summarization \\
+\textbf{Research Rabbit} & Discover related papers via citation
+networks \\
+\textbf{Undermind} & AI-assisted deep literature search \\
+\textbf{NotebookLM} (VU-licensed) & Summarize and explore uploaded
+documents \\
+\textbf{Scite} & Find papers that support or contradict a claim \\
+\end{longtable}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Always verify AI-generated literature}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+AI tools can hallucinate references that do not exist or misattribute
+findings. \textbf{Always read the original sources yourself} and verify
+that citations are real and accurately represented before including them
+in your thesis.
+
+\end{tcolorbox}
+
+See \href{ai-tools.qmd}{Using AI Tools} for the full departmental AI
+policy.
+
+\chapter{Citing \& Referencing (APA
+7th)}\label{citing-referencing-apa-7th}
+
+Your thesis must follow \textbf{APA 7th edition} throughout --- for
+in-text citations, the reference list, tables, figures, and statistical
+reporting. The authoritative source is
+\href{https://apastyle.apa.org/}{apastyle.apa.org}.
+
+\section{In-text citations}\label{in-text-citations}
+
+\subsection{Basic format}\label{basic-format}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3929}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2857}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3214}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Situation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Format
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Example
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+One author & (Author, Year) & (Masur, 2023) \\
+Two authors & (Author \& Author, Year) & (Masur \& Teutsch, 2023) \\
+Three or more authors & (First author et al., Year) & (Masur et al.,
+2023) \\
+Narrative citation & Author (Year) found that\ldots{} & Masur (2023)
+found that\ldots{} \\
+Multiple citations & Alphabetical order, separated by ; & (Jones, 2021;
+Masur, 2023) \\
+\end{longtable}
+
+\subsection{Direct quotations}\label{direct-quotations}
+
+If you quote directly, you must include a \textbf{page number}:
+
+\begin{quote}
+(Masur, 2023, p.~45)
+\end{quote}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-note-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Minimize direct quotations}, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+In scientific writing, you should paraphrase and synthesize --- direct
+quotations are the exception, not the rule. Only quote when the exact
+wording is essential.
+
+\end{tcolorbox}
+
+\subsection{Paraphrasing}\label{paraphrasing}
+
+When you restate an idea in your own words, you still need a citation.
+Every factual claim, theoretical argument, or empirical finding that is
+not your own must be cited.
+
+\section{Reference list}\label{reference-list}
+
+The reference list appears at the end of the thesis, after the
+Conclusion and before the AI statement. Entries are in
+\textbf{alphabetical order by first author's last name} and use a
+\textbf{hanging indent}.
+
+\subsection{Common reference types}\label{common-reference-types}
+
+\textbf{Journal article:} \textgreater{} Masur, P. K. (2020). How online
+privacy literacy affects users' information provision behavior.
+\emph{Behaviour \& Information Technology}, \emph{39}(7), 783--797.
+https://doi.org/10.1080/0144929X.2019.1623368
+
+\textbf{Journal article with DOI:} Include the DOI as a live hyperlink.
+Always include DOI when available.
+
+\textbf{Book:} \textgreater{} Blumler, J. G., \& Katz, E. (1974).
+\emph{The uses of mass communications: Current perspectives on
+gratifications research}. Sage.
+
+\textbf{Book chapter:} \textgreater{} McQuail, D. (2010). The future of
+communication theory. In J. Gripsrud (Ed.), \emph{Relocating television:
+Television in the digital context} (pp.~15--28). Routledge.
+
+\textbf{Website / online resource:} \textgreater{} VU Amsterdam. (2024).
+\emph{Thesis submission guidelines}.
+https://vu.nl/en/student/graduation-and-diploma
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Reference managers often produce incomplete book chapter references}, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Always verify book chapter references manually --- check that editor
+names, book title, page numbers, and publisher are all included.
+
+\end{tcolorbox}
+
+\section{Quality of references}\label{quality-of-references}
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{large majority} of your references should be peer-reviewed
+  journal articles
+\item
+  Prefer articles from journals with a strong reputation in social
+  sciences
+\item
+  Avoid citing: Wikipedia, blogs, news articles, BA/MA theses, or PhD
+  dissertations as primary sources for theoretical claims
+\item
+  When in doubt about a source's quality, discuss it with your
+  supervisor
+\end{itemize}
+
+\section{Using Zotero}\label{using-zotero}
+
+\href{https://www.zotero.org}{Zotero} generates APA 7th references
+automatically. However, always \textbf{check the output} --- automatic
+generation sometimes produces errors or incomplete entries, especially
+for: - Book chapters (often missing editors, page numbers, or publisher)
+- Conference papers - Preprints
+
+\section{Checklist: Reference list}\label{checklist-reference-list}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Every in-text citation has a corresponding entry in the reference
+  list, and vice versa
+\item[$\square$]
+  All entries follow APA 7th format
+\item[$\square$]
+  Journal article titles are in sentence case (capitalize only first
+  word, proper nouns, and first word after a colon)
+\item[$\square$]
+  Journal names are in title case and italicized
+\item[$\square$]
+  DOIs are included where available
+\item[$\square$]
+  Book chapter references are complete (editors, page numbers,
+  publisher)
+\item[$\square$]
+  References are in alphabetical order by first author's last name
+\end{itemize}
+
+\chapter{Open Science}\label{open-science}
+
+Open science refers to a set of practices that make scientific research
+more transparent, reproducible, and accessible. Adopting open science
+practices in your thesis strengthens the quality of your work and aligns
+with the standards increasingly expected in Communication Science.
+
+\section{Pre-registration}\label{pre-registration-1}
+
+\textbf{Pre-registration} means publicly documenting your research
+design, hypotheses, and analysis plan \emph{before} you collect data.
+It:
+
+\begin{itemize}
+\tightlist
+\item
+  Prevents \emph{p}-hacking and HARKing (Hypothesizing After Results are
+  Known)
+\item
+  Increases credibility of your confirmatory findings
+\item
+  Distinguishes what you planned from exploratory analyses you add later
+\end{itemize}
+
+\subsection{Where to pre-register}\label{where-to-pre-register}
+
+The standard platform is the \textbf{Open Science Framework (OSF)}:
+\href{https://osf.io}{osf.io}
+
+To pre-register: 1. Create a free OSF account (log in with your
+institutional email) 2. Create a new project for your thesis 3. Under
+\emph{Registrations}, choose a registration template (e.g., AsPredicted
+or OSF Prereg) 4. Complete your hypotheses, design, and analysis plan 5.
+Submit --- you receive a time-stamped, publicly accessible registration
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Discuss pre-registration with your supervisor}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Pre-registration is optional for MA theses but encouraged. Your
+supervisor can help you decide whether and how to do it. If you
+register, include the OSF link in your method section.
+
+\end{tcolorbox}
+
+\section{Open data}\label{open-data}
+
+Sharing your data and analysis code allows others to verify, reuse, and
+build on your work.
+
+In your VU thesis, you share data with your supervisor via a secure
+surfdrive folder (see \href{ethics.qmd}{Ethics \& Data Management}).
+After your thesis is graded, you may optionally deposit anonymized data
+in a public repository such as:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{OSF} (\href{https://osf.io}{osf.io}) --- general purpose
+\item
+  \textbf{DANS / Data Archiving and Networked Services}
+  (\href{https://dans.knaw.nl}{dans.knaw.nl}) --- Dutch research data
+  archive
+\item
+  \textbf{Zenodo} (\href{https://zenodo.org}{zenodo.org}) ---
+  CERN-hosted, general purpose
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Never share personal data publicly}, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Before depositing any data publicly, ensure all personal and sensitive
+information has been removed. When in doubt, consult your supervisor and
+the RERC guidelines.
+
+\end{tcolorbox}
+
+\section{Reproducible analysis}\label{reproducible-analysis}
+
+Reproducibility means your results can be re-created exactly from your
+raw data and code. Good practices:
+
+\begin{itemize}
+\tightlist
+\item
+  Keep a \textbf{clean, annotated syntax file} (R or SPSS) from the
+  start
+\item
+  Use \textbf{relative file paths} so your code works on other machines
+\item
+  Document every data transformation and exclusion decision
+\item
+  Consider using \textbf{R Markdown} or \textbf{Quarto} to combine
+  analysis and write-up
+\end{itemize}
+
+For R users: resources are available on the Canvas page \emph{R for
+Social Scientists}.
+
+\section{Transparency in reporting}\label{transparency-in-reporting}
+
+\begin{itemize}
+\tightlist
+\item
+  Report \textbf{all tested hypotheses}, including non-significant
+  findings
+\item
+  Clearly distinguish \textbf{confirmatory} (pre-registered) from
+  \textbf{exploratory} analyses
+\item
+  If you deviated from your pre-registered plan, explain why
+\item
+  Report exact \emph{p} values and effect sizes (not just \emph{p}
+  \textless{} .05)
+\end{itemize}
+
+\section{Open access}\label{open-access}
+
+After passing your thesis, you are required to upload your thesis to the
+\textbf{UBVU thesis database} with public access rights (see
+\href{assessment.qmd}{Assessment \& Graduation}). This makes your work
+openly available for future researchers and students.
+
+\chapter{Using AI Tools}\label{using-ai-tools}
+
+Generative AI tools are increasingly part of the academic workflow. The
+Department of Communication Science at VU Amsterdam permits the use of
+these tools --- provided you use them \textbf{responsibly and
+transparently}.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-important-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{The core principle: Human in the Lead}, colbacktitle=quarto-callout-important-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+You are always the one who decides on the content. You are responsible
+for the quality and originality of your work. Generative AI cannot do
+your thinking for you --- and it should not.
+
+\end{tcolorbox}
+
+\section{What is responsible use?}\label{what-is-responsible-use}
+
+Responsible use means:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{You decide on the content} at all times
+\item
+  \textbf{You are critical of AI output} --- AI is not a source of
+  truth; it can produce inaccurate, incomplete, or superficial
+  suggestions
+\item
+  \textbf{You understand what you are doing} --- use AI tools only when
+  you understand the topic well enough to evaluate, improve, or reject
+  what the tool suggests
+\item
+  \textbf{You take full responsibility} for the final submitted version
+\end{itemize}
+
+Generative AI can be a useful sparring partner for brainstorming,
+gaining an overview, structuring your work, or improving text you have
+already written. It cannot replace the reading, thinking, and writing
+that constitute your learning process.
+
+\section{Academic misconduct and
+fraud}\label{academic-misconduct-and-fraud}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Never copy-paste AI-generated text} into your thesis without
+  attribution --- this is plagiarism
+\item
+  Using AI without transparency is \textbf{academic fraud}
+\item
+  If your supervisor doubts whether you have used AI responsibly, they
+  may discuss this with you; persistent doubts go to the Examination
+  Board
+\end{itemize}
+
+More information:
+\href{https://vu.nl/en/student/examinations/academic-integrity}{vu.nl/en/student/examinations/academic-integrity}
+
+VU rules on generative AI:
+\href{https://vu.nl/en/student/examinations/generative-ai-your-use-our-expectations}{vu.nl/en/student/examinations/generative-ai-your-use-our-expectations}
+
+\section{VU-licensed vs.~non-licensed
+tools}\label{vu-licensed-vs.-non-licensed-tools}
+
+\subsection{VU-licensed tools
+(recommended)}\label{vu-licensed-tools-recommended}
+
+Log in with your \textbf{VU email account} --- your data will not be
+used to train the model:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4286}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5714}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tool
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Access
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Microsoft Copilot} &
+\href{https://copilot.microsoft.com}{copilot.microsoft.com} --- log in
+with VU credentials \\
+\textbf{Google Gemini} &
+\href{https://gemini.google.com}{gemini.google.com} --- log in with VU
+email \\
+\textbf{NotebookLM} &
+\href{https://notebooklm.google.com}{notebooklm.google.com} --- log in
+with VU email \\
+\end{longtable}
+
+\subsection{Non-licensed tools (use at your own
+risk)}\label{non-licensed-tools-use-at-your-own-risk}
+
+Tools like \textbf{ChatGPT}, \textbf{Elicit}, \textbf{QuillBot}, and
+others fall \textbf{outside VU's license}. When using these: - Your data
+may be used for model training - You are personally responsible for
+privacy and data protection - \textbf{Never upload personal research
+data} (names, email addresses, interview transcripts, survey data) -
+\textbf{Never upload paywalled articles} --- this violates copyright
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{GDPR and data protection}, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Never upload sensitive or personal data to any AI tool --- not even
+VU-licensed ones. This includes: names, email addresses, research data,
+financial records, or company details from internships or partnerships.
+
+\end{tcolorbox}
+
+\section{Responsible AI use by thesis
+phase}\label{responsible-ai-use-by-thesis-phase}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Thesis Phase
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Responsible Use
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Useful Tools
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Topic selection} & Brainstorming ideas, identifying research
+gaps & Gemini, Elicit \\
+\textbf{Literature review} & Finding keywords/synonyms, searching
+articles, generating summaries (always verify originals) & Elicit,
+Scite, Research Rabbit, NotebookLM, Undermind \\
+\textbf{Research design} & Generating ideas, creating experimental
+stimuli (justify all choices yourself) & Gemini, Qualtrics AI \\
+\textbf{Proposal writing} & Feedback on text you wrote; rephrasing,
+shortening, grammar & Gemini, Grammarly, Wordtune \\
+\textbf{Data collection} & In some cases, automating data collection
+(verify quality yourself) & Code Interpreter, Google Forms AI \\
+\textbf{Data analysis} & Generating/debugging R code, creating
+visualizations (verify all output) & Gemini, NVivo, Orange3 \\
+\textbf{Writing the thesis} & Improving clarity and structure of your
+own text & Gemini, Grammarly, QuillBot, Wordtune \\
+\textbf{Revision \& feedback} & Improving academic style, tone,
+consistency & Gemini, Grammarly, Hemingway Editor, Trinka AI \\
+\end{longtable}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Sustainability}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+Every query to a generative AI system requires significant computing
+energy. Use these tools mindfully and purposefully.
+
+\end{tcolorbox}
+
+\section{The AI statement (required)}\label{the-ai-statement-required}
+
+All theses must include a \textbf{Statement about Generative AI and
+AI-Assisted Technology usage} at the end of the thesis, after the
+reference list. This statement is \textbf{not counted in the word
+count}.
+
+Your statement must answer:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Did you use generative AI?} (yes/no --- if no, the statement
+  ends here)
+\item
+  \textbf{Which tools did you use, and how?} --- for each tool, specify
+  the purpose (e.g., \emph{``I used Google Gemini to receive feedback on
+  paragraph structure in the introduction and theory sections''})
+\item
+  \textbf{How did you handle the AI-generated content?} --- end with a
+  statement taking responsibility for the final work
+\end{enumerate}
+
+\subsection{Example AI statements}\label{example-ai-statements}
+
+\begin{quote}
+\emph{``During the process of writing this thesis, I used Undermind to
+explore the scientific literature. I always verified the information
+received via AI searches by reading the original sources. I also used
+Google Gemini to receive feedback on my own writing regarding paragraph
+structure and academic phrasing. The final formulations were written and
+checked by myself. I take full responsibility for the final submitted
+version.''}
+\end{quote}
+
+\begin{quote}
+\emph{``When writing the theory sections, I used Grammarly to improve
+readability and language. I also used Copilot to debug errors in my R
+code during analyses. When using these tools, I carefully reviewed and
+edited the generated content. I take full responsibility for the content
+of this thesis.''}
+\end{quote}
+
+\subsection{In-chapter disclosure}\label{in-chapter-disclosure}
+
+If you used AI for specific chapter-level tasks, also note this within
+the relevant chapter. For example: - \emph{Theory section}: used AI to
+generate an initial reading list on a topic - \emph{Method section}:
+used AI to generate experimental stimuli - \emph{Results section}: used
+AI to generate or refine analysis code
+
+Keep a record of your AI prompts and outputs --- you may be asked to
+show these.
+
+\chapter{R for Data Analysis}\label{r-for-data-analysis}
+
+R is the primary statistical computing environment used in Communication
+Science research at VU Amsterdam. This chapter points you to resources
+for learning R, running common analyses, and reporting results in APA
+format. It also covers how AI tools can help you write and debug R code.
+
+\section{Getting started with R}\label{getting-started-with-r}
+
+If you are new to R or need a refresher, start here:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Resource
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What it covers
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{R for Social Scientists} (Canvas) & The departmental resource
+--- covers common analyses relevant to Communication Science; start
+here \\
+\href{https://github.com/ccs-amsterdam/r-course-material}{CCS Amsterdam
+R Course Material} & Modular R tutorials developed at VU Amsterdam for
+Communication Science students --- covers R fundamentals, tidyverse,
+ggplot2, regression, multilevel models, factor analysis, text analysis,
+topic modeling, and more \\
+\href{https://r4ds.hadley.nz}{R for Data Science} (Wickham et al.) &
+Free online book; covers data import, transformation, visualization with
+the tidyverse \\
+\href{https://learningstatisticswithr.com}{Learning Statistics with R}
+(Navarro) & Free textbook; covers statistics concepts alongside R
+implementation \\
+\href{https://swirlstats.com}{swirl} & Interactive R tutorials you run
+inside R itself \\
+\href{https://posit.co/resources/cheatsheets/}{Posit Cheatsheets} &
+One-page visual references for ggplot2, dplyr, tidyr, etc. \\
+\end{longtable}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Statistics helpdesk}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+VU Amsterdam runs a \textbf{statistics helpdesk} for students. Check
+Canvas for the current schedule and how to book an appointment. This is
+the right place for questions about which test to use and how to run it
+--- not your supervisor.
+
+\end{tcolorbox}
+
+\section{Essential packages}\label{essential-packages}
+
+Install these packages to cover most analyses you'll need:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\FunctionTok{c}\NormalTok{(}
+  \StringTok{"tidyverse"}\NormalTok{,   }\CommentTok{\# data manipulation and visualization (dplyr, ggplot2, tidyr, ...)}
+  \StringTok{"haven"}\NormalTok{,       }\CommentTok{\# import SPSS (.sav) and Stata files}
+  \StringTok{"psych"}\NormalTok{,       }\CommentTok{\# reliability (alpha), descriptive stats, factor analysis}
+  \StringTok{"car"}\NormalTok{,         }\CommentTok{\# ANOVA, Levene\textquotesingle{}s test, recoding}
+  \StringTok{"lme4"}\NormalTok{,        }\CommentTok{\# multilevel / mixed models}
+  \StringTok{"lavaan"}\NormalTok{,      }\CommentTok{\# SEM and mediation/moderation (alternative to PROCESS)}
+  \StringTok{"mediation"}\NormalTok{,   }\CommentTok{\# causal mediation analysis}
+  \StringTok{"effectsize"}\NormalTok{,  }\CommentTok{\# Cohen\textquotesingle{}s d, eta{-}squared, omega{-}squared}
+  \StringTok{"apaTables"}\NormalTok{,   }\CommentTok{\# export APA{-}formatted tables to Word}
+  \StringTok{"papaja"}\NormalTok{,      }\CommentTok{\# APA{-}style reporting in R Markdown / Quarto}
+  \StringTok{"report"}       \CommentTok{\# automatic plain{-}language results reporting}
+\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Common analyses}\label{common-analyses}
+
+\subsection{Descriptive statistics and
+correlations}\label{descriptive-statistics-and-correlations}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(psych)}
+
+\CommentTok{\# Descriptive statistics}
+\FunctionTok{describe}\NormalTok{(data[, }\FunctionTok{c}\NormalTok{(}\StringTok{"var1"}\NormalTok{, }\StringTok{"var2"}\NormalTok{, }\StringTok{"var3"}\NormalTok{)])}
+
+\CommentTok{\# Correlation matrix (APA{-}ready)}
+\FunctionTok{library}\NormalTok{(apaTables)}
+\FunctionTok{apa.cor.table}\NormalTok{(data[, }\FunctionTok{c}\NormalTok{(}\StringTok{"var1"}\NormalTok{, }\StringTok{"var2"}\NormalTok{, }\StringTok{"var3"}\NormalTok{)],}
+              \AttributeTok{filename =} \StringTok{"Table1\_correlations.doc"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Reliability (Cronbach's
+α)}\label{reliability-cronbachs-ux3b1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(psych)}
+
+\CommentTok{\# Select items belonging to one scale}
+\FunctionTok{alpha}\NormalTok{(data[, }\FunctionTok{c}\NormalTok{(}\StringTok{"item1"}\NormalTok{, }\StringTok{"item2"}\NormalTok{, }\StringTok{"item3"}\NormalTok{, }\StringTok{"item4"}\NormalTok{)])}
+\CommentTok{\# Look at: raw\_alpha (Cronbach\textquotesingle{}s α)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{Independent samples
+\emph{t}-test}{Independent samples t-test}}\label{independent-samples-t-test}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Test whether group means differ}
+\FunctionTok{t.test}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ group, }\AttributeTok{data =}\NormalTok{ data, }\AttributeTok{var.equal =} \ConstantTok{TRUE}\NormalTok{)}
+
+\CommentTok{\# Effect size}
+\FunctionTok{library}\NormalTok{(effectsize)}
+\FunctionTok{cohens\_d}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ group, }\AttributeTok{data =}\NormalTok{ data)}
+\end{Highlighting}
+\end{Shaded}
+
+Report as: \emph{t}(df) = X.XX, \emph{p} = .XXX, \emph{d} = X.XX
+
+\subsection{One-way and factorial
+ANOVA}\label{one-way-and-factorial-anova}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(car)}
+
+\CommentTok{\# Factorial ANOVA (e.g., 2x2 between{-}subjects experiment)}
+\NormalTok{model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ factor\_a }\SpecialCharTok{*}\NormalTok{ factor\_b, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{Anova}\NormalTok{(model, }\AttributeTok{type =} \StringTok{"III"}\NormalTok{)   }\CommentTok{\# Type III sums of squares}
+
+\CommentTok{\# Effect size}
+\FunctionTok{library}\NormalTok{(effectsize)}
+\FunctionTok{eta\_squared}\NormalTok{(model, }\AttributeTok{partial =} \ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Report as: \emph{F}(df1, df2) = X.XX, \emph{p} = .XXX, η²\_p = .XX
+
+\subsection{Linear regression}\label{linear-regression}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple regression}
+\NormalTok{model1 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ predictor, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{summary}\NormalTok{(model1)}
+
+\CommentTok{\# Multiple regression}
+\NormalTok{model2 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ predictor1 }\SpecialCharTok{+}\NormalTok{ predictor2 }\SpecialCharTok{+}\NormalTok{ covariate, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{summary}\NormalTok{(model2)}
+
+\CommentTok{\# Standardized coefficients}
+\FunctionTok{library}\NormalTok{(effectsize)}
+\FunctionTok{standardize\_parameters}\NormalTok{(model2)}
+\end{Highlighting}
+\end{Shaded}
+
+Report as: \emph{b} = X.XX, \emph{SE} = X.XX, \emph{β} = X.XX,
+\emph{t}(df) = X.XX, \emph{p} = .XXX
+
+\subsection{Moderation (interaction
+effects)}\label{moderation-interaction-effects}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Center continuous predictors before creating interaction term}
+\NormalTok{data}\SpecialCharTok{$}\NormalTok{pred\_c     }\OtherTok{\textless{}{-}} \FunctionTok{scale}\NormalTok{(data}\SpecialCharTok{$}\NormalTok{predictor, }\AttributeTok{center =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{scale =} \ConstantTok{FALSE}\NormalTok{)}
+\NormalTok{data}\SpecialCharTok{$}\NormalTok{moderator\_c }\OtherTok{\textless{}{-}} \FunctionTok{scale}\NormalTok{(data}\SpecialCharTok{$}\NormalTok{moderator, }\AttributeTok{center =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{scale =} \ConstantTok{FALSE}\NormalTok{)}
+
+\NormalTok{model\_mod }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ pred\_c }\SpecialCharTok{*}\NormalTok{ moderator\_c, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{summary}\NormalTok{(model\_mod)}
+
+\CommentTok{\# Visualize interaction with ggplot2 or the \textquotesingle{}interactions\textquotesingle{} package}
+\FunctionTok{library}\NormalTok{(interactions)}
+\FunctionTok{interact\_plot}\NormalTok{(model\_mod, }\AttributeTok{pred =}\NormalTok{ pred\_c, }\AttributeTok{modx =}\NormalTok{ moderator\_c)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Mediation analysis (PROCESS /
+lavaan)}\label{mediation-analysis-process-lavaan}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Using the \textquotesingle{}mediation\textquotesingle{} package (bootstrapped indirect effects)}
+\FunctionTok{library}\NormalTok{(mediation)}
+
+\CommentTok{\# Step 1: model for mediator}
+\NormalTok{m\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(mediator }\SpecialCharTok{\textasciitilde{}}\NormalTok{ predictor, }\AttributeTok{data =}\NormalTok{ data)}
+
+\CommentTok{\# Step 2: model for outcome}
+\NormalTok{y\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ predictor }\SpecialCharTok{+}\NormalTok{ mediator, }\AttributeTok{data =}\NormalTok{ data)}
+
+\CommentTok{\# Bootstrap mediation}
+\NormalTok{med\_out }\OtherTok{\textless{}{-}} \FunctionTok{mediate}\NormalTok{(m\_model, y\_model,}
+                   \AttributeTok{treat =} \StringTok{"predictor"}\NormalTok{, }\AttributeTok{mediator =} \StringTok{"mediator"}\NormalTok{,}
+                   \AttributeTok{boot =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{sims =} \DecValTok{5000}\NormalTok{)}
+\FunctionTok{summary}\NormalTok{(med\_out)}
+\end{Highlighting}
+\end{Shaded}
+
+Alternatively, use the \textbf{PROCESS macro} (Hayes) in SPSS, or
+\textbf{lavaan} for structural equation modeling in R.
+
+\subsection{Manipuation check
+(experiment)}\label{manipuation-check-experiment}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Did participants in different conditions perceive the manipulation differently?}
+\FunctionTok{t.test}\NormalTok{(manipulation\_check }\SpecialCharTok{\textasciitilde{}}\NormalTok{ condition, }\AttributeTok{data =}\NormalTok{ data)}
+
+\CommentTok{\# For 2x2 design}
+\NormalTok{aov\_result }\OtherTok{\textless{}{-}} \FunctionTok{aov}\NormalTok{(manipulation\_check }\SpecialCharTok{\textasciitilde{}}\NormalTok{ factor\_a }\SpecialCharTok{*}\NormalTok{ factor\_b, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{summary}\NormalTok{(aov\_result)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{APA-formatted reporting in
+R}\label{apa-formatted-reporting-in-r}
+
+\subsection{\texorpdfstring{The \texttt{report}
+package}{The report package}}\label{the-report-package}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(report)}
+
+\NormalTok{model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ predictor, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{report}\NormalTok{(model)}
+\CommentTok{\# Returns a plain{-}language sentence you can adapt for your results section}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{The \texttt{apaTables}
+package}{The apaTables package}}\label{the-apatables-package}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(apaTables)}
+
+\CommentTok{\# APA regression table exported to Word}
+\FunctionTok{apa.reg.table}\NormalTok{(model1, model2,}
+              \AttributeTok{filename =} \StringTok{"Table2\_regression.doc"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{papaja (APA manuscripts in Quarto/R
+Markdown)}\label{papaja-apa-manuscripts-in-quartor-markdown}
+
+If you are writing your thesis in R Markdown or Quarto, the
+\href{https://frederikaust.com/papaja_man/}{papaja} package provides
+APA-formatted output. Use \texttt{apa\_print()} to inline statistics:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(papaja)}
+\NormalTok{result }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(outcome }\SpecialCharTok{\textasciitilde{}}\NormalTok{ group, }\AttributeTok{data =}\NormalTok{ data)}
+\FunctionTok{apa\_print}\NormalTok{(result)}\SpecialCharTok{$}\NormalTok{statistic   }\CommentTok{\# → "t(48) = 2.34, p = .023"}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Keeping your syntax clean}\label{keeping-your-syntax-clean}
+
+Good syntax habits matter --- your supervisor needs to be able to
+reproduce your analyses from your raw data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# ============================================================}
+\CommentTok{\# MA Thesis Analysis — [Your Name] — [Date]}
+\CommentTok{\# ============================================================}
+
+\CommentTok{\# 0. Load packages {-}{-}{-}{-}}
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(psych)}
+\FunctionTok{library}\NormalTok{(effectsize)}
+
+\CommentTok{\# 1. Import data {-}{-}{-}{-}}
+\NormalTok{data\_raw }\OtherTok{\textless{}{-}}\NormalTok{ haven}\SpecialCharTok{::}\FunctionTok{read\_sav}\NormalTok{(}\StringTok{"data/raw\_data.sav"}\NormalTok{)}
+
+\CommentTok{\# 2. Data cleaning {-}{-}{-}{-}}
+\CommentTok{\# Remove incomplete responses (n = 9)}
+\NormalTok{data\_clean }\OtherTok{\textless{}{-}}\NormalTok{ data\_raw }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{filter}\NormalTok{(progress }\SpecialCharTok{==} \DecValTok{100}\NormalTok{)}
+
+\CommentTok{\# 3. Compute scale scores {-}{-}{-}{-}}
+\CommentTok{\# Scale: Vaccine Hesitancy (α = .82 in original; check below)}
+\NormalTok{data\_clean }\OtherTok{\textless{}{-}}\NormalTok{ data\_clean }\SpecialCharTok{|\textgreater{}}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{vacc\_hes =} \FunctionTok{rowMeans}\NormalTok{(}\FunctionTok{across}\NormalTok{(}\FunctionTok{c}\NormalTok{(vh1, vh2, vh3, vh4, vh5)),}
+                              \AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{))}
+
+\CommentTok{\# 4. Descriptive statistics {-}{-}{-}{-}}
+\FunctionTok{describe}\NormalTok{(data\_clean[, }\FunctionTok{c}\NormalTok{(}\StringTok{"vacc\_hes"}\NormalTok{, }\StringTok{"soc\_media\_exp"}\NormalTok{, }\StringTok{"age"}\NormalTok{)])}
+
+\CommentTok{\# 5. H1: Regression of social media exposure on vaccine hesitancy {-}{-}{-}{-}}
+\NormalTok{h1\_model }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(vacc\_hes }\SpecialCharTok{\textasciitilde{}}\NormalTok{ soc\_media\_exp, }\AttributeTok{data =}\NormalTok{ data\_clean)}
+\FunctionTok{summary}\NormalTok{(h1\_model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-tip-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Use section headers in your script}, colbacktitle=quarto-callout-tip-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+The \texttt{\#\ Section\ -\/-\/-\/-} pattern (four dashes) creates
+collapsible sections in RStudio's code outline. This keeps your syntax
+file navigable when it grows long.
+
+\end{tcolorbox}
+
+\section{Getting help with R code}\label{getting-help-with-r-code}
+
+Beyond the statistics helpdesk and Canvas resources, AI tools can be
+genuinely useful for R:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2727}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7273}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Task
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Useful approach
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Debugging an error message & Paste the error + relevant code into Gemini
+or Copilot and ask what is wrong \\
+Finding the right function & Describe what you want to do in plain
+English \\
+Writing boilerplate (e.g., a for-loop) & Ask AI to generate it, then
+check you understand it \\
+Interpreting output & Ask AI to explain what a specific output means \\
+\end{longtable}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-warning-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Verify AI-generated R code}, colbacktitle=quarto-callout-warning-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+AI tools can produce plausible-looking but incorrect R code. Always run
+it, check the output makes sense, and make sure you understand what
+every line does before including results in your thesis. See
+\href{ai-tools.qmd}{Using AI Tools} for the full policy.
+
+\end{tcolorbox}
+
+\part{Submission \& Assessment}
+
+\chapter{Assessment \& Graduation}\label{assessment-graduation}
+
+\section{Submitting your final
+thesis}\label{submitting-your-final-thesis}
+
+Submit your final thesis \textbf{no later than the first-opportunity
+deadline} (see \href{timeline.qmd}{Timeline \& Deadlines}):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Upload on Canvas} (required --- the thesis is checked for
+  plagiarism here)
+\item
+  \textbf{Email to your supervisor and second reviewer} (confirm with
+  your supervisor whether a printed copy is also required)
+\item
+  \textbf{Ensure your supervisor has access} to your final data file and
+  syntax via the shared surfdrive folder
+\end{enumerate}
+
+\section{How your thesis is assessed}\label{how-your-thesis-is-assessed}
+
+Your thesis is evaluated by \textbf{two reviewers}: your supervisor
+(first reviewer) and a second reviewer. Both use the official
+\textbf{assessment form} (available on Canvas).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Details
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Time to grade} & Two weeks (10 working days) after submission
+deadline \\
+\textbf{Final grade} & Average of first and second reviewer \\
+\textbf{Disagreement} & If assessors differ by more than 2 points, or
+one fails and the other passes → third assessor assigned by the
+Examination Board (binding) \\
+\textbf{Passing grade} & ≥ 5.5 \\
+\end{longtable}
+
+\section{Resits and late submission}\label{resits-and-late-submission}
+
+Failing to submit at the first deadline is treated the same as missing
+an exam --- you have used one exam opportunity.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Situation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What happens
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Not submitted at first deadline} & First exam opportunity used;
+one resit available \\
+\textbf{Submitted but grade \textless{} 5.5} & One resit available \\
+\textbf{Resit submitted but grade \textless{} 5.5} & Failed the course;
+may be eligible for a second resit in the next academic year (see
+below) \\
+\textbf{Not submitted at first deadline AND resit} & Failed the course;
+may be eligible for a second resit in the next academic year \\
+\end{longtable}
+
+\subsection{Second resit (next academic
+year)}\label{second-resit-next-academic-year}
+
+In limited circumstances, you may be eligible for a second resit in the
+following academic year (deadline: end of November). This requires
+re-enrollment and tuition fee payment. Eligibility is assessed by the
+supervisor and thesis coordinator. Contact your study advisor.
+
+\section{Graduation procedure}\label{graduation-procedure}
+
+Once your thesis has a passing grade and you have completed all other
+courses:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  You will automatically receive a graduation email within approximately
+  two weeks
+\item
+  \textbf{Upload your thesis to the UBVU thesis database} --- this is
+  mandatory for receiving your diploma
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Choose \emph{Publicly available} under access rights
+  \item
+    Instructions:
+    \href{https://vu.nl/en/about-vu/divisions/university-library/more-about/uploading-your-thesis}{vu.nl/en/about-vu/divisions/university-library/more-about/uploading-your-thesis}
+  \end{itemize}
+\item
+  Indicate your attendance at the \textbf{graduation ceremony} (usually
+  in October/November)
+\end{enumerate}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacityback=0, toprule=.15mm, colframe=quarto-callout-note-color-frame, left=2mm, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{No defense required}, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, colback=white, breakable, toptitle=1mm, titlerule=0mm, leftrule=.75mm, arc=.35mm, opacitybacktitle=0.6, coltitle=black]
+
+There is no oral presentation or defense of the MA thesis in
+Communication Science. The diploma ceremony is a celebration, not an
+assessment event.
+
+\end{tcolorbox}
+
+\section{Where to find formal
+regulations}\label{where-to-find-formal-regulations}
+
+The formal \emph{Regulation Ma thesis} governs all MA theses at the
+Faculty of Social Sciences. It is available on VUnet. For the vast
+majority of students, these regulations remain in the background ---
+supervisor and student find a good working relationship without needing
+to consult them. They become relevant if serious disagreements arise.
+
+\section{Getting help}\label{getting-help}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Need
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contact
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Academic/personal difficulties & Study advisor:
+\href{https://vu.nl/en/student/contact-student-guidance-and-support/academic-advisors-fss}{vu.nl/en/student/contact-student-guidance-and-support/academic-advisors-fss} \\
+Financial support for delays & Profileringsfonds:
+\href{https://vu.nl/en/student/finances/profile-fund}{vu.nl/en/student/finances/profile-fund} \\
+Graduation questions &
+\href{https://vu.nl/en/student/graduation-and-diploma}{vu.nl/en/student/graduation-and-diploma} \\
+Ethics self-check questions & rerc.ssc@vu.nl \\
+\end{longtable}
+
+
+\backmatter
+
+\end{document}

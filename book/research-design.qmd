@@ -27,6 +27,16 @@ A survey measures variables via a questionnaire administered to a sample of part
 - Platform (Qualtrics is the standard at VU)
 - Online convenience sampling vs. probability sampling
 
+::: {.callout-warning}
+## Self-report validity
+Self-reported media use correlates only *r* ≈ .38 with device-logged behavior — below the convergent validity threshold (Parry et al., 2021). If *actual* use (not *perceived* use) is central to your research question, consider whether self-report is a sufficient proxy. Always label self-reported use explicitly as such and qualify your inferences accordingly.
+:::
+
+::: {.callout-warning}
+## AI bots in online surveys
+Recent research estimates that 30–90% of responses in crowdsourcing platforms (e.g., Prolific, MTurk) may be inauthentic, with AI-generated responses reaching up to 45% in some studies (Panizza et al., 2026). Even 3–7% polluted data can distort results enough to invalidate conclusions. When recruiting online, enable paradata tracking (response time, keystroke patterns) in Qualtrics, include attention checks, and discuss your data quality approach with me before launching your survey.
+:::
+
 ## Experimental research
 
 An experiment manipulates one or more independent variables and measures effects on dependent variables, with random assignment of participants to conditions.
@@ -66,6 +76,10 @@ Content analysis systematically codes and analyzes a corpus of media content (te
 - How were variables operationalized and coded?
 - What are the reliability and validity of your coding?
 
+**Example corpus description:**
+
+> *"We collected all articles published by the five most-read Dutch online news outlets between January 1 and March 31, 2024, using the Coosto API. After removing duplicates and non-news items (e.g., job listings), the final corpus consisted of 12,847 articles. The unit of analysis was the individual article."*
+
 ## Qualitative research
 
 Qualitative designs explore social phenomena in depth without the goal of statistical generalization.
@@ -84,6 +98,21 @@ Qualitative designs explore social phenomena in depth without the goal of statis
 
 In qualitative theses, the method chapter describes the methodology (e.g., grounded theory), data collection (who, how many, how recruited), and data analysis procedures.
 
+## Experience sampling (ESM)
+
+An experience sampling study asks participants to complete brief surveys repeatedly over several days or weeks — typically triggered by a timer or an event (e.g., each time they use social media). This captures behavior and experiences as they happen, rather than relying on retrospective recall.
+
+**When to use it:** When your research question is about how experiences or behaviors fluctuate *within* people across situations, rather than average differences between people.
+
+**Key considerations:**
+
+- Requires a sampling app (e.g., m-Path, movisensXS) and careful pilot testing
+- Participants complete many measurements — keep each survey very short (2–5 minutes)
+- Analysis uses multilevel modeling (observations nested within persons)
+- Ethics and burden: participants must be debriefed and compensated appropriately
+
+**Example:** In a two-week ESM study (Masur, 2019), n = 164 participants completed a brief survey each time they engaged in digital communication, capturing 1,104 situational events. The analysis found that 72% of the variance in self-disclosure lay *within* persons across situations — a finding a one-time survey would have missed entirely.
+
 ## The analysis plan
 
 Your **Research Proposal must include an analysis plan** that specifies (for each hypothesis or sub-question) exactly which statistical test on which variables will be used to answer it. For example:
@@ -94,5 +123,13 @@ This plan prevents ad-hoc analysis decisions later. In the final thesis, the ana
 
 ::: {.callout-tip}
 ## Pre-registration
-I strongly suggest to preregister your analysis plan on the Open Science Framework (OSF) before data collection. See [Open Science](open-science.qmd) for details. We will discuss this right before data collection. 
+I strongly suggest to preregister your analysis plan on the Open Science Framework (OSF) before data collection. See [Open Science](open-science.qmd) for details. We will discuss this right before data collection.
 :::
+
+## References
+
+- Masur, P. K. (2019). *Situational Privacy and Self-Disclosure: Communication Processes in Online Environments*. Springer International Publishing. https://doi.org/10.1007/978-3-319-78884-5
+
+- Panizza, F., Kyrychenko, Y., & Roozenbeek, J. (2026). Survey-taking AI tools surpass human abilities. Here's what we can do about it. *Nature*. https://doi.org/10.1038/d41586-026-00386-2
+
+- Parry, D. A., Davidson, B. I., Sewall, C. J. R., Fisher, J. T., Mieczkowski, H., & Quintana, D. S. (2021). A systematic review and meta-analysis of discrepancies between logged and self-reported digital media use. *Nature Human Behaviour*, *5*, 1535–1547. https://doi.org/10.1038/s41562-021-01117-5

@@ -7,7 +7,7 @@ Beginning with a MA thesis can be a bit intimidating. It is likely the biggest (
 The MA Thesis in Communication Science is a substantial independent research project that represents the culmination of your master's degree. Here are the key course facts:
 
 |                     |                                                                                               |
-|------------------------------------|------------------------------------|
+|---------------------|-----------------------------------------------------------------------------------------------|
 | **Course code**     | S_MTcw                                                                                        |
 | **Credits**         | 18 EC (≈ 504 hours)                                                                           |
 | **Course level**    | 600                                                                                           |
@@ -65,3 +65,23 @@ In general, I would like you to work on the topics that I proposed during the in
 ### Can I write my thesis in English?
 
 Yes. In fact, I prefer if you would write your thesis in English, but I also allow for you to write in Dutch.
+
+## Getting organized
+
+A thesis spans several months and involves dozens of papers, multiple drafts, and a growing analysis folder. Students who set up a simple system at the start save themselves significant stress later.
+
+**Reference manager — use Zotero from day one**
+
+[Zotero](https://www.zotero.org) (free) lets you save references directly from your browser, organize them into collections, and generate APA citations automatically in Word or R Markdown. Set it up before you start reading. See [Literature Search](literature.qmd) for more detail.
+
+**Take notes as you read**
+
+When you read a paper, immediately write down the key argument, the main findings, and how it connects to your own study. Do not rely on being able to recall this later. A simple document per topic or a note in Zotero is enough — but do it while the paper is open in front of you.
+
+**Break the thesis into SMART goals**
+
+"Write the theory chapter" is paralyzing. "Draft the first paragraph of the social norms section by Thursday" is not. Break every phase of the thesis into small, specific, time-bound tasks. This is the single most effective way to maintain momentum on a long project.
+
+**Back up your work**
+
+Save your files to OneDrive or another cloud service automatically and continuously. Also keep your analysis syntax and data in the shared SURFdrive folder from the start (see [Ethics & Data Management](ethics.qmd)) — not only at the end.

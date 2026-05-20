@@ -61,15 +61,29 @@ A hypothesis proposes a specific, testable relationship between variables. Good 
 
 Example: *"H1: Higher exposure to health misinformation on social media will be positively associated with vaccine hesitancy."*
 
+More examples from typical research areas in Communication Science:
+
+| Research area | Example hypothesis |
+|---|---|
+| Privacy & self-disclosure | *"H1: Higher privacy literacy will be negatively associated with self-disclosure depth on social media."* |
+| Social norms | *"H2: Exposure to descriptive norms showing high peer disclosure will increase participants' own disclosure intentions."* |
+| Moderation | *"H3: The positive effect of peer disclosure exposure on disclosure intentions will be stronger for users with lower privacy concerns."* |
+| Mediation | *"H4: Privacy concerns will mediate the negative association between privacy literacy and self-disclosure."* |
+| Digital literacy | *"H5: Higher algorithm literacy will be negatively associated with susceptibility to algorithmically curated misinformation."* |
+| GenAI use | *"H6: More frequent use of generative AI tools for work tasks will be positively associated with feelings of work-related dependency."* |
+
 ::: {.callout-important}
 ## Common problem: Non-falsifiable hypotheses
-Hypotheses must be falsifiable, i.e., it should be possible that the data does not support them. For example, a hypothesis like this *"Exposure to health misinformation has an effect on vaccine hesitancy"* is almost not falsifiable as it doesn't specify a direction and thus any found effect would support it. 
+Hypotheses must be falsifiable, i.e., it should be possible that the data does not support them. For example, a hypothesis like this *"Exposure to health misinformation has an effect on vaccine hesitancy"* is almost not falsifiable as it doesn't specify a direction and thus any found effect would support it.
 :::
 
-
 ::: {.callout-important}
-## Moderation and mediation in separate hypotheses
-Main effects and moderation/mediation effects must be stated in separate hypotheses. Do not combine them.
+## Common problem: Hypotheses that combine multiple effects
+The following hypothesis looks specific but is actually two separate predictions in one statement:
+
+*"Privacy literacy is negatively associated with self-disclosure, and this effect is stronger for women and older users."*
+
+This should be split into three hypotheses: one main effect (H1) and two moderation effects (H2, H3). Main effects and moderation/mediation effects must always be stated in separate hypotheses.
 :::
 
 ## Sub-questions (qualitative research)
